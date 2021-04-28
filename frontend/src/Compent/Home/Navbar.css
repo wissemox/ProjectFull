@@ -1,0 +1,407 @@
+* {
+  margin: 0px;
+
+  padding: 0px;
+  font-family: "Sakkal Majalla";
+}
+.FlexBoxNavBar {
+  display: flex;
+
+  margin-left: 100px;
+}
+.FlexBoxNavBar img {
+  width: 180px;
+}
+
+.FlexBoxNavBar03 {
+  background-color: #0b224d;
+  height: 100px;
+}
+.FlexBoxNavBar {
+  height: 100px;
+}
+.FlexBoxNavBar button {
+  background-color: red;
+}
+.Text03 {
+  display: flex;
+  margin-left: 220px;
+
+  margin-top: 40px;
+}
+.Text03 button {
+  margin-top: 60px;
+  margin-left: 50px;
+  width: 80px;
+  height: 30px;
+  border: none;
+
+  color: white;
+  border-radius: 18px;
+}
+
+.Text03 h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.Menu05 {
+  display: none;
+}
+.BOlen {
+  display: none;
+}
+.Image68 {
+  height: 100px;
+}
+
+.FlexBoxNavBar img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 250px;
+}
+.ImageNavBar01 {
+  display: none;
+}
+.ButtonResposive {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .ImageNavbar {
+    display: none;
+  }
+  .ImageNavBar01 {
+    display: flex;
+  }
+  .ImageNavBar01 {
+    -webkit-transition: 1s;
+    margin-top: 20px;
+    margin-left: 140px;
+  }
+  .ImageNavBar01 img {
+    -webkit-transition: 1s;
+    width: 200px;
+  }
+  .FlexBoxNavBar img {
+    -webkit-transition: 1s;
+  }
+  .Text03 {
+    -webkit-transition: 1s;
+    display: none;
+  }
+  .Menu05 {
+    background-color: white;
+    -webkit-transition: 1s;
+    height: 80px;
+    display: flex;
+  }
+  .Menu05 img {
+    -webkit-transition: 1s;
+    margin-left: 45%;
+    margin-top: 10px;
+    -webkit-transition: 1s;
+    width: 45px;
+    height: 40px;
+  }
+  .Menu05 img:hover {
+    -webkit-transition: 1s;
+    -webkit-transition: 1s;
+    transform: scale(1.2);
+    transition: transform 2s;
+  }
+  .BOlen {
+    margin-top: 20px;
+    -webkit-transition: 1s;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1050px;
+    background-color: rgb(241, 241, 241);
+  }
+  .BOlen p {
+    -webkit-transition: 1s;
+    padding-top: 10px;
+    text-align: center;
+    width: 80px;
+    padding-left: 200px;
+    font-size: 22px;
+
+    color: #5793ce;
+  }
+  .Button03 {
+    -webkit-transition: 1s;
+    margin-top: 20px;
+    margin-left: 120px;
+    display: flex;
+  }
+  .Button03 h2 {
+    font-size: 20px;
+  }
+  .Button03 button {
+    margin-bottom: 20px;
+    height: 23px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    -webkit-transition: 1s;
+    margin-left: 20px;
+
+    border: none;
+    background-color: #f72122;
+    border-radius: 50px;
+    color: white;
+    width: 100px;
+  }
+  .BOlen {
+    margin-top: 0px;
+  }
+}
+.Categories button {
+  color: #0b224d;
+  background-color: #0b224d;
+  -webkit-transition: 1s;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin-left: 450px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+.Categories button:hover {
+  -webkit-transition: 1s;
+  background-color: #f72122;
+  color: white;
+}
+.FlexBox03 {
+  display: flex;
+  background-color: white;
+}
+.ImageNavbar {
+  margin-left: 150px;
+}
+.ImageNavbar img {
+  width: 300px;
+
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+.FlexBox03 p {
+  font-size: 20px;
+  color: black;
+
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.FlexBox03 button {
+  background-color: #f72122;
+  margin-top: 20px;
+}
+.FlexBox03 p:hover {
+  cursor: pointer;
+  opacity: 60%;
+  text-decoration: none;
+
+  color: #f72122;
+}
+
+.Button03 {
+  font-size: 12px;
+}
+.PorquoiBinpact p {
+  width: 120px;
+}
+
+.Margine5 p {
+  padding-left: 150px;
+  width: 350px;
+  font-size: 25px;
+  text-align: center;
+}
+.ButtonFlexBox {
+  display: flex;
+}
+@media screen and (max-width: 1500px) {
+  .Text03 {
+    -webkit-transition: 1s;
+    margin-left: 0px;
+  }
+  .Text03 p {
+    -webkit-transition: 1s;
+    font-size: 14px;
+  }
+  .ImageNavbar img {
+    -webkit-transition: 1s;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .ImageNavbar {
+    -webkit-transition: 1s;
+    width: 180px;
+    margin-right: 450px;
+    margin-left: 10px;
+  }
+  .FlexBox03 button {
+    width: 50px;
+    height: 20px;
+    margin-top: 23px;
+  }
+  .FlexBox03 h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Text03 {
+    -webkit-transition: 1s;
+    margin-left: 0px;
+  }
+  .Text03 p {
+    -webkit-transition: 1s;
+    font-size: 14px;
+  }
+  .ImageNavbar img {
+    -webkit-transition: 1s;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .ImageNavbar {
+    -webkit-transition: 1s;
+    width: 180px;
+    margin-right: 150px;
+    margin-left: 10px;
+  }
+  .FlexBox03 button {
+    width: 50px;
+    height: 20px;
+    margin-top: 23px;
+  }
+  .FlexBox03 h2 {
+    background-color: red(2, 2, 2);
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Text03 {
+    -webkit-transition: 1s;
+    margin-left: 5px;
+  }
+  .Text03 p {
+    padding-left: 0px;
+    -webkit-transition: 1s;
+    font-size: 14px;
+  }
+  .ImageNavbar img {
+    -webkit-transition: 1s;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .ImageNavbar {
+    -webkit-transition: 1s;
+    width: 180px;
+    margin-right: 80px;
+    margin-left: 10px;
+  }
+  .FlexBox03 button {
+    width: 50px;
+    height: 20px;
+    margin-top: 23px;
+  }
+  .FlexBox03 h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .ImageNavbar img {
+    -webkit-transition: 1s;
+  }
+  .ImageNavbar {
+    margin-right: 40px;
+  }
+  .Text03 p {
+    width: 30px;
+  }
+  .Text03 {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ImageNavbar img {
+    -webkit-transition: 1s;
+  }
+  .ImageNavbar {
+    margin-right: 10px;
+  }
+}
+/* ButtonFlexBox */
+@media screen and (max-width: 880px) {
+  .ButtonFlexBox {
+    -webkit-transition: 1s;
+    display: none;
+  }
+  .ButtonResposive {
+    -webkit-transition: 1s;
+    display: flex;
+    margin-left: 40px;
+  }
+  .ButtonResposive button {
+    -webkit-transition: 1s;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+  }
+  .ButtonResposive {
+    margin-right: 100px;
+
+    width: 50px;
+  }
+  .ButtonResposive button {
+    margin-top: 15px;
+  }
+  .ButtonResposive img {
+    margin-top: 3px;
+    width: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .ButtonResposive button {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ButtonResposive button {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .ButtonResposive button {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+  }
+  .Text03 p {
+    width: 40px;
+  }
+  .PorquoiBinpact {
+    margin-left: 20px;
+    width: 70px;
+  }
+  .PorquoiBinpact p {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Text03 p {
+    width: 20px;
+  }
+  .PorquoiBinpact p {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 120px;
+  }
+}

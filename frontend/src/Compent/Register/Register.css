@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Sakkal Majalla";
+}
+
+.BackGroundRegister {
+  background-color: #d7ebfb;
+  height: 720px;
+  display: flex;
+}
+.ImageRegister {
+  margin-left: 320px;
+  margin-top: 120px;
+}
+.ImageRegister img {
+  width: 600px;
+}
+.Register01 {
+  margin-top: 120px;
+  margin-left: 150px;
+}
+.Register01 input {
+  -webkit-transition: 2s;
+  border: none;
+  border: solid gainsboro;
+  background-color: #304697;
+  border-radius: 30px;
+  width: 320px;
+  height: 40px;
+  font-size: 22px;
+  margin-top: 20px;
+  padding-left: 60px;
+  color: white;
+}
+.Input06 img {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 20px;
+  width: 30px;
+}
+.Register01 h2 {
+  letter-spacing: 4px;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.adzd {
+  margin-right: 20px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.adzd img {
+  margin-top: 100px;
+  width: 60px;
+}
+.Radio {
+  display: flex;
+
+  width: 350px;
+}
+.Radio input {
+  margin-left: 80px;
+  width: 30px;
+  background-color: black;
+}
+.Radio label {
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 20px;
+  margin-left: 35px;
+}

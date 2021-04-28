@@ -1,0 +1,60 @@
+.NavItem {
+  background-color: #000d36;
+}
+.NavItem img {
+  margin-top: 20px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.Image {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+.Image img {
+  height: 150px;
+
+  width: 200px;
+}
+.ProductFilter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ProductFilter {
+  margin-bottom: 250px;
+  height: 1000px;
+}
+.Image {
+  margin-top: 30px;
+}
+.AllProduct {
+  border-radius: 15px;
+  width: 300px;
+  margin-top: 150px;
+  margin-left: 150px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Button02 {
+  margin-top: 60px;
+}
+/*   border: none;
+  background-color: none; */
+
+.Button02 button {
+  border: none;
+  background-color: none;
+  width: 300px;
+  border-radius: 15px;
+  height: 40px;
+  color: white;
+  background-color: #276bb4;
+}
+.TextH2 h2 {
+  padding-top: 150px;
+}
+
+.Image img {
+  margin-left: 50px;
+}

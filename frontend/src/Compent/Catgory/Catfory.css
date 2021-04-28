@@ -1,0 +1,144 @@
+.CatGoryText h2 {
+  margin-top: 50px;
+  color: #224e80;
+  font-size: 40px;
+  font-weight: 200;
+  height: 50px;
+  letter-spacing: 2.5px;
+  padding-top: 10px;
+  margin-top: 100px;
+}
+.CatGoryText p {
+  font-size: 20px;
+  font-weight: 100;
+  color: #5893ce;
+  letter-spacing: 4px;
+}
+.Lmage4 {
+  display: flex;
+}
+.Catgory03 {
+  font-size: 25px;
+  border-radius: 5px;
+
+  color: white;
+  margin-top: 50px;
+}
+.Catgory03 h2 {
+  margin-bottom: 30px;
+  padding-left: 18px;
+  text-align: center;
+  font-size: 30px;
+  height: 40px;
+  border-radius: 10px;
+  width: 10px;
+  padding-right: 20px;
+  background-color: #f72122;
+
+  font-weight: 200;
+}
+.Catgory03 {
+  margin-left: 250px;
+}
+.Catgory03 p {
+  color: red;
+}
+.Catgory03 {
+  display: flex;
+}
+.Text05 h1 {
+  color: #224e80;
+  font-size: 43px;
+  width: 435px;
+}
+
+.CatGoryText {
+  margin-bottom: 50px;
+}
+.Text0d6 p {
+  text-align: justify;
+  width: 330px;
+  font-size: 25px;
+  color: #5893ce;
+  margin-left: 50px;
+}
+.Image789 img {
+  width: 450px;
+}
+.Image789 {
+  margin-left: 150px;
+}
+.Text065 {
+  display: flex;
+}
+.Text065 h1 {
+  color: #224e80;
+  font-size: 43px;
+  width: 435px;
+}
+.Image img {
+  width: 450px;
+}
+.Image4 img {
+  margin-left: 100px;
+  width: 400px;
+}
+.Lmage4 {
+  margin-left: 30px;
+}
+.Image58 img {
+  width: 400px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.Image58 {
+  margin-right: 100px;
+}
+.Catgory03 {
+  display: flex;
+}
+
+.Text10 h1 {
+  color: #224e80;
+  font-size: 43px;
+  width: 435px;
+}
+.Text10 {
+  display: flex;
+}
+.Text050 {
+  display: flex;
+}
+.Text050 {
+  color: #224e80;
+  height: 50px;
+}
+.Dad {
+  margin-left: 50px;
+  margin-bottom: 150px;
+}
+.Text05 h4 {
+  color: #224e80;
+  padding-left: 50px;
+  font-size: 40px;
+}
+.Flasha img {
+  margin-top: 50px;
+  width: 50px;
+}
+.Baackground {
+  margin-top: 50px;
+  background-color: #fb654a;
+  height: 100px;
+}
+.Baackground p {
+  font-size: 32px;
+  color: white;
+  padding-top: 30px;
+}
+.Flasha img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.3);
+  transition: transform 1s;
+}
