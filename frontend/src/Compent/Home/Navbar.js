@@ -38,7 +38,7 @@ const Navbar = ({BackgroundImage , setImage}) => {
                  <Link to="/Catgory"> <div className="PorquoiBinpact">
                  <p  >Pourquoi Binpact</p>
                      </div> </Link> 
-                     <p style={{color:ColorChnage}} onClick={Togel}>Catégories</p> 
+                     <p style={{color:ColorChnage}} onClick={Togel}>Catégorihes</p> 
                     {/* <Modale className="d"/> */}
                     <p>Communautés</p>
                     <div className="ButtonFlexBox">
