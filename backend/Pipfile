@@ -11,6 +11,9 @@ psycopg2 = "*"
 djangorestframework = "*"
 pillow = "*"
 django-safedelete = "*"
+djangorestframework-jwt = "*"
+drf-yasg = "*"
+datetime = "*"
 
 [dev-packages]
 
