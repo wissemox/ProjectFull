@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'safedelete',
     'rest_framework',
     'drf_yasg',
-
     'authentification',
 ]
 AUTH_USER_MODEL='authentification.User'
@@ -169,9 +168,12 @@ LOGIN_REDIRECT_URL = 'index'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = False
+EMAIL_HOST = 'ssl0.ovh.net'
+EMAIL_PORT = 587 
+DEFAULT_FROM_EMAIL = 'postmaster@binpact.com'
+EMAIL_HOST_USER = 'postmaster@binpact.com'
+EMAIL_HOST_PASSWORD = 'Binpact2020..'
