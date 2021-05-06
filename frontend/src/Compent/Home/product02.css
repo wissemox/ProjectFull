@@ -9,6 +9,7 @@
 .Image {
   display: flex;
   flex-wrap: wrap;
+
   width: 250px;
 }
 .Image img {
@@ -18,11 +19,13 @@
 }
 .ProductFilter {
   display: flex;
+
   flex-wrap: wrap;
 }
 .ProductFilter {
-  margin-bottom: 250px;
-  height: 1000px;
+  margin-bottom: 100px;
+
+  margin-left: 50px;
 }
 .Image {
   margin-top: 30px;
@@ -30,14 +33,14 @@
 .AllProduct {
   border-radius: 15px;
   width: 300px;
-  margin-top: 150px;
-  margin-left: 150px;
-  height: 400px;
+  margin-top: 100px;
+  margin-left: 50px;
+
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .Button02 {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 /*   border: none;
   background-color: none; */
@@ -46,15 +49,245 @@
   border: none;
   background-color: none;
   width: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   height: 40px;
   color: white;
   background-color: #276bb4;
 }
 .TextH2 h2 {
-  padding-top: 150px;
-}
+  text-align: left;
+  padding-top: 100px;
+  height: 120px;
 
+  font-size: 30px;
+}
+.TextH2 {
+  margin-left: 30px;
+
+  width: 250px;
+}
 .Image img {
   margin-left: 50px;
+}
+.Input05 {
+  opacity: 80%;
+  width: 80%;
+  height: 75px;
+  border-radius: 38px;
+  margin-left: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+.FlexBox p {
+  padding-top: 2%;
+  font-family: "Corbel";
+  font-size: 120%;
+  display: flex;
+  padding-left: 100px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.FlexBox {
+  display: flex;
+}
+.BackImageUr {
+  background-image: url("Test08.png");
+  height: 1350px;
+}
+.Padn {
+  color: #dee8f5;
+  padding-top: 20px;
+}
+.FlexBox img {
+  width: 50px;
+  margin-top: 1%;
+  margin-left: 1%;
+  height: 50px;
+}
+.Prix {
+  height: 5px;
+
+  color: #c12026;
+  display: flex;
+}
+/* Corbel */
+.Prix p {
+  font-family: "Corbel";
+  font-size: 20px;
+  padding-top: 0px;
+  padding-left: 20px;
+}
+.Prix {
+  margin-bottom: 100px;
+}
+.Raddzte {
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 3px;
+  box-shadow: rgba(165, 165, 165, 0.19);
+}
+.Prix {
+  height: 1px;
+}
+/* 2B478B */
+.Raddzte span {
+  border-radius: 20px;
+  color: #2b478b;
+  font-size: 23px;
+}
+.FlexNumber {
+  display: flex;
+  font-size: 30px;
+  margin-left: 35%;
+  margin-top: 450px;
+  margin-bottom: 80px;
+}
+.FlexNumber p {
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+  margin-left: 5%;
+  font-family: "Corbel";
+  background-color: #d1def0;
+  color: black;
+}
+.Fada {
+  display: flex;
+}
+.Fadwa input {
+  width: 1000px;
+  margin-left: 50px;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 5px black;
+}
+.Dazda {
+  margin-top: 20px;
+  height: 250px;
+  margin-left: 400px;
+  background-color: red;
+  width: 800px;
+  opacity: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Image59 img {
+  width: 40%;
+}
+.Image59 {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 20%;
+
+  text-align: left;
+}
+.Image59 h3 {
+  font-size: 350%;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.Prix {
+  display: flex;
+}
+.Prix span {
+  color: #000d36;
+}
+.Rate {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+.daz {
+  margin-top: 20px;
+  display: flex;
+  color: white;
+  width: 120px;
+  border-radius: 10px;
+
+  margin-left: 20px;
+  background-color: #c12026;
+  height: 30px;
+}
+.HightTech {
+  height: 25px;
+  width: 400px;
+  display: flex;
+  margin-top: 10px;
+}
+.HightTech img {
+  margin-bottom: 10px;
+  width: 30px;
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+}
+.HightTech p {
+  padding-bottom: 15px;
+  font-size: 13px;
+  color: #999999;
+  height: 13px;
+  height: 12px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 10px;
+  border-right: solid 1px #999999;
+}
+.Samunge {
+  display: flex;
+  margin-left: 2px;
+}
+.Samunge p {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.PhoneName p {
+  color: #999999;
+  border: none;
+}
+.HightTechazd {
+  margin-top: 6px;
+  display: flex;
+}
+.Etat {
+  margin-left: 5px;
+  display: flex;
+  height: 30px;
+}
+.Etat h3 {
+  padding-top: 3px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.Etat p {
+  color: #39b54a;
+  font-size: 20px;
+}
+.Descraption p {
+  padding-right: 0px;
+  width: 300px;
+  font-size: 15px;
+  border: none;
+  padding-right: 100px;
+}
+
+/*  margin-left: 0px;
+  margin-right: 0px; */
+.Descraption {
+  border: none;
+  margin-left: 5px;
+}
+.PrixAll {
+  display: flex;
+}
+
+.Prix8 {
+  border-bottom: solid 1px #999999;
+  display: flex;
+  height: 60px;
+  margin-left: 19px;
+  width: 260px;
+}
+.Prix8 p {
+  font-size: 20px;
+  padding-left: 10px;
 }

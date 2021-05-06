@@ -71,3 +71,17 @@
   width: 20px;
   margin-left: 35px;
 }
+
+.BackGroundImaged {
+  background-color: rgb(225, 225, 225);
+  border-radius: 30px;
+  width: 330px;
+  margin-left: 10px;
+}
+.BacKGroundImage p {
+  font-size: 20px;
+  cursor: pointer;
+}
+.BacKGroundImage p:hover {
+  color: #304697;
+}

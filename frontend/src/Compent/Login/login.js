@@ -2,10 +2,21 @@ import React,{useEffect , useState} from 'react'
 import './Login.css'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import {useDispatch} from 'react-redux'
+import {logiUser , Test} from '../../js/actions/authActions'
 const Login = () => {
     useEffect(() => {
       Aos.init({duration: 2000});
     }, [])
+    const dispatch =useDispatch() 
+    const LoginUser =()=>{
+        dispatch(logiUser( {email:username ,password:Password} ))
+        //  "email": "sender.binpact@gmail.com",
+
+    }
+    const TEST = ()=>{
+        dispatch(Test())
+    }
     const [username ,setName]=useState('')
     const [Password ,setPassword]=useState('')
     return (
@@ -27,7 +38,8 @@ const Login = () => {
                     <input placeholder="password"/>
                 </div>
                 <div  data-Aos="fade-up" className="Button">
-                    <button>Login</button>
+                    <button onClick={LoginUser}>Login</button>
+                 
                 </div>
                 
                 </div>
@@ -37,7 +49,7 @@ const Login = () => {
             </div>
 
             <div data-Aos="fade-up" className="ImageLogin">
-                <img src="LoginImage.png"/>
+                <img src="LoginImage02.png"/>
             </div>
         
         </div>

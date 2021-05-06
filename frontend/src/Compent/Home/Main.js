@@ -15,7 +15,7 @@ const Main = ({BackgroundImage , setImage}) => {
     }
  
     return (
-        <Parallax  bgImage={"Ecommerce.jpg"} strength={500}>
+        <Parallax bgImage={"WWW02.jpg"} strength={300}>
         <div className="MainFlexBox02">
             
         <div className="MainFlexBox02"> 
@@ -36,7 +36,7 @@ const Main = ({BackgroundImage , setImage}) => {
                      <button>Bloquez votre place maintenat</button>
             </div>
             <div  data-Aos="fade-up" className="BackGroundImage6">
-                <img data-Aos="fade-left" src="Ordinater.png"/>
+                 <img data-Aos="fade-left" src="Ordinater5.png"/> 
                 {/* Background65 */}
             </div>
            {BackgroundImage ?<div data-Aos="fade-up"  className="Catgories">
