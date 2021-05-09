@@ -1,5 +1,5 @@
 .NavItem {
-  background-color: #000d36;
+  background-color: #e6e6e6;
 }
 .NavItem img {
   margin-top: 20px;
@@ -8,14 +8,14 @@
 }
 .Image {
   display: flex;
-  flex-wrap: wrap;
 
+  height: 100px;
   width: 250px;
 }
 .Image img {
-  height: 150px;
+  height: 200px;
 
-  width: 200px;
+  width: 300px;
 }
 .ProductFilter {
   display: flex;
@@ -27,6 +27,7 @@
 
   margin-left: 50px;
 }
+
 .Image {
   margin-top: 30px;
 }
@@ -57,18 +58,18 @@
 .TextH2 h2 {
   text-align: left;
   padding-top: 100px;
-  height: 120px;
+  height: 115px;
+  font-family: "Montserrat*", SemiBold *;
+  font-size: 26px;
 
-  font-size: 30px;
+  font-weight: 600;
 }
 .TextH2 {
-  margin-left: 30px;
+  margin-left: 20px;
 
   width: 250px;
 }
-.Image img {
-  margin-left: 50px;
-}
+
 .Input05 {
   opacity: 80%;
   width: 80%;
@@ -92,7 +93,6 @@
   display: flex;
 }
 .BackImageUr {
-  background-image: url("Test08.png");
   height: 1350px;
 }
 .Padn {
@@ -147,7 +147,7 @@
   color: white;
   border-radius: 5px;
   width: 50px;
-  margin-left: 5%;
+  margin-left: 30px;
   font-family: "Corbel";
   background-color: #d1def0;
   color: black;
@@ -155,6 +155,19 @@
 .Fada {
   display: flex;
 }
+.Fada p {
+  font-family: "Montserrat*", Regular *;
+  font-weight: 500;
+  width: 150px;
+  margin-left: 40px;
+  margin-top: 20px;
+  text-align: center;
+  height: 40px;
+  padding-left: 0px;
+  padding-top: 0px;
+  border-right: solid 1px #d1d1d1;
+}
+/*  font-family: "Montserrat*", Regular *; */
 .Fadwa input {
   width: 1000px;
   margin-left: 50px;
@@ -183,6 +196,7 @@
   text-align: left;
 }
 .Image59 h3 {
+  font-family: "Montserrat*", SemiBold *;
   font-size: 350%;
   padding-top: 100px;
   padding-left: 50px;
@@ -194,43 +208,54 @@
   color: #000d36;
 }
 .Rate {
-  margin-left: 50px;
+  margin-left: 5px;
   margin-top: 25px;
+
+  color: #2b478b;
+  padding-left: 30px;
+}
+.Rate span {
+  font-size: 20px;
+  border-radius: 50px;
 }
 .daz {
   margin-top: 20px;
   display: flex;
   color: white;
   width: 120px;
-  border-radius: 10px;
-
+  border-radius: 13px;
+  cursor: pointer;
   margin-left: 20px;
   background-color: #c12026;
   height: 30px;
 }
 .HightTech {
-  height: 25px;
-  width: 400px;
   display: flex;
+  height: 28px;
   margin-top: 10px;
 }
 .HightTech img {
-  margin-bottom: 10px;
-  width: 30px;
-  margin-left: 50px;
-  width: 30px;
-  height: 30px;
+}
+.TextH2 h2 {
+  margin-top: 25px;
+}
+.LikeImage {
+  height: 800px;
+  margin-top: 110px;
+  position: absolute;
+  margin-left: 220px;
 }
 .HightTech p {
-  padding-bottom: 15px;
-  font-size: 13px;
+  font-family: "Montserrat*", Regular *;
+  line-height: 0.8;
+  font-size: 15px;
+  height: 10px;
   color: #999999;
-  height: 13px;
-  height: 12px;
-  padding-bottom: 5px;
+
   padding-left: 2px;
+
   padding-right: 10px;
-  border-right: solid 1px #999999;
+  border-right: solid 2px #b6b6b6;
 }
 .Samunge {
   display: flex;
@@ -245,13 +270,13 @@
   border: none;
 }
 .HightTechazd {
-  margin-top: 6px;
   display: flex;
+  margin-top: 10px;
 }
 .Etat {
-  margin-left: 5px;
+  margin-left: 2px;
   display: flex;
-  height: 30px;
+  height: 20px;
 }
 .Etat h3 {
   padding-top: 3px;
@@ -264,10 +289,11 @@
 }
 .Descraption p {
   padding-right: 0px;
-  width: 300px;
+  width: 370px;
   font-size: 15px;
   border: none;
   padding-right: 100px;
+  text-align: left;
 }
 
 /*  margin-left: 0px;
@@ -275,19 +301,80 @@
 .Descraption {
   border: none;
   margin-left: 5px;
+  height: 50px;
 }
 .PrixAll {
   display: flex;
 }
 
 .Prix8 {
-  border-bottom: solid 1px #999999;
   display: flex;
   height: 60px;
-  margin-left: 19px;
+
   width: 260px;
 }
 .Prix8 p {
   font-size: 20px;
   padding-left: 10px;
+  font-family: "Montserrat*", Regular *;
+  font-weight: 300;
+}
+.ImageProfile {
+  position: absolute;
+  margin-left: 210px;
+  margin-top: 80px;
+}
+.ImageProfile img {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+.Text08P {
+  display: flex;
+  position: absolute;
+  margin-left: 200px;
+  width: 250px;
+  margin-top: 70px;
+}
+.Text08P p {
+  color: white;
+  font-size: 18px;
+}
+.Sponsur02 {
+  margin-top: 700px;
+  background-color: #00123a;
+  height: 700px;
+  color: white;
+}
+.Sponsur02 p {
+  color: white;
+}
+.Sponsur02 h1 {
+  color: white;
+}
+.FlexNumber {
+  margin-top: 550px;
+  position: absolute;
+}
+.Daties {
+  display: flex;
+  margin-left: 20px;
+  border-top: 1px solid #c9c9c9;
+  width: 250px;
+}
+/* Montserrat* */
+.Daties p {
+  padding-left: 3px;
+  color: #2b478b;
+  margin-bottom: 4px;
+  height: 15px;
+  font-family: "Montserrat", Regular *;
+}
+.Time {
+  margin-left: 60px;
+  display: flex;
+}
+.Time p {
+  padding-left: 5px;
+  color: #999999;
 }

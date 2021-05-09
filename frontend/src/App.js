@@ -3,11 +3,12 @@ import React,{useState} from 'react'
 import './App.css';
 import Login from './Compent/Login/login'
 import Register from './Compent/Register/Register'
-import {BrowserRouter ,Route} from 'react-router-dom'
+import {BrowserRouter ,Route, Switch} from 'react-router-dom'
 import Home from './Compent/Home/Home'
 import Catgory from './Compent/Catgory/Catgory'
 import Producdt from './Compent/Home/Product03'
 import Confirm from './Compent/Confirm/Confirm'
+import User from './Compent/userInterface/User'
 import "aos/dist/aos.css"
 function App() {
   // Function
@@ -59,9 +60,11 @@ function App() {
       <Route exact path="/Product" render={()=><Catgory/>} />
       <Route exact path="/Product01" render={()=><Producdt/>} />
       {ConfirmEmail&&    <Route exact path="/Confirm" render={()=><Confirm/>} />}
-  
+      {/* User */}
+     
       {/* Producdt */}
-      {/* Confirm */}
+      {/* Confirm */} <Route  path="/Dashboard" component={User}/>
+      <Route exact path="/Confirm" render={()=><Confirm/>} />
       </BrowserRouter>
       
     </div>

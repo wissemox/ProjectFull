@@ -33,66 +33,66 @@ const Producdt = () => {
         Rate:4,
         name:"Samsung",
         Catgory:"Smartphone", 
-        Image:"https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/navigation/a-series/a53s/A53s-navigation-blue-v2.png"
+        Image:"Samsung-Galaxy-S21-Ultra-Spen-XDA-234235.jpg"
     
     },
     {
         Rate:3,
         name:"Samsung",
         Catgory:"Smartphone", 
-        Image:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/250px-Image_created_with_a_mobile_phone.png"
+        Image:"Samsung-Galaxy-S21-Ultra-Spen-XDA-234235.jpg"
     
     },
     {
         Rate:4,
         name:"Samsung",
         Catgory:"Smartphone", 
-        Image:"https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/navigation/a-series/a53s/A53s-navigation-blue-v2.png"
+        Image:"Samsung-Galaxy-S21-Ultra-Spen-XDA-234235.jpg"
     
     },
     
     {   Rate:2,
-        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza" ,
+        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza dazdadzad zadazdzd zadazfazdzadfazd dza" ,
         Catgory:"Voitere", 
         Image:"https://static.remove.bg/remove-bg-web/2a274ebbb5879d870a69caae33d94388a88e0e35/assets/start-0e837dcc57769db2306d8d659f53555feb500b3c5d456879b9c843d1872e7baa.jpg"
     },
     {   Rate:3,
-        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza" ,
+        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza dazdadzad zadazdzd zadazfazdzadfazd dza"  ,
         name:"MSI Ge66",
         Catgory:"Ordinater", 
-        Image:"https://d1eh9yux7w8iql.cloudfront.net/product_images/product_images/None_50ea1bc0-2936-4296-864f-4a7b06686855-thumb.jpg"
+        Image:"vpavic_4291_20201113_0366-0.jpg"
     },
       { 
         Rate:4,
-        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza" ,
+        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza dazdadzad zadazdzd zadazfazdzadfazd dza" ,
         name:"MSI Ge66",
         prix:50,
         Catgory:"Ordinater", 
-        Image:"https://m.media-amazon.com/images/I/41hPGuef6PL._AC._SR360,460.jpg"
+        Image:"unnamed.jpg"
     },
     {   
         Rate:4,
-        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza" ,
+        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza dazdadzad zadazdzd zadazfazdzadfazd dza" ,
         name:"MSI Ge66",
         prix:80,
         Catgory:"Ordinater", 
-        Image:"https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/HP_OMEN_15_2020_Ryzen4800H_RTX2060_3.jpg"
+        Image:"vpavic_4291_20201113_0366-0.jpg"
     },
     {   
         Rate:5,
-        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza" ,
+        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza dazdadzad zadazdzd zadazfazdzadfazd dza" ,
         name:"MSI Ge66",
         prix:50,
         Catgory:"Ordinater", 
-        Image:"https://www.savanna.tn/53807-home_default/msi-pc-portable-ge66-raider-10sf-i7-10eme-gen-16go-1-to-ssd.jpg"
+        Image:"vpavic_4291_20201113_0366-0.jpg"
     },
     {   
         Rate:5,
-        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza" ,
+        descraption:"dazdadzad zadazdzd zadazfazdzadfazd dza dazdadzad zadazdzd zadazfazdzadfazd dza " ,
         name:"Pc hp Omen" ,
         prix:40,
         Catgory:"Ordinater", 
-        Image:"https://www.tunisianet.com.tn/103464-large/pc-portable-hp-15-da0001nk-i3-7e-gen-4-go-blanc-sim-orange-offerte-30-go.jpg"
+        Image:"unnamed.jpg"
     }
     ])
     const[Recharche , setRecharche]=useState([{
@@ -163,13 +163,72 @@ const Producdt = () => {
           <div className="FlexNumber">
 
           
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+</div>
+       
+          {/* Sponsur */}  
+          <div>
+       
+          <div className="Sponsur02">
+            
+            <div className="Sponsir03">
+            <div className="TextSponnsurall">
+            <div className="H1">
+                
+            <h1 id="Liens"> Liens </h1>
+       
+        <h1>Catégories</h1>
+        <h1>Contact</h1>
+            </div>
+          
+            <div className="TextSponsur">
+                <div className="TextSponsour01">
+                    <p>Qui some nous</p>
+                    <p>Comment ca marche ? </p>
+                    <p>La charte du bon troqueur</p>
+                </div>
+                <div className="FlexBox07">
+                    <div className="FlexBoxTsext06">
+                    <p>Multimédia</p>
+                   <p>pour Maison</p>
+                   <p id="Buerau">Bureau</p>
+                    </div>
+                    <div className="FlexBoxTsext06">
+                    <p>Immoblier</p>
+                   <p id="PourVous">pour vous</p>
+                   <p id="Loisir">Loisirs</p>
+                    </div>
+                    <div className="FlexBoxTsext06">
+                    <p>Auto-Moto</p>
+                   <p>Pour enfant </p>
+                   <p id="Bircolagge">Bircolage</p>
+                    </div>
+                  
+                </div>
+                <div className="Dazd">
+                    <p>Address :</p>
+                    <p>Num Tel:</p>
+                    <p>Social media</p>
+                </div>
+            </div>
+            </div>
+            <div className="InscrivesVous">
+            <p>INSCRIVEZ-VOUS</p>
+            </div>
+            <div className="InputInscrevie">
+            <input placeholder="E-mail"/>
+           
+            </div>
+            <div className="Flash8">
+            <img src="Flash03.png"/>
+            </div>
+            </div>
+        </div>
           </div>
-          <Sponsur/>
           {/* BackGround0 */}
           <Sponsur05/>
         </div>
