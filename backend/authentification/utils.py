@@ -20,4 +20,9 @@ class Util:
         email = EmailMessage(
             subject=data['email_subject'], body=data['email_body'], to=[data['to_email']])
         EmailThread(email).start()
+    
+    @staticmethod
+    def get_domain(email):
+        return email.split('@')[1]
+        
         

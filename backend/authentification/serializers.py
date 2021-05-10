@@ -1,57 +1,74 @@
 from rest_framework import serializers
-from .models import User
+from .models import User, Communaute
 from django.contrib import auth
 from rest_framework.exceptions import AuthenticationFailed
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.utils.encoding import smart_str, force_str, smart_bytes, DjangoUnicodeDecodeError
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.utils.timezone import now
+from .utils import Util
 
 SEXE_CHOICES = (
     ('homme','HOMME'),
     ('femme','FEMME'),
     ('Autre','AUTRE'),
-
-    
-
-
 )
+
 ROLE_CHOICES = (
     ('leader','LEADER'),
     ('community_member','COMMUNITY_MEMBER'),
 
 )
-CATEGORY_CHOICES = (
-    ('iTech','ITECH'),
-    ('meubles','MEUBLES'),
-    ('accessoires enfants','ACCESSOIRES ENFANTS'),
-    ('dressing(H/F)','DRESSING(H/F)'),
-    ('fournitures bureau','FOURNITURES BUREAU'),
 
 
-)
 
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(
         max_length=68, min_length=6, write_only=True)
-    nomcommunaute = serializers.CharField(
-        max_length=68,write_only=True)
+    
 
-    DateNaissance=serializers.DateField(default=now)
-    Sexe=serializers.ChoiceField(choices=SEXE_CHOICES,label='')
+    date_naissance=serializers.DateField(default=now)
+    sexe=serializers.ChoiceField(choices=SEXE_CHOICES,label='')
     role=serializers.ChoiceField(choices=ROLE_CHOICES)
+
+    # nom_communaute = serializers.SerializerMethodField()
+    
    
     default_error_messages = {
         'username': 'The username should only contain alphanumeric characters'}
 
     class Meta:
         model = User
-        fields = ['email', 'username', 'password','role','nomcommunaute','Sexe','DateNaissance']
+        fields = [
+            'nom',
+            'prenom',
+            'username',
+            'email', 
+            'username', 
+            'password',
+            'role',
+            'communaute',
+            'sexe','date_naissance',
+            'tel',
+            'pays',
+            'ville',
+            'adresse',
+            'code_postal',
+            'nom_communaute',
+            'profile_pourcentage'
+        ]
 
     def validate(self, attrs):
         email = attrs.get('email', '')
         username = attrs.get('username', '')
-        
+        domaine = Util.get_domain(email = email)
+        nom_communaute = attrs.get('nom_communaute', '')
+        role =  attrs.get('role', '')
+        if role == 'leader':
+            communaute_result=Communaute.objects.all().filter(nom=nom_communaute,domaine=domaine)
+            if communaute_result:
+                raise serializers.ValidationError(
+                'communaute is already exists')
         if not username.isalnum():
             raise serializers.ValidationError(
                 self.default_error_messages)
@@ -108,7 +125,6 @@ class LoginSerializer(serializers.ModelSerializer):
         return {
             'email': user.email,
             'username': user.username,
-            
             'tokens': user.tokens,
             
         }
@@ -171,6 +187,26 @@ class SetNewPasswordSerializer(serializers.Serializer):
         except Exception as e:
             raise AuthenticationFailed('The reset link is invalid', 401)
         return super().validate(attrs)
+
+class CommunauteSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Communaute
+        fields = [
+            'secteur_activite',
+            'nom',
+            'slug',
+            'domaine', 
+            'logo', 
+            'siret',
+            'pays',
+            'ville',
+            'adresse',
+            'code_postal',
+            'date_creation',
+            'user',
+            'communaute'
+        ]
 
 
 

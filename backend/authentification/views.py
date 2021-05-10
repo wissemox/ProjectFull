@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from rest_framework import generics, status,views
-from .serializers import RegisterSerializer, EmailVerificationSerializer,LoginSerializer,ResetPasswordEmailRequestSerializer,SetNewPasswordSerializer
+from .serializers import RegisterSerializer, EmailVerificationSerializer,LoginSerializer,ResetPasswordEmailRequestSerializer,SetNewPasswordSerializer,CommunauteSerializer
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
-from .models import User
+from .models import User, Communaute
 from .utils import Util
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
@@ -35,11 +35,23 @@ class RegisterView(generics.GenericAPIView):
 
     def post(self, request):
         user = request.data
+        
+        
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         user_data = serializer.data
         user = User.objects.get(email=user_data['email'])
+        #save communaute if user.role == leader and user.nom_communate is not null
+        if user.nom_communaute and user.role == 'leader':
+            domaine = Util.get_domain(email = user_data['email'])
+            communaute = Communaute(nom = user.nom_communaute, user = user, domaine= domaine)
+            communaute.save()
+            user.communaute = communaute
+            user.save()
+            user_data['communaute'] = communaute.id
+            
+
         token = RefreshToken.for_user(user).access_token
         current_site = get_current_site(request).domain
         relativeLink = reverse('email-verify')
@@ -51,6 +63,7 @@ class RegisterView(generics.GenericAPIView):
 
         Util.send_email(data)
         return Response(user_data, status=status.HTTP_201_CREATED)
+
 
 class VerifyEmail(views.APIView):
     serializer_class = EmailVerificationSerializer
@@ -139,11 +152,13 @@ class SetNewPasswordAPIView(generics.GenericAPIView):
         serializer.is_valid(raise_exception=True)
         return Response({'success': True, 'message': 'Password reset success'}, status=status.HTTP_200_OK)
 
-class ListDomain(APIView):
-    
-    def get(self):
-        """
-        Return a list of all users.
-        """
-        domains = [ user.email.split('@')[-1].split('.')[0] for user in User.objects.all()]
-        return domains
+class CommunauteView(generics.GenericAPIView):
+    serializer_class = CommunauteSerializer
+    def get(slef,request):
+        communautes = Communaute.objects.all()
+        serializer = CommunauteSerializer(communautes, many=True)
+        serializer_data=[]
+        for data in serializer.data:
+            serializer_data.append(data)
+        return Response(serializer_data, status=status.HTTP_200_OK) 
+
