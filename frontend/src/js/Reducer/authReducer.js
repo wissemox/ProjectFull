@@ -18,8 +18,30 @@ const initialState={
 
 const authReducer =(state=initialState , {type , payload}) =>{
     switch (type) {
-        case REGISTER_USER:
-          
+        case  LOGIN_USER:
+            localStorage.setItem('token',payload.token)
+            return{
+                ...state, 
+                isLoading:false, 
+                isAuth:true , 
+                ...payload
+            }
+            case  REGISTER_USER:
+                localStorage.setItem('token',payload.token)
+                return{
+                    ...state, 
+                    isLoading:false, 
+                    isAuth:true , 
+                    ...payload
+                }
+                case  GET_AUTH_USER:
+                    localStorage.setItem('token',payload.token)
+                    return{
+                        ...state, 
+                        isLoading:false, 
+                        isAuth:true , 
+                        ...payload
+                    }
         default:
             return state;
     }

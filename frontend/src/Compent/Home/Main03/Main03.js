@@ -52,7 +52,7 @@ const Main03 = () => {
 
          </div>
          <div className="ImageCATFORY">
-         <img src="Image-money.png"/>
+         <img src="Imageda.png"/>
          </div>
        
             {/* <div className="Image05s">

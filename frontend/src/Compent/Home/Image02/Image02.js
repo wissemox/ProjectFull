@@ -14,7 +14,7 @@ const Image02 = ({setRate ,Rate}) => {
             <div data-Aos="fade-right"  className="BackgroundPhoto" >
               
               <div className="Image8">
-              <img src="FeedBack06.png"/>
+              <img src="ASsesta.png"/>
               </div>
               <div className="Noteetavis">
                 <p>Note et avis</p>

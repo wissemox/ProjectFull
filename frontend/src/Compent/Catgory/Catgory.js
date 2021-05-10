@@ -17,11 +17,11 @@ const Catgory = () => {
             <h2 data-Aos="fade-up">Pourquoi essayer le troc de Binpact ? </h2>
             <p>Si vous ne trouvez pas votre place on vous en offre une !</p>
             </div>
-            <div className="Lmage4">
+            <div data-Aos="fade-up" className="Lmage4">
                 <div>
                     <div data-Aos="fade-left" className="Catgory03">
                     <h2>1</h2>
-                        <div className="Text05">
+                        <div data-Aos="fade-up" className="Text05">
                         <h1>Economisez de l'argent.</h1>
                             <div className="Text0d6">
                                 <p>Voud n"allez pas touche a votre portefeuille ni a votre carte bancaire.
@@ -30,7 +30,7 @@ const Catgory = () => {
                             </div>
                         </div>
                         
-                        <div className="Image4">
+                        <div data-Aos="fade-up" className="Image4">
                             <img src="7849.jpg"/>
                         </div>
                     </div>
@@ -42,24 +42,25 @@ const Catgory = () => {
 
                 </div>
             </div>
-            <div className="Catgory03">
-            <div className="Image58">
-            <img src="Online shop managers asking clients for feedback.jpg"/>
+            <div  data-Aos="fade-up" className="Catgory03">
+            <div  data-Aos="fade-up" className="Image58">
+                {/*  */}
+            <img src="WennedYourFedback.png"/>
             
             </div>
          
-                 <h2>2</h2>
-                        <div data-Aos="fade-left" className="Text05">
-                        <h4>Troquez avec toute confiance</h4>
-                            <div className="Text0d6">
+                 <h2  data-Aos="fade-up">2</h2>
+                        <div  data-Aos="fade-left" className="Text05">
+                        <h4  data-Aos="fade-up">Troquez avec toute confiance</h4>
+                            <div  data-Aos="fade-up" className="Text0d6">
                                 <p>Voud n"allez pas touche a votre portefeuille ni a votre carte bancaire.
                                 vous faites des éconmoies tous les mous nous calculons pour vous le prévalue
                                 </p>
                             </div>
                         </div>
                         </div>      
-                        <div data-Aos="fade-right" className="Catgory03">
-                    <h2>1</h2>
+                        <div  data-Aos="fade-up" data-Aos="fade-right" className="Catgory03">
+                    <h2  data-Aos="fade-up">1</h2>
                         <div className="Text05">
                         <h1>Economisez de l'argent.</h1>
                             <div className="Text0d6">
