@@ -4,6 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.cache import cache_control 
 from rest_framework.decorators import api_view 
 from rest_framework.parsers import JSONParser 
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.generics import ListAPIView
+from rest_framework.filters import SearchFilter, OrderingFilter
 from .serializers import ProduitSerializer, ImageSerializer
 import json
 
@@ -99,4 +102,19 @@ def convert_euros_bins(euros):
     x = 10
     bins = str(x*int(euros))
     return bins
-    
+
+class ApiProduitsListView(ListAPIView):
+    queryset = Produit.objects.all()
+    serializer_class = ProduitSerializer
+    pagination_class = PageNumberPagination
+
+    filter_backends = (SearchFilter, OrderingFilter)
+    filter_fields = ('categorie__categorie','sous_categorie__categorie')
+    search_field = (
+        'nom',
+        'marque',
+        'modele',
+        'critere',
+        'description', 
+        'owner__username'
+    )

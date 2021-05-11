@@ -194,7 +194,7 @@ class User(AbstractBaseUser, PermissionsMixin, SafeDeleteModel):
             completed_fields+=1
         if self.date_naissance :
             completed_fields+=1
-        self.profile_pourcentage = completed_fields*10
+        self.profile_pourcentage = completed_fields*100/total
         
         
     def save(self, *args, **kwargs):        
