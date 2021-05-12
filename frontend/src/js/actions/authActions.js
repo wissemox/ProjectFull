@@ -17,7 +17,11 @@ import {USER_LOADING,
           payload:res.data
        })
     }catch(error){ 
-       console.log(error)
+       console.dir(error)
+       dispatch({
+          type:REGISTER_USER, 
+         payload:error.response.data
+       })
      }
  }; 
 

@@ -30,7 +30,7 @@ function App() {
   }
   // Setp2 
   const Step2d =(Communite,LederName , Date ,Sex)=>{
-    if(Communite && LederName && Date && Sex  ){
+    if(Communite || LederName && Date && Sex  ){
       console.log('dqzdq')
       setStep2(true)
       console.log(Step2)
@@ -40,7 +40,7 @@ function App() {
   }
   //setp3
   const Step3d =(LederNamed,Test  )=>{
-    if(LederNamed && Test && LederNamed===Test && LederNamed.length>6 ){
+    if(LederNamed && Test && LederNamed===Test && LederNamed.length>=5 ){
       console.log('dqzdq')
       setStep3(true)
       console.log(Step3)

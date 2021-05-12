@@ -14,6 +14,7 @@ import MapTrouves from './MapTrouvesNos/MapTrouves'
 import Sponsur from './Sponsur'
 import Sponsur05 from './Sponsur05'
 import Catgor from './Catgor'
+
 const Home = () => {
     useEffect(() => {
         Aos.init({duration: 2000});
@@ -31,14 +32,19 @@ const Home = () => {
                 SetFilter(false)
             }
       }
+      const [Test , setTest01]=useState(false)
     return (
         <div>
             
                 
             <div className="NavBar">
             <Navbar BackgroundImage={BackgroundImage} setImage={setImage}/>
-            
-            <Main BackgroundImage={BackgroundImage} setImage={setImage}/>
+            <div onScroll={()=>setTest01(!Test)}>
+                {console.log(Test)}
+
+       
+            <Main onscr BackgroundImage={BackgroundImage} setImage={setImage}/>
+            </div>
             <div data-Aos="fade-up" >
                 <Catgor FilterRecharche={FilterRecharche} Filter={Filter}/>
                 <Produits/>

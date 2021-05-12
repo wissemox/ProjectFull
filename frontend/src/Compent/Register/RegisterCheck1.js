@@ -47,7 +47,7 @@ const RegisterCheck1 = ({Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08}) 
       <Progress data-Aos="fade-left" value="50" />
       {console.log(TakeName)}
         {console.log(Test08)}
-      {Communite&&LederName&&Date&&Sex ? null : <p>Enter all filed</p> }
+      {Date&&Sex ? null : <p>Enter all filed</p> }
                         <div> 
                             <input  value={LederName} onChange={(e)=>setLederName(e.target.value)}   placeholder="role"/>
                             </div>

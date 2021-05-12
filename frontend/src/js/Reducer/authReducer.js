@@ -11,8 +11,9 @@ import {USER_LOADING,
 
 const initialState={
     toke:localStorage.getItem('token') ,
-    user:null ,
+    data:null ,
     isAuth:false,
+    errors:null,
     isLoading:true 
 }
 
