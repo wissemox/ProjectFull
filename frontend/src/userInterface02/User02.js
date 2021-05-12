@@ -1,12 +1,14 @@
 import React,{useState , useEffect} from 'react'
-import Catgory from '../Catgory/Catgory'
-import Product03Map  from './Product03Map'
-import './product02.css'
-import Sponsur from './Sponsur'
-import Sponsur05 from './Sponsur05'
+
+import Product03Map  from '../Compent/Home/Product03Map'
+import '../Compent/Home/product02.css'
+import Sponsur from '../Compent/Home/Sponsur'
+import Sponsur05 from '../Compent/Home/Sponsur05'
 import Aos from 'aos'
-import RecharcheMap from './ResercheMap'
-const Producdt = () => {
+import RecharcheMap from '../Compent/Home/ResercheMap'
+
+import './User02.css'
+const User02 = () => {
     useEffect(() => {
         Aos.init({duration: 3000});
       }, [])
@@ -116,8 +118,18 @@ const Producdt = () => {
     }
     return (
         <div data-Aos="fade-up" >
-            <div data-Aos="fade-up" className="NavItem">
+            <div data-Aos="fade-up" className="NavItem02">
                 <img src="binpact002.png"/>
+                <div className="NameProfile">
+                <div >
+                <img src="Wissemabid.png"/>
+                </div>
+                <p>Wissem abid</p>
+               
+                </div>
+                <div className="Button6">
+                <button>Logout</button>
+                </div>
             </div>
             <div data-Aos="fade-up" className="BackImageUr">
             {console.log(aValue01)}
@@ -155,10 +167,10 @@ const Producdt = () => {
                       <h3>TROQUEZ   <br/> en quelquez clics!</h3>
                       
                   </div>
-            <div data-Aos="fade-up" className="ProductFilter">
-          {Product.filter(word => word.Catgory===aValue ).map((el , i )=><Product03Map el={el} i={i}/>)}
-          {Product.filter(word => word.Catgory===aValue01 ).map((el)=><Product03Map el={el}/>)}
-          </div>
+                  <div className="ProductFlex8">
+                  {Product.slice(3).map((el)=><Product03Map el={el}/>)}
+                  </div>
+            
           </div>
           <div className="FlexNumber">
 
@@ -171,18 +183,8 @@ const Producdt = () => {
 </div>
        
           {/* Sponsur */}  
-          
-            <div className="FlexsdNumber">
-
-
-<p>1</p>
-<p>2</p>          
-<p>3</p>
-<p>4</p>
-<p>5</p>
-</div>
           <div>
-        
+       
           <div className="Sponsur02">
             
             <div className="Sponsir03">
@@ -246,4 +248,4 @@ const Producdt = () => {
     )
 }
 
-export default Producdt
+export default User02

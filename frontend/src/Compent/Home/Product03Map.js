@@ -1,10 +1,11 @@
-import React,{useEffect} from 'react'
+import React,{useEffect ,useState} from 'react'
 import Rate from './Image02/Rate'
 import Aos from 'aos'
-const Product03Map = ({el}) => {
+const Product03Map = ({el , i}) => {
     useEffect(() => {
         Aos.init({duration: 3000});
       }, [])
+      const [Color , setColor]=useState(i===0 ? "#D1DEF0":"#184981")
     return (
         <div>
         <div className="AllProduct">
@@ -14,7 +15,7 @@ const Product03Map = ({el}) => {
                </div>
                <div className="ImageProfile">
                <img src="ProfileImage.png"/>
-              
+                {console.log(Color)}
                </div>
                <div className="Text08P">
                     <p>wissem abid</p>
@@ -81,7 +82,7 @@ const Product03Map = ({el}) => {
            
            <div   data-Aos="fade-up" className="Button02">
               
-           <button  data-Aos="fade-up" >Torquez maintenant</button>
+           <button  style={{backgroundColor: Color}} data-Aos="fade-up" >Torquez maintenant</button>
            </div>
         </div>
         </div>

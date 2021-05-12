@@ -16,7 +16,7 @@
 .ProduitsMap03 {
   background-color: #184981;
   width: 250px;
-  height: 320px;
+  height: 330px;
   margin-left: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -85,12 +85,16 @@
 }
 .ProduitsVoice button {
   border: none;
-  background-color: #fe0000;
+  background-color: #c12026;
   height: 50px;
   width: 150px;
+  padding-top: 1px;
   border-radius: 25px;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
+  font-size: 28px;
+  font-weight: 300;
+  font-family: "Montserrat*", Regular *;
 }
 .ProduitsVoice {
   margin-bottom: 50px;
@@ -104,13 +108,17 @@
   margin-top: 80px;
 }
 .Bdutton button {
-  width: 230px;
+  width: 200px;
   border-radius: 30px;
   border: none;
   background-color: #184981;
   color: white;
-  font-size: 25px;
+
+  padding-top: 8px;
+  font-size: 27px;
+  font-family: "Montserrat*", Regular *;
 }
+
 /* ProduitsFlexBox */
 @media screen and (max-width: 1500px) {
   .ProduitsFlexBox {
