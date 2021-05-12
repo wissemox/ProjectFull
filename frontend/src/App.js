@@ -9,6 +9,8 @@ import Catgory from './Compent/Catgory/Catgory'
 import Producdt from './Compent/Home/Product03'
 import Confirm from './Compent/Confirm/Confirm'
 import User from './Compent/userInterface/User'
+import User02 from './userInterface02/User02'
+import Profile from './userInterface02/Profile'
 import "aos/dist/aos.css"
 function App() {
   // Function
@@ -64,6 +66,8 @@ function App() {
      
       {/* Producdt */}
       {/* Confirm */} <Route  path="/Dashboard" component={User}/>
+                      <Route  path="/Dashboard01" component={User02}/>
+                      <Route  path="/Profile" component={Profile}/>
       <Route exact path="/Confirm" render={()=><Confirm/>} />
       </BrowserRouter>
       

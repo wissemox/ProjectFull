@@ -50,9 +50,11 @@
   border: none;
   background-color: none;
   width: 300px;
+  font-size: 24px;
   border-radius: 5px;
   height: 40px;
   color: white;
+
   background-color: #276bb4;
 }
 .TextH2 h2 {
@@ -140,9 +142,10 @@
   display: flex;
   font-size: 30px;
   margin-left: 35%;
-  margin-top: 450px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
+
 .FlexNumber p {
   color: white;
   border-radius: 5px;
@@ -187,6 +190,7 @@
 }
 .Image59 img {
   width: 40%;
+  height: 40%;
 }
 .Image59 {
   margin-top: 30px;
@@ -197,9 +201,92 @@
 }
 .Image59 h3 {
   font-family: "Montserrat*", SemiBold *;
-  font-size: 350%;
+  font-weight: 600;
+  font-size: 400%;
   padding-top: 100px;
+  color: #002954;
   padding-left: 50px;
+}
+.FlexsdNumber {
+  position: absolute;
+}
+/* Resposive here */
+
+.FlexsdNumber {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .FlexNumber {
+    display: none;
+  }
+
+  .FlexsdNumber {
+    -webkit-transition: 1s;
+    display: flex;
+    font-size: 30px;
+    margin-top: 1100px;
+    margin-left: 350px;
+  }
+  .FlexsdNumber p {
+    -webkit-transition: 1s;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+    margin-left: 30px;
+    font-family: "Corbel";
+    background-color: #d1def0;
+    color: black;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .FlexNumber {
+    display: none;
+  }
+
+  .FlexsdNumber {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .FlexNumber {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Image59 h3 {
+    -webkit-transition: 1s;
+    font-family: "Montserrat*", SemiBold *;
+    font-weight: 600;
+    font-size: 250%;
+    padding-top: 100px;
+    color: #002954;
+    padding-left: 50px;
+  }
+  .Image59 img {
+    -webkit-transition: 1s;
+    width: 40%;
+    height: 40%;
+  }
+  .Image59 {
+    -webkit-transition: 1s;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 10%;
+
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Image59 h3 {
+    -webkit-transition: 1s;
+  }
+  .Image59 img {
+    -webkit-transition: 1s;
+  }
+  .Image59 {
+    -webkit-transition: 1s;
+  }
 }
 .Prix {
   display: flex;
@@ -346,6 +433,73 @@
   height: 700px;
   color: white;
 }
+/* Resposive */
+
+/* .FlexNumber {
+  margin-top: 550px;
+  position: absolute;
+} */
+
+@media screen and (max-width: 1400px) {
+  .Sponsur02 {
+    -webkit-transition: 1s;
+
+    color: white;
+    background-color: #00123a;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .Sponsur02 {
+    -webkit-transition: 1s;
+
+    color: white;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .Sponsur02 {
+    -webkit-transition: 1s;
+    margin-top: 120%;
+    height: 700px;
+    color: white;
+    background-color: #00123a;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Sponsur02 {
+    -webkit-transition: 1s;
+    margin-top: 140%;
+    color: white;
+    height: 300px;
+    background-color: #00123a;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Sponsur02 {
+    -webkit-transition: 1s;
+    margin-top: 180%;
+    color: white;
+    background-color: #00123a;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Sponsur02 {
+    -webkit-transition: 1s;
+    margin-top: 330%;
+    height: 300px;
+    color: white;
+    background-color: #00123a;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Sponsur02 {
+    margin-top: 450%;
+    color: white;
+    background-color: #00123a;
+    height: 300px;
+  }
+}
+
 .Sponsur02 p {
   color: white;
 }

@@ -30,7 +30,7 @@ const Main = ({BackgroundImage , setImage}) => {
                 
             <div  data-Aos="fade-up" className="TextFlexBox02">
               
-                <h4>Troquez des produits de qualité dans une communauté engagée !</h4>
+              <b><h4>Troquez des produits de qualité dans une communauté engagée !</h4></b>  
                 <p>Des produits verifiées et validés par nos experts ! Ofire spéciale lancement
                      gratuite pour les 2000 premiers inscrits</p>
                      <button>Bloquez votre place maintenat</button>

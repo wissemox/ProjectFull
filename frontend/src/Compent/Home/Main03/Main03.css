@@ -196,19 +196,22 @@
 
 .CmpenetCatgorie h5 {
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat*", Regular *;
   font-weight: 600;
+  font-size: 25px;
 }
 .CmpenetCatgorie p {
   color: #2a62a8;
-  width: 80%;
+  width: 105%;
   text-align: justify;
-  font-size: 100%;
+  font-family: "Montserrat*", Regular *;
+  font-size: 120%;
+  font-weight: 600;
 }
 .CmpenetCatgorie {
   margin-right: 5%;
   margin-top: 2%;
-
+  width: 350px;
   margin-left: 8%;
 }
 .ImageCATFORY img {

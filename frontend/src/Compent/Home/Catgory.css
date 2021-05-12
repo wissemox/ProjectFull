@@ -18,12 +18,14 @@
 .Catgory4 {
   -webkit-transition: 1s;
   display: flex;
-  font-size: 150%;
+  font-size: 170%;
 }
 .Catgory4 p {
   -webkit-transition: 1s;
-  border-left: solid black 1px;
+  border-left: solid rgb(187, 187, 187) 1px;
+  font-family: "Montserrat*", Regular *;
   margin-top: 25px;
+  font-weight: 500;
   margin-right: 120px;
   width: 100%;
 }
