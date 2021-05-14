@@ -48,3 +48,16 @@
   margin-left: 50px;
   color: white;
 }
+.BackGround02 {
+  background-color: #184981;
+  color: white;
+  animation: Progres03 3s;
+}
+@keyframes Progres03 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 450px;
+  }
+}

@@ -35,7 +35,13 @@ import {USER_LOADING,
             payload: res.data
          })
      }catch(error){
-         console.log(error)
+      
+      console.dir(error)
+      dispatch({
+         type:AUTH_ERROS, 
+        payload:error.response.data
+      })
+      
      }
  }
 

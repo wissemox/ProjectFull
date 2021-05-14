@@ -2,13 +2,16 @@ import React,{useEffect , useState} from 'react'
 import './Login.css'
 import Aos from 'aos'
 import "aos/dist/aos.css"
-import {useDispatch} from 'react-redux'
+import {useDispatch , useSelector} from 'react-redux'
 import {logiUser , Test} from '../../js/actions/authActions'  
+import {Redirect} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 const Login = () => {
     useEffect(() => {
       Aos.init({duration: 2000});
     }, [])
+    const BolenValue = useSelector(state => state.authReducer.redirect)
+  const EeroreDetail = useSelector(state => state.authReducer.detail)
     const dispatch =useDispatch() 
     const LoginUser =()=>{
         dispatch(logiUser( {email:username ,password:Password} ))
@@ -20,12 +23,20 @@ const Login = () => {
     }
     const [username ,setName]=useState('')
     const [Password ,setPassword]=useState('')
+    
     return (
+        
         // FlexBox
+    
         <div data-Aos="fade"  className="FlexBoxLogin">
+             {console.log(BolenValue)}
+             {console.log(EeroreDetail)}
+           {BolenValue&&  <Redirect to="/Dashboard01"/>} 
+
             <div>
             <div   className="InputName">
                 <h2 data-Aos="fade-up">Conncte</h2>
+                <p>{EeroreDetail&&EeroreDetail}</p>
                 {username.length===0 ? <p data-Aos="fade-up" >Empty Email</p>:null}
                     {Password.length===0 ? <p data-Aos="fade-up" >Empty password</p>:null}
                     <div data-Aos="fade-up" className="Username">
@@ -41,8 +52,6 @@ const Login = () => {
                 <div  data-Aos="fade-up" className="Button">
                    
                     <div className="BakcGround08">
-             
-               
             </div>
            
            

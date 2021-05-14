@@ -19,6 +19,7 @@ function App() {
   const [Bloena  , setBolen ]=useState(false)
   const [Step2  , setStep2 ]=useState(false)
   const [Step3  , setStep3 ]=useState(false)
+  const [Verf0action  , setVerfaction ]=useState(0)
   const ConfirmEmail = JSON.parse(localStorage.getItem('Token')) 
   const Test =(UserName,Email , ConfirmEmail , password )=>{
     if(UserName && UserName.length>6 && Email && ConfirmEmail && Email===ConfirmEmail &&Email.includes('@')&&ConfirmEmail.includes('@')  ){
@@ -50,13 +51,36 @@ function App() {
       console.log("le")
     }
   }
+
+  // Verfaction System
+  const Verfaction1 =(Usersdname , Email )=>{
+    if(Usersdname||Email)  {
+      setVerfaction(15)
+    }
+    if(Usersdname&&Email) {
+      setVerfaction(30)
+    }
+  }
+  const Verfaction02 =(role , comunite , Datadenasisence , sex )=>{
+    if(role||comunite)  {
+      setVerfaction(Verf0action+30)
+    }
+    if(Datadenasisence||sex)  {
+      setVerfaction(Verf0action+30)
+    }
+    // Verf0action
+    if(role&&comunite&&Datadenasisence&&sex) {
+      setVerfaction(75)
+    }
+  } 
+  
   return (
     
     <div  className="App">
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
       <BrowserRouter>
       <Route exact path="/login" render={()=><Login/>}></Route>
-      <Route exact path="/register" render={()=><Register Test={Test} Bloena={Bloena} Step2d={Step2d} Step2={Step2} Step3d={Step3d} Step3={Step3} />}></Route>
+      <Route exact path="/register" render={()=><Register Verfaction02={Verfaction02} Verf0action={Verf0action} Verfaction1={Verfaction1} Test={Test} Bloena={Bloena} Step2d={Step2d} Step2={Step2} Step3d={Step3d} Step3={Step3} />}></Route>
       {/* <Route exact path="/register/1" render={()=><Register Test={Test} Bloena={Bloena} />}></Route> */}
     
       <Route  exact path="/" render={()=> <Home/> } /> 

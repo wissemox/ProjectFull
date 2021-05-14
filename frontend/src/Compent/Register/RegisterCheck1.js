@@ -3,7 +3,7 @@ import { Label } from 'reactstrap'
 import { Progress } from 'reactstrap';
 import RegisterCheckMap from './RegisterCheckMap'
 import RegisterCheck02 from './RegisterCheck02'
-const RegisterCheck1 = ({Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08}) => {
+const RegisterCheck1 = ({Verf0action,Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08 , Verfaction02}) => {
     const [Communite , setCommunite]=useState('')
     const [Communite01 , setCommunite01]=useState('')
     const [LederName , setLederName]=useState('')
@@ -26,8 +26,11 @@ const RegisterCheck1 = ({Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08}) 
        
         localStorage.setItem("Date", JSON.stringify(Date));
         localStorage.setItem("Sex", JSON.stringify(Sex));
+        localStorage.setItem("Verfaction",JSON.stringify(Verf0action))
   
     }
+    {console.log(Verf0action)}
+    {console.log(Communite01)}
     const Homme = ()=>{
         SetSex('homme')
     }
@@ -39,6 +42,10 @@ const RegisterCheck1 = ({Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08}) 
     }
     
     LederFunction(LederName)
+    const Test03 =()=>{
+        Verfaction02(Communite,Communite01,LederName,TakeName)
+        Step2d(Communite,LederName,Date,Sex)
+    }
     return (
         <div>
               
@@ -48,6 +55,7 @@ const RegisterCheck1 = ({Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08}) 
       <div className="Progres01">
           <div className="Progres02">
               <p>50%</p>
+             
           </div>
       </div>
       {console.log(TakeName)}
@@ -103,7 +111,7 @@ const RegisterCheck1 = ({Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08}) 
                     <div data-Aos="fade-up" className="Button">
                    
                 
-                        <button onClick={()=>Step2d(Communite,LederName,Date,Sex)} >next</button>
+                        <button onClick={Test03} >next</button>
                     </div>
                    
                     </> }

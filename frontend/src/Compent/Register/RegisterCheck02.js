@@ -18,7 +18,7 @@ const RegisterCheck02 = ({Step3d , Step3}) => {
     const [Test , setTest]=useState('')
     const dispatch =  useDispatch()
     const RegisterUser =() =>{
-        dispatch(registerUser({email:email ,nom:"wissem", username:username,password:UserName , role:role ,nomcommunaute:nomcommunaute,sexe:sexe,datetime:DateNaissance}))
+        dispatch(registerUser({ prenom:"Abid",email:email, adresse:"string" ,tel:"string",pays:"string",ville:"string",nom:username,code_postal:150, username:username,password:UserName , role:role ,nom_communaute:nomcommunaute,sexe:sexe,date_naissance:DateNaissance}))
     }
     return (
         <div>

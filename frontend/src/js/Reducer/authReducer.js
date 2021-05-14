@@ -5,6 +5,7 @@ import {USER_LOADING,
     GET_AUTH_USER,
     AUTH_ERROS,
     
+    
 } from '../constant/Actiontype'
 
 
@@ -20,7 +21,8 @@ const initialState={
 const authReducer =(state=initialState , {type , payload}) =>{
     switch (type) {
         case  LOGIN_USER:
-            localStorage.setItem('token',payload.token)
+            localStorage.setItem('tokens',payload.data.tokens.refresh)
+            
             return{
                 ...state, 
                 isLoading:false, 
@@ -43,6 +45,14 @@ const authReducer =(state=initialState , {type , payload}) =>{
                         isAuth:true , 
                         ...payload
                     }
+                    case  AUTH_ERROS:
+                       
+                        return{
+                            ...state, 
+                            isLoading:false, 
+                            isAuth:true , 
+                            ...payload
+                        }
         default:
             return state;
     }

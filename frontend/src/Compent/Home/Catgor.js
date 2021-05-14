@@ -32,11 +32,24 @@ const Catgor = ({FilterRecharche ,Filter}) => {
             {Bollen01 ? 
             <>
             <div data-Aos="fade"  className="NavBa55"> 
-            <div  data-Aos="fade"  className="Catgory4">
-                <div className="Input055">
+            <div style={{backgroundColor:Bollen01 && "#f2f2f2"}}  data-Aos="fade"  className="Catgory4">
+                <div className="ONTogel">
                     {console.log(Value)}
-             <input value={Value}  onChange={(e)=>setValues(e.target.value)} />
+             {/* <input value={Value}  onChange={(e)=>setValues(e.target.value)} /> */}
+             <div className="InputFlexBOX">
+                 <div>
+                 <p>dazdad</p>
+                 </div>
+                 <div>
+                 <p>dazdad</p>
+                 </div>
+                 <div>
+                 <p>dazdad</p>
+                 </div>
+                 <div>
              <img data-Aos="fade-left"  onClick={()=>setBollen02(!Bollen01)} src="Reserche.png"/>
+             </div>
+             </div>
              </div>
                 </div>
                  

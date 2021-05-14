@@ -16,7 +16,7 @@ const User02 = () => {
     var aValue01 =JSON.parse( localStorage.getItem('Catgory01'))
     const[togel ,setTogel]=useState(false)
     const[Inputd ,setInputd]=useState("")
-    
+    const Presntage =  JSON.parse(localStorage.getItem("Verfaction"));
     const [Product , setProduct ]=useState([{
         Rate:4,
         name:"Samsung",
@@ -133,7 +133,10 @@ const User02 = () => {
             </div>
             <div data-Aos="fade-up" className="BackImageUr">
             {console.log(aValue01)}
-            <p  className="Padn">dza</p>
+            <div style={{width:Presntage===60&&"1000px" || Presntage===70 && "1300px"}} className="BackGround02">
+            <p >{Presntage}</p>
+            </div>
+         
             {console.log(togel)}
             <div data-Aos="fade-up" className="Input05"> 
             {/* Corbel */}
@@ -141,6 +144,7 @@ const User02 = () => {
             <div data-Aos="fade-up" className="FlexBox5">
                <div data-Aos="fade-up" className="FlexBox">
                    {togel ? <div data-Aos="fade-up" className="Fadwa">
+                   
                         <input value={Inputd} onChange={(e)=>setInputd(e.target.value)} data-Aos="fade-up"/> 
                         {console.log(Inputd)}
                        </div> :<div  className="Fada"> <p data-Aos="fade-up" onClick={FilterHightTech}>Hight-tech</p>

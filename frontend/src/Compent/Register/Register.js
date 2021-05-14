@@ -5,7 +5,7 @@ import "aos/dist/aos.css"
 import RegisterCheck01 from './RegisterCheck1'
 import { Progress } from 'reactstrap';
 
-const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
+const Register = ({Verf0action,Verfaction1,Test,Bloena,Step2d,Step2,Step3d ,Step3 , Verfaction02}) => {
     useEffect(() => {
         Aos.init({duration: 2000});
       }, [])
@@ -15,12 +15,16 @@ const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
      const[password , setpassword]=useState('')
      const[BolenUsername , SetBolenUsername]=useState(false)
      const[Test08 , setTest08]=useState(false)
+     const[Verfication,setVerfaction]=useState(0)
     if(Bloena){
         localStorage.setItem("username", JSON.stringify(userName));
         localStorage.setItem("Email", JSON.stringify(Email));
         localStorage.setItem("confirmEmail", JSON.stringify(confirmEmail));
         localStorage.setItem("password", JSON.stringify(password));
+        localStorage.setItem("Verfaction", JSON.stringify(Verf0action));
     }
+    
+    {console.log(Verfication)}
     const LederFunction =(test)=>{
         if(test==="leader"){
             setTest08(true)
@@ -29,7 +33,12 @@ const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
         }
       
     }
-  
+  const Test05 = () =>{
+    Test(userName,Email,confirmEmail,password)
+    Verfaction1(Email,userName)
+  }
+  {console.log(userName)}
+  {console.log(Verf0action)}
   const check = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i)
 
 
@@ -48,7 +57,7 @@ const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
             <h2 data-Aos="fade-up">Register</h2>
             {console.log(BolenUsername)}
             
-            {Bloena ?<RegisterCheck01 Test08={Test08} LederFunction={LederFunction} Step3d={Step3d} Step2d={Step2d} Step2={Step2} Step3={Step3} />: <> 
+            {Bloena ?<RegisterCheck01 Verf0action={Verf0action} Verfaction02={Verfaction02}  Test08={Test08} LederFunction={LederFunction} Step3d={Step3d} Step2d={Step2d} Step2={Step2} Step3={Step3} />: <> 
 
                 <div  data-Aos="fade-up" className="Input06">
                     <div className="text-center">10%</div>
@@ -57,6 +66,7 @@ const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
                         <div className="Progress06">
                         <p>dazda</p>
                         </div>
+                      
                     </div>
                     {Email.includes('@') ? null : <p data-Aos="fade-up" >Entre Real Mail</p>}
                     {userName && Email && confirmEmail  ? null :<p data-Aos="fade-up" >Enter all filed</p>}
@@ -75,7 +85,7 @@ const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
                     </div>
                    
                     <div data-Aos="fade-up" className="Button">
-                        <button onClick={()=>Test(userName,Email,confirmEmail,password)} >next</button>
+                        <button onClick={Test05} >next</button>
                     </div>
                     
             </> }
