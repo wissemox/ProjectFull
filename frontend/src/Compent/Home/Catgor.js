@@ -10,6 +10,8 @@ const Catgor = ({FilterRecharche ,Filter}) => {
         Aos.init({duration: 2000});
       }, [])
     const[Bollen , setBollen]=useState(false)
+    const[Bollen0d1 , setBollen01]=useState(false)
+  
     const[Recharche , setRecharche]=useState([{
         ProductFilter:"Ordinater"
     } , 
@@ -51,7 +53,7 @@ const Catgor = ({FilterRecharche ,Filter}) => {
               </>
             :<>  <div data-Aos="fade"  className="NavBa55">
                 
-                <div data-Aos="fade"  className="Catgory4">
+                <div data-Aos="fade" style={{backgroundColor:Bollen02 ? "#f2f2f2" :"white"}}  className="Catgory4">
                 
                     <div data-Aos="fade"  className="Catgory5">
                         <p id="Catégorie" onClick={()=>setBollen(!Bollen)}>Catégorie</p>
@@ -73,7 +75,9 @@ const Catgor = ({FilterRecharche ,Filter}) => {
                        <p> Caractéristique</p> 
                     </div>;
                     <div className="Reserche">
-                        <img onClick={()=>setBollen02(!Bollen01)} src="Reserche.png"/>
+                        <img onClick={()=>setBollen02(!Bollen01)}    src="Reserche.png"/>
+                        {/* onClick={()=>setBollen02(!Bollen01)}  */}
+                        {console.log(Bollen0d1)}
                     </div>
                 </div>
                 

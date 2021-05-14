@@ -11,14 +11,14 @@ const RegisterCheck02 = ({Step3d , Step3}) => {
     const email =JSON.parse(localStorage.getItem('Email')) 
     const username =JSON.parse(localStorage.getItem('username')) 
     const nomcommunaute =JSON.parse(localStorage.getItem('Communite')) 
-    const Sexe =JSON.parse(localStorage.getItem('Sex')) 
+    const sexe =JSON.parse(localStorage.getItem('Sex')) 
     const role =JSON.parse(localStorage.getItem('LederName')) 
     const DateNaissance=JSON.parse(localStorage.getItem('Date')) 
     const [UserName , setUsername]=useState('')
     const [Test , setTest]=useState('')
     const dispatch =  useDispatch()
     const RegisterUser =() =>{
-        dispatch(registerUser({email:email , username:username,password:UserName , role:role ,nomcommunaute:nomcommunaute,Sexe:Sexe,DateNaissance:DateNaissance}))
+        dispatch(registerUser({email:email ,nom:"wissem", username:username,password:UserName , role:role ,nomcommunaute:nomcommunaute,sexe:sexe,datetime:DateNaissance}))
     }
     return (
         <div>
@@ -27,10 +27,15 @@ const RegisterCheck02 = ({Step3d , Step3}) => {
             {console.log(role)}
             {console.log(email)}
             {console.log(username)}
-            {console.log(Sexe)}
+           
             {console.log(DateNaissance)}
                <div className="text-center">75%</div>
-      <Progress data-Aos="fade-left" value="75" />
+               <div className="Progres01">
+          <div className="Progres04">
+              <p>50%</p>
+          </div>
+      </div>
+      
       {UserName&&Test ? null : <p>Enter all filed</p> }
                 {Step3 ? <Redirect to="/login"/> : <>
                 <div  data-Aos="fade-up" className="Input06">

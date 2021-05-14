@@ -27,7 +27,10 @@ environ.Env.read_env()
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY ='7d(pq23iy%2w5ou!%1@zj(e1+^u=j!$xwcz@cv+#xk*1&&_i'
+
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG'),
@@ -48,7 +51,6 @@ INSTALLED_APPS = [
     'safedelete',
     'rest_framework',
     'drf_yasg',
-
     'authentification',
 ]
 AUTH_USER_MODEL='authentification.User'
@@ -99,11 +101,12 @@ DATABASES = {
 }
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
+    'PAGE_SIZE': 1,
     'NON_FIELD_ERRORS_KEY': 'error',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+    ),
+    # 'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
 
@@ -163,15 +166,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static-files')
 MEDIA_URL = 'images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
-LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'index'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = False
+EMAIL_HOST = 'ssl0.ovh.net'
+EMAIL_PORT = 587 
+DEFAULT_FROM_EMAIL = 'postmaster@binpact.com'
+EMAIL_HOST_USER = 'postmaster@binpact.com'
+EMAIL_HOST_PASSWORD = 'Binpact2020..'

@@ -44,7 +44,12 @@ const RegisterCheck1 = ({Step2d , Step2 ,Step3d ,Step3 , LederFunction,Test08}) 
               
             {Step2 ?<RegisterCheck02 Step3={Step3} Step3d={Step3d}/>:<> <div  data-Aos="fade-up" className="Input06">
             <div className="text-center">50%</div>
-      <Progress data-Aos="fade-left" value="50" />
+     
+      <div className="Progres01">
+          <div className="Progres02">
+              <p>50%</p>
+          </div>
+      </div>
       {console.log(TakeName)}
         {console.log(Test08)}
       {Date&&Sex ? null : <p>Enter all filed</p> }

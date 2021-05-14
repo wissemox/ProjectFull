@@ -3,7 +3,8 @@ import './Login.css'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 import {useDispatch} from 'react-redux'
-import {logiUser , Test} from '../../js/actions/authActions'
+import {logiUser , Test} from '../../js/actions/authActions'  
+import {Link} from 'react-router-dom'
 const Login = () => {
     useEffect(() => {
       Aos.init({duration: 2000});
@@ -38,8 +39,17 @@ const Login = () => {
                     <input placeholder="password"/>
                 </div>
                 <div  data-Aos="fade-up" className="Button">
+                   
+                    <div className="BakcGround08">
+             
+               
+            </div>
+           
+           
                     <button onClick={LoginUser}>Login</button>
-                 
+                    <div className="ForgetPassword">
+                  <Link to="/password">  <p>Forget password</p> </Link>
+            </div>
                 </div>
                 
                 </div>
@@ -51,7 +61,7 @@ const Login = () => {
             <div data-Aos="fade-up" className="ImageLogin">
                 <img src="LoginImage02.png"/>
             </div>
-        
+           
         </div>
     )
 }

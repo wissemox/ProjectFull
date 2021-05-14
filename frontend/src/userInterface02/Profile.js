@@ -13,7 +13,7 @@ const Profile = () => {
                     <img   data-Aos="fade-up"  src="binpact002.png"/>
                 </div>
             
-{/*                
+               
                 <div  data-Aos="fade-up"  className="Imageoda">
                 <img   data-Aos="fade-up"  src="Wissemabid.png"/>
                 </div>
@@ -22,7 +22,7 @@ const Profile = () => {
                 </div>
                 <div  data-Aos="fade-up"  className="Buttonda">
                 <button>Logout</button>
-                </div> */}
+                </div>
               
             </div>
             <div className="Texdt8">

@@ -14,16 +14,19 @@ import MapTrouves from './MapTrouvesNos/MapTrouves'
 import Sponsur from './Sponsur'
 import Sponsur05 from './Sponsur05'
 import Catgor from './Catgor'
+import ReactLoading from 'react-loading'
 
 const Home = () => {
     useEffect(() => {
         Aos.init({duration: 2000});
         localStorage.removeItem("Catgory01")
         localStorage.removeItem("Catgory")
+        
       }, [])
       const[Rate , setRate]=useState(1)
       const [BackgroundImage , setImage]=useState(false)
       const[Filter , SetFilter]=useState(false)
+      const[TestLoading , setLoading]=useState(false)
       const FilterRecharche = (Test)=>{
             if(Test.length>=1){
                 SetFilter(true)
@@ -32,19 +35,23 @@ const Home = () => {
                 SetFilter(false)
             }
       }
-      const [Test , setTest01]=useState(false)
+      const [Test , setTest01]=useState(false) 
+      const Test55 = () =>{
+        setLoading(true)
+      }
+      setTimeout(Test55, 3000);
+     
     return (
         <div>
-            
-                
+            {TestLoading ?  <> {console.log(TestLoading)}
             <div className="NavBar">
             <Navbar BackgroundImage={BackgroundImage} setImage={setImage}/>
-            <div onScroll={()=>setTest01(!Test)}>
+           
                 {console.log(Test)}
 
        
-            <Main onscr BackgroundImage={BackgroundImage} setImage={setImage}/>
-            </div>
+            <Main onScroll={()=>setTest01(!Test)} BackgroundImage={BackgroundImage} setImage={setImage}/>
+        
             <div data-Aos="fade-up" >
                 <Catgor FilterRecharche={FilterRecharche} Filter={Filter}/>
                 <Produits/>
@@ -59,7 +66,9 @@ const Home = () => {
            <Sponsur/>
            <Sponsur05/>
             </div>
-           
+            </>
+            : <div className="Loader"> <ReactLoading type={"bars"} color={"#184981"} height={150} width={150} /> </div>}
+              
         </div>
      
     )

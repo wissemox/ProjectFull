@@ -26,6 +26,21 @@
   height: 40px;
 }
 
+.BakcGround08 {
+  display: flex;
+}
+@keyframes mymove {
+  10% {
+    width: 0px;
+  }
+  20% {
+    width: 0px;
+  }
+
+  70% {
+    width: 300px;
+  }
+}
 .InputName h2 {
   width: 250px;
   height: 30px;
@@ -129,4 +144,18 @@
 }
 .azd {
   background-color: red;
+}
+.ForgetPassword p {
+  color: #9b9999;
+  padding-top: 10px;
+  padding-left: 200px;
+  text-decoration: none;
+}
+.ForgetPassword p:hover {
+  color: #184981;
+
+  cursor: pointer;
+}
+.ForgetPassword p {
+  text-decoration: none;
 }

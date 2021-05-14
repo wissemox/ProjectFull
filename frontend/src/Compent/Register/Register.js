@@ -4,6 +4,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import RegisterCheck01 from './RegisterCheck1'
 import { Progress } from 'reactstrap';
+
 const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
     useEffect(() => {
         Aos.init({duration: 2000});
@@ -50,8 +51,13 @@ const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
             {Bloena ?<RegisterCheck01 Test08={Test08} LederFunction={LederFunction} Step3d={Step3d} Step2d={Step2d} Step2={Step2} Step3={Step3} />: <> 
 
                 <div  data-Aos="fade-up" className="Input06">
-                    <div className="text-center">0%</div>
-                    <Progress />
+                    <div className="text-center">10%</div>
+                    {/* <Progress /> */}
+                    <div className="Progress05" >
+                        <div className="Progress06">
+                        <p>dazda</p>
+                        </div>
+                    </div>
                     {Email.includes('@') ? null : <p data-Aos="fade-up" >Entre Real Mail</p>}
                     {userName && Email && confirmEmail  ? null :<p data-Aos="fade-up" >Enter all filed</p>}
                    
@@ -84,6 +90,7 @@ const Register = ({Test,Bloena,Step2d,Step2,Step3d ,Step3}) => {
             <div>
             </div>
             <div data-Aos="fade-up" className="ImageRegister">
+                
                 <img src="LoginImage02.png"/>
             </div>
         </div>

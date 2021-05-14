@@ -5,6 +5,7 @@ import {USER_LOADING,
     LOGOUT_USER,
     GET_AUTH_USER,
     AUTH_ERROS,
+    REST_PASSWORD
     
 } from '../constant/Actiontype'
 
@@ -49,7 +50,17 @@ import {USER_LOADING,
        console.log(error)
    }
 }
-
+export const ResetPassword01=(email , token)=>async dispatch=>{
+   try{
+      const res = await axios.get(`/auth/password-reset/${email}/${token}/`)
+       dispatch({
+          type:REST_PASSWORD ,
+           payload: res.data
+        })
+    }catch(error){
+        console.log(error)
+    }
+ }
 // export const getAuthUser=()=>async dispatch=>{ 
 //     try{
 //         const Config = {headers:{'x-auth-token':localStorage.getItem('token')}}

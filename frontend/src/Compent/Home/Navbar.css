@@ -2,7 +2,6 @@
   margin: 0px;
 
   padding: 0px;
-  font-family: "Montserrat*", Regular *;
 }
 .FlexBoxNavBar {
   display: flex;
@@ -42,7 +41,7 @@
 
 .Text03 h2 {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .Menu05 {

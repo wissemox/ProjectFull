@@ -85,3 +85,162 @@
 .BacKGroundImage p:hover {
   color: #304697;
 }
+.Progress05 {
+  -webkit-transition: 2s;
+  background-color: #f3f3f3;
+  animation: Test 3s infinite;
+  border-radius: 20px;
+}
+.Progress06 {
+  -webkit-transition: 2s;
+  animation: Test05 4s;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #304697;
+  color: #304697;
+}
+@keyframes Test05 {
+  0% {
+    width: 3px;
+  }
+  50% {
+    width: 35px;
+  }
+  60% {
+    width: 36px;
+  }
+  70% {
+    width: 38px;
+  }
+  80% {
+    width: 39px;
+  }
+}
+@keyframes Test {
+  0% {
+    opacity: 30%;
+  }
+
+  15% {
+    -webkit-transition: 2s;
+    opacity: 40%;
+  }
+
+  25% {
+    opacity: 20%;
+  }
+  30% {
+    -webkit-transition: 2s;
+    opacity: 25%;
+  }
+  35% {
+    -webkit-transition: 2s;
+    opacity: 30%;
+  }
+
+  50% {
+    opacity: 45%;
+  }
+  55% {
+    opacity: 50%;
+  }
+  60% {
+    opacity: 55%;
+  }
+
+  80% {
+    opacity: 70%;
+  }
+  85% {
+    opacity: 75%;
+  }
+
+  95% {
+    opacity: 85%;
+  }
+}
+.Progres01 {
+  -webkit-transition: 2s;
+  background-color: #f3f3f3;
+  animation: Progres01 2s infinite;
+  color: #e9e9e9;
+  border-radius: 20px;
+}
+@keyframes Progres01 {
+  0% {
+    opacity: 50%;
+  }
+
+  15% {
+    -webkit-transition: 2s;
+    opacity: 40%;
+  }
+
+  25% {
+    opacity: 20%;
+  }
+  30% {
+    -webkit-transition: 2s;
+    opacity: 25%;
+  }
+  35% {
+    -webkit-transition: 2s;
+    opacity: 30%;
+  }
+
+  50% {
+    opacity: 45%;
+  }
+  55% {
+    opacity: 50%;
+  }
+  60% {
+    opacity: 55%;
+  }
+
+  80% {
+    opacity: 70%;
+  }
+  85% {
+    opacity: 75%;
+  }
+}
+.Progres02 {
+  -webkit-transition: 2s;
+  border-radius: 20px;
+  background-color: #304697;
+  width: 190px;
+  animation: Progres02 4s;
+  color: #304697;
+}
+@keyframes Progres02 {
+  10% {
+    -webkit-transition: 2s;
+    width: 20px;
+  }
+
+  70% {
+    -webkit-transition: 2s;
+    width: 190px;
+  }
+}
+.Progres04 {
+  -webkit-transition: 2s;
+  border-radius: 20px;
+  background-color: #304697;
+  width: 250px;
+  animation: Progres04 4s;
+  color: #304697;
+}
+
+@keyframes Progres04 {
+  10% {
+    -webkit-transition: 2s;
+    width: 60px;
+  }
+
+  50% {
+    -webkit-transition: 2s;
+    width: 230px;
+  }
+}
