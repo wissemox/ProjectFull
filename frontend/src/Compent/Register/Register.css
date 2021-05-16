@@ -206,7 +206,7 @@
   }
 }
 .Progres02 {
-  -webkit-transition: 2s;
+  transition: width 50s;
   border-radius: 20px;
   background-color: #304697;
   width: 190px;
@@ -215,12 +215,12 @@
 }
 @keyframes Progres02 {
   10% {
-    -webkit-transition: 2s;
+    -webkit-animation-delay: 0.2s;
     width: 20px;
   }
 
   70% {
-    -webkit-transition: 2s;
+    -webkit-animation-delay: 0.2s;
     width: 190px;
   }
 }

@@ -270,3 +270,55 @@
     margin-left: 0px;
   }
 }
+
+.SousCatgoryTest {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+
+  border-radius: 50px;
+  animation: myAnimation 5sec;
+  width: 250px;
+}
+.ImageTogel {
+  margin-left: 400px;
+}
+@keyframes myAnimation {
+  10% {
+    width: 0px;
+  }
+  50% {
+    width: 200px;
+  }
+}
+.SousCatgoryTest p {
+  position: absolute;
+  padding-bottom: 20px;
+  padding-bottom: 0px;
+  font-size: 20px;
+  text-align: left;
+}
+.SusCatégorie {
+  margin-top: 50px;
+  width: 250px;
+  position: absolute;
+}
+.SusCatégorie p {
+  position: absolute;
+}
+.SousCatgoryTest h6 {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 35px;
+  padding-top: 10px;
+  height: 20px;
+}
+.SousCatgoryTest input {
+  border: none;
+  background-color: none;
+  width: 200px;
+  margin-left: 10px;
+}
+.SousCatgoryTest ::placeholder {
+  font-size: 23px;
+  color: rgb(167, 167, 167);
+}

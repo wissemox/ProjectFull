@@ -32,25 +32,35 @@ const Catgor = ({FilterRecharche ,Filter}) => {
             {Bollen01 ? 
             <>
             <div data-Aos="fade"  className="NavBa55"> 
+            
+              
+             
+         
             <div style={{backgroundColor:Bollen01 && "#f2f2f2"}}  data-Aos="fade"  className="Catgory4">
                 <div className="ONTogel">
                     {console.log(Value)}
              {/* <input value={Value}  onChange={(e)=>setValues(e.target.value)} /> */}
-             <div className="InputFlexBOX">
-                 <div>
-                 <p>dazdad</p>
-                 </div>
-                 <div>
-                 <p>dazdad</p>
-                 </div>
-                 <div>
-                 <p>dazdad</p>
-                 </div>
-                 <div>
-             <img data-Aos="fade-left"  onClick={()=>setBollen02(!Bollen01)} src="Reserche.png"/>
-             </div>
-             </div>
-             </div>
+        
+                <div className="InputFlexBOX">
+                    
+                        <div data-Aos="fade" className="SousCatgoryTest">
+                    <h6>Catgory </h6>
+                    <input placeholder="Qu allez-vous" value={Value}  onChange={(e)=>setValues(e.target.value)} />
+                        </div>
+                        <div>
+                        <p>Ville</p>
+                        </div>
+                        <div>
+                        <p>Prix en binz</p>
+                        </div>
+                        <div>
+                            <p>Rating user</p>
+                        </div>
+                        <div className="ImageTogel">
+                <img data-Aos="fade-left"  onClick={()=>setBollen02(!Bollen01)} src="Reserche.png"/>
+                </div>
+                </div>
+                </div>
                 </div>
                  
             </div>
@@ -72,21 +82,21 @@ const Catgor = ({FilterRecharche ,Filter}) => {
                         <p id="Catégorie" onClick={()=>setBollen(!Bollen)}>Catégorie</p>
                     </div>
                     <div>
-                       <p id="sousCatgory"> Sus Catégorie</p> 
-                  
-                    </div>
-                    <div data-Aos="fade" >
-                       <p> Ville</p> 
-                    </div>
-                    <div data-Aos="fade" >
-                       <p> Prix en binz</p> 
-                    </div >
-                    <div data-Aos="fade" >
-                       <p> Rating user</p> 
-                    </div>
-                    <div data-Aos="fade" >
-                       <p> Caractéristique</p> 
-                    </div>;
+                        <p id="sousCatgory"> Sus Catégorie</p> 
+
+                        </div>
+                        <div data-Aos="fade" >
+                        <p> Ville</p> 
+                        </div>
+                        <div data-Aos="fade" >
+                        <p> Prix en binz</p> 
+                        </div >
+                        <div data-Aos="fade" >
+                        <p> Rating user</p> 
+                        </div>
+                        <div data-Aos="fade" >
+                        <p> Caractéristique</p> 
+                        </div>;
                     <div className="Reserche">
                         <img onClick={()=>setBollen02(!Bollen01)}    src="Reserche.png"/>
                         {/* onClick={()=>setBollen02(!Bollen01)}  */}
@@ -101,14 +111,14 @@ const Catgor = ({FilterRecharche ,Filter}) => {
                
 
                 <div data-Aos="fade"   className="Modal1">
-               <Link to="/product01"> <p onClick={()=> localStorage.setItem('Catgory', 'Ordinater')}>pc Ordinateur</p></Link>
-              <Link to="/product01">  <p onClick={()=> localStorage.setItem('Catgory', 'Smartphone')}>Smartphones</p> </Link>
-              <Link to="/product01"><p>Accessoire oridnater</p></Link>  
-              <Link to="/product01"> <p>Stockage</p> </Link>
-              <Link to="/product01">  <p>Impression</p></Link>
-               <Link to="/product01"><p>Tablette et phone</p></Link> 
-               <Link to="/product01">   <p>Image et son</p></Link>
-               <Link to="/product01"> <p>Gaming</p></Link>
+                <Link to="/product01"> <p onClick={()=> localStorage.setItem('Catgory', 'Ordinater')}>pc Ordinateur</p></Link>
+                <Link to="/product01">  <p onClick={()=> localStorage.setItem('Catgory', 'Smartphone')}>Smartphones</p> </Link>
+                <Link to="/product01"><p>Accessoire oridnater</p></Link>  
+                <Link to="/product01"> <p>Stockage</p> </Link>
+                <Link to="/product01">  <p>Impression</p></Link>
+                <Link to="/product01"><p>Tablette et phone</p></Link> 
+                <Link to="/product01">   <p>Image et son</p></Link>
+                <Link to="/product01"> <p>Gaming</p></Link>
                 </div>
             </div> :null}
           </>}
