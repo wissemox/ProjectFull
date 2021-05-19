@@ -18,7 +18,7 @@ const Navbar = ({BackgroundImage , setImage}) => {
       }, [])
     return (
         <div   data-Aos="fade-up" className="nAVbA02">
-                   
+                    
             {BackgroundImage?<div className="Test06"> 
             <div data-Aos="fade-up"  className="Categories">
             <button  onClick={Togel}></button>
@@ -43,11 +43,12 @@ const Navbar = ({BackgroundImage , setImage}) => {
                     <p>Communautés</p>
                     <div className="ButtonFlexBox">
                     <Link to="/login"><button><h2>Login</h2></button></Link> 
-                    <Link to="/Register"><button><h2>Register</h2></button></Link> 
+                    <Link to="/Login02"><button><h2>Register</h2></button></Link> 
                     </div>
                     <div className="ButtonResposive">
                     <Link to="/login"><button><img src="UserName.png"/></button></Link> 
-                    <Link to="/Register"><button>  <img src="Password03.png"/></button></Link> 
+                    <Link to="/Login02"><button>  <img src="Password03.png"/></button></Link> 
+                    
                     </div>
               
                 </div>

@@ -5,7 +5,8 @@ import {USER_LOADING,
     LOGOUT_USER,
     GET_AUTH_USER,
     AUTH_ERROS,
-    REST_PASSWORD
+    REST_PASSWORD, 
+    GET_AUTH_USER02
     
 } from '../constant/Actiontype'
 
@@ -61,6 +62,17 @@ export const ResetPassword01=(email , token)=>async dispatch=>{
       const res = await axios.get(`/auth/password-reset/${email}/${token}/`)
        dispatch({
           type:REST_PASSWORD ,
+           payload: res.data
+        })
+    }catch(error){
+        console.log(error)
+    }
+ } 
+ export const GetUserRefresh=(token)=>async dispatch=>{
+   try{
+      const res = await axios.post('/auth/token/refresh/',token)
+       dispatch({
+          type:GET_AUTH_USER02,
            payload: res.data
         })
     }catch(error){

@@ -188,6 +188,14 @@
   padding-bottom: 10%;
   height: 43%;
   padding-top: 20%;
+  
+}
+.Text5 p{
+  
+  font-size: 30px;
+}
+.Text5 span{
+  font-size: 25px;
 }
 .FleBoxCatgorie {
   display: flex;
@@ -198,15 +206,15 @@
   width: 100%;
   font-family: "Montserrat*", Regular *;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 23px;
 }
 .CmpenetCatgorie p {
   color: #2a62a8;
   width: 105%;
   text-align: justify;
   font-family: "Montserrat*", Regular *;
-  font-size: 120%;
-  font-weight: 600;
+  font-size: 100%;
+  font-weight: 500;
 }
 .CmpenetCatgorie {
   margin-right: 5%;
@@ -396,9 +404,17 @@
 
     width: 40%;
     height: 90%;
-    font-family: Arial, Helvetica, sans-serif;
+   
     font-weight: 600;
     margin-right: 80px;
     margin-left: 20px;
+  }
+  .CmpenetCatgorie h5{
+    font-size: 20px;
+  }
+  .CmpenetCatgorie p{
+    font-size: 10px;
+   
+    text-align: left;
   }
 }

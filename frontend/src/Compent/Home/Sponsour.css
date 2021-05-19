@@ -16,7 +16,7 @@
   text-align: center;
 }
 .H1 h1 {
-  margin-left: 300px;
+  margin-left: 250px;
   margin-top: 80px;
   text-align: center;
 }
@@ -26,7 +26,7 @@
 .TextSponsour01 {
   margin-left: 80px;
   border-right: solid 2px black;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 30px;
   width: 250px;
   color: black;
@@ -38,7 +38,7 @@
 .FlexBoxTsext06 {
   display: flex;
   color: black;
-  font-size: 23px;
+  font-size: 15px;
 }
 .FlexBoxTsext06 p {
   margin-left: 50px;

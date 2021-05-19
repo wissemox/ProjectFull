@@ -67,12 +67,12 @@ const Product03Map = ({el , i}) => {
            </div>
       
             <div className="Daties">
-                <div>
+                <div className="gpsImage">
                 <img src="gps.png"/>
                 </div>
                 <p>Kantaoui, Sousse </p>
                 <div className="Time">
-                    <div>
+                    <div className="TimeImage">
                     <img src="Time.png"/>
                     </div>
                    

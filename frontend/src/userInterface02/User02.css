@@ -20,7 +20,7 @@
 }
 /* line-height: 1.6; */
 .NameProfile p {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 0.3;
 }
@@ -52,6 +52,9 @@
   background-color: #184981;
   color: white;
   animation: Progres03 3s;
+}
+.Image59 h3{
+  font-size: 45px;
 }
 @keyframes Progres03 {
   0% {

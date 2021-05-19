@@ -13,10 +13,18 @@ import User02 from './userInterface02/User02'
 import Profile from './userInterface02/Profile'
 import ResetPassword from '../src/Compent/Login/ResetPassword'
 import "aos/dist/aos.css"
+import PriverRoute02 from './Compent/routes/PrivateRoutes'
+import Test01 from './Test'
+import Register02 from './Compent/login02/login'
+import Register4 from './Compent/login02/Register02Check4'
+import Check from './Compent/routes/Check'
 function App() {
   // Function
     // 1 userName 
   const [Bloena  , setBolen ]=useState(false)
+  const [Bloena02  , setBolen02 ]=useState(false)
+  const [Bloena03  , setBolen03 ]=useState(false)
+  const [LengthBolen  , setLengthBolen ]=useState(false)
   const [Step2  , setStep2 ]=useState(false)
   const [Step3  , setStep3 ]=useState(false)
   const [Verf0action  , setVerfaction ]=useState(0)
@@ -30,6 +38,25 @@ function App() {
       console.log("le")
     }
   }
+  const Test03 =(Nom , Pernom ,Email , Modpaas , confirmModpass )=>{
+    if(Nom && Pernom && Email && Modpaas && Email.includes('@') && Modpaas===confirmModpass &&  Modpaas.length>=6){
+      setBolen(true)
+    
+  }
+}
+const Test04 =(NomCommunauté , Secture ,siret ,  nomentreprizde )=>{
+  if(NomCommunauté&&Secture&&siret&&nomentreprizde){
+    setBolen02(true)
+  }
+
+}
+const Test05 =(Sexe , Date  ,Adress , Ville , Pays )=>{
+  if(Sexe&&Date&&Adress&&Ville&&Pays){
+    setBolen03(true)
+  }
+  console.log(Bloena03)
+}
+
   // Setp2 
  
   const Step2d =(Communite,LederName , Date ,Sex)=>{
@@ -90,14 +117,20 @@ function App() {
       <Route exact path="/Product" render={()=><Catgory/>} />
       <Route exact path="/Product01" render={()=><Producdt/>} />
       <Route exact path="/password" render={()=><ResetPassword/>} />
+      <Route exact path="/Test" render={()=><Test01/>} />
       {ConfirmEmail&&    <Route exact path="/Confirm" render={()=><Confirm/>} />}
       {/* User */}
      
       {/* Producdt */}
       {/* Confirm */} <Route  path="/Dashboard" component={User}/>
-                      <Route  path="/Dashboard01" component={User02}/>
+                 {/* <PriverRoute02 exact path="/Dashboard01" component={User02}></PriverRoute02>   */}
+                 <Route exact path="/Dashboard01" render={()=><User02/>} />   
                       <Route  path="/Profile" component={Profile}/>
       <Route exact path="/Confirm" render={()=><Confirm/>} />
+      <Route exact path="/Confirm" render={()=><Confirm/>} />
+      <Route exact path="/Login02" render={()=><Register02 Test05={Test05} Bloena02={Bloena02} Test04={Test04} setLengthBolen={setLengthBolen} LengthBolen={LengthBolen}  Bloena={Bloena} Test03={Test03}/>}/>
+      <Route exact path="/Favoire" render={()=><Register4/>}/>
+      <Route exact path="/Check/:token" render={({match})=><Check match={match.params.token}/>}/>
       </BrowserRouter>
       
     </div>

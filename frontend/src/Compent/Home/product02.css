@@ -50,7 +50,7 @@
   border: none;
   background-color: none;
   width: 300px;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 5px;
   height: 40px;
   color: white;
@@ -62,7 +62,7 @@
   padding-top: 100px;
   height: 115px;
   font-family: "Montserrat*", SemiBold *;
-  font-size: 26px;
+  font-size: 22px;
 
   font-weight: 600;
 }
@@ -296,7 +296,7 @@
 }
 .Rate {
   margin-left: 5px;
-  margin-top: 25px;
+  margin-top: 10px;
 
   color: #2b478b;
   padding-left: 30px;
@@ -306,7 +306,7 @@
   border-radius: 50px;
 }
 .daz {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   color: white;
   width: 120px;
@@ -335,7 +335,7 @@
 .HightTech p {
   font-family: "Montserrat*", Regular *;
   line-height: 0.8;
-  font-size: 15px;
+  font-size: 12px;
   height: 10px;
   color: #999999;
 
@@ -368,17 +368,18 @@
 .Etat h3 {
   padding-top: 3px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 .Etat p {
   color: #39b54a;
-  font-size: 20px;
+  font-size: 18px;
 }
 .Descraption p {
   padding-right: 0px;
   width: 370px;
-  font-size: 15px;
+  font-size: 12px;
   border: none;
+ 
   padding-right: 100px;
   text-align: left;
 }
@@ -419,13 +420,13 @@
 .Text08P {
   display: flex;
   position: absolute;
-  margin-left: 200px;
+  margin-left: 190px;
   width: 250px;
   margin-top: 70px;
 }
 .Text08P p {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
 }
 .Sponsur02 {
   margin-top: 700px;
@@ -520,9 +521,10 @@
 .Daties p {
   padding-left: 3px;
   color: #2b478b;
-  margin-bottom: 4px;
+  margin-bottom: 20px;
+  margin-top: 5px;
   height: 15px;
-  font-family: "Montserrat", Regular *;
+  font-size: 12px;
 }
 .Time {
   margin-left: 60px;
@@ -531,4 +533,10 @@
 .Time p {
   padding-left: 5px;
   color: #999999;
+}
+.TimeImage{
+  margin-top: 10px;
+}
+.gpsImage{
+  margin-top: 10px;
 }

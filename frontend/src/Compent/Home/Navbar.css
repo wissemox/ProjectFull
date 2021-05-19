@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-
+  font-family:"Montserrat", Regular ;
   padding: 0px;
 }
 .FlexBoxNavBar {
@@ -20,7 +20,7 @@
   height: 100px;
 }
 .FlexBoxNavBar button {
-  background-color: red;
+  background-color:#BF1822;
 }
 .Text03 {
   display: flex;
@@ -161,7 +161,7 @@
   border: none;
   width: 100px;
   height: 30px;
-  margin-left: 450px;
+  margin-left: 50px;
   margin-top: 40px;
   border-radius: 20px;
 }
@@ -174,40 +174,47 @@
   display: flex;
   background-color: white;
 }
+
 .ImageNavbar {
-  margin-left: 150px;
+  margin-left: 100px;
 }
 .ImageNavbar img {
   width: 300px;
 
   margin-top: 15px;
   margin-bottom: 20px;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 .FlexBox03 p {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
 
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 20px;
 }
 .FlexBox03 button {
-  background-color: #f72122;
+  background-color: #BF1822;
   margin-top: 20px;
+}
+.ButtonFlexBox button h2 {
+
+  margin-top: 5px;
+  font-size: 15px;
 }
 .FlexBox03 p:hover {
   cursor: pointer;
   opacity: 60%;
   text-decoration: none;
 
-  color: #f72122;
+  color: #BF1822;
 }
 
 .Button03 {
   font-size: 12px;
 }
 .PorquoiBinpact p {
-  width: 120px;
+  
+  width: 200px;
 }
 
 .Margine5 p {
@@ -219,14 +226,17 @@
 .ButtonFlexBox {
   display: flex;
 }
+
 @media screen and (max-width: 1500px) {
   .Text03 {
     -webkit-transition: 1s;
     margin-left: 0px;
+
   }
   .Text03 p {
     -webkit-transition: 1s;
     font-size: 14px;
+    margin-left: 50px;
   }
   .ImageNavbar img {
     -webkit-transition: 1s;
@@ -236,12 +246,14 @@
   .ImageNavbar {
     -webkit-transition: 1s;
     width: 180px;
-    margin-right: 450px;
-    margin-left: 10px;
+    margin-right: 210px;
+    margin-left: 30px;
   }
   .FlexBox03 button {
-    width: 50px;
-    height: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 80px;
+    height: 25px;
     margin-top: 23px;
   }
   .FlexBox03 h2 {
@@ -250,12 +262,14 @@
 }
 @media screen and (max-width: 1200px) {
   .Text03 {
+  
     -webkit-transition: 1s;
     margin-left: 0px;
   }
   .Text03 p {
     -webkit-transition: 1s;
     font-size: 14px;
+    margin-left: 20px;
   }
   .ImageNavbar img {
     -webkit-transition: 1s;
@@ -269,7 +283,7 @@
     margin-left: 10px;
   }
   .FlexBox03 button {
-    width: 50px;
+    width: 80px;
     height: 20px;
     margin-top: 23px;
   }
@@ -281,17 +295,31 @@
 @media screen and (max-width: 1000px) {
   .Text03 {
     -webkit-transition: 1s;
-    margin-left: 5px;
+    margin-left: 30px;
+    
+    
+
+  }
+  .ButtonFlexBox button h2{
+  padding-top: 3px;
+    font-size: 10px;
   }
   .Text03 p {
     padding-left: 0px;
     -webkit-transition: 1s;
-    font-size: 14px;
+    font-size: 12px;
   }
   .ImageNavbar img {
     -webkit-transition: 1s;
     margin-left: 20px;
     margin-right: 50px;
+  }
+  .Text03 p{
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+  .Text03{
+    margin-left: 50px;
   }
   .ImageNavbar {
     -webkit-transition: 1s;
@@ -313,10 +341,11 @@
     -webkit-transition: 1s;
   }
   .ImageNavbar {
+
     margin-right: 40px;
   }
   .Text03 p {
-    width: 30px;
+    width: 90px;
   }
   .Text03 {
     margin-left: 10%;
@@ -324,10 +353,11 @@
 }
 @media screen and (max-width: 900px) {
   .ImageNavbar img {
+    
     -webkit-transition: 1s;
   }
   .ImageNavbar {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 }
 /* ButtonFlexBox */
@@ -348,7 +378,7 @@
     margin-left: 30px;
   }
   .ButtonResposive {
-    margin-right: 100px;
+    margin-right: 50px;
 
     width: 50px;
   }
@@ -365,7 +395,7 @@
   .ButtonResposive button {
     width: 20px;
     height: 20px;
-    margin-left: 25px;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -395,12 +425,28 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .ImageNavbar img{
+    margin-top: 40px;
+    width: 150px;
+  }
+  .ImageNavbar{
+    width: 80px;
+  }
   .Text03 p {
-    width: 20px;
+     margin-left: 20px;
+    width: 80px;
   }
   .PorquoiBinpact p {
+    
     margin-left: 0px;
     margin-right: 0px;
-    width: 120px;
+   
+    text-align: left;
   }
+  .ButtonResposive button {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+  }
+  
 }

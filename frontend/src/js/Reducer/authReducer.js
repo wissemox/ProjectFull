@@ -4,7 +4,7 @@ import {USER_LOADING,
     LOGOUT_USER,
     GET_AUTH_USER,
     AUTH_ERROS,
-    
+    GET_AUTH_USER02
     
 } from '../constant/Actiontype'
 
@@ -14,7 +14,9 @@ const initialState={
     toke:localStorage.getItem('token') ,
     data:null ,
     isAuth:false,
+    access:null,
     errors:null,
+    Acces02:false,
     isLoading:true 
 }
 
@@ -25,8 +27,10 @@ const authReducer =(state=initialState , {type , payload}) =>{
             
             return{
                 ...state, 
+                Acces02:true,
                 isLoading:false, 
                 isAuth:true , 
+               
                 ...payload
             }
             case  REGISTER_USER:
@@ -44,11 +48,20 @@ const authReducer =(state=initialState , {type , payload}) =>{
                         isLoading:false, 
                         isAuth:true , 
                         ...payload
-                    }
-                    case  AUTH_ERROS:
+                    } 
+                    case  GET_AUTH_USER:
+                        localStorage.setItem('token',payload.token)
+                        return{
+                            ...state, 
+                            isLoading:false, 
+                            isAuth:true , 
+                            ...payload
+                        }
+                    case  GET_AUTH_USER02:
                        
                         return{
                             ...state, 
+                            Acces02:true,
                             isLoading:false, 
                             isAuth:true , 
                             ...payload

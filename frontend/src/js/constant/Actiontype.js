@@ -5,3 +5,4 @@ export const LOGOUT_USER="LOGOUT_USER";
 export const GET_AUTH_USER='GET_AUTH_USER';
 export const AUTH_ERROS='AUTH_ERRORS';
 export const REST_PASSWORD='REST_PASSWORD';
+export const GET_AUTH_USER02='GET_AUTH_USER';
