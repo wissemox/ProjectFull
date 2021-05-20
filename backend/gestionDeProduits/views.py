@@ -4,7 +4,7 @@ from django.views.decorators.cache import cache_control
 from rest_framework.decorators import api_view 
 from rest_framework.parsers import JSONParser 
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.generics import ListAPIView
+from rest_framework.generics import ListAPIView, CreateAPIView, UpdateAPIView, DestroyAPIView
 from rest_framework.filters import SearchFilter, OrderingFilter
 from .serializers import ProduitSerializer, ImageSerializer
 import json
@@ -112,6 +112,7 @@ def convert_euros_bins(euros):
     x = 10
     bins = str(x*int(euros))
     return bins
+
 
 class ApiProduitsListView(ListAPIView):
     queryset = Produit.objects.all()

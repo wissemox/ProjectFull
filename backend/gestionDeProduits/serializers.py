@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Produit, Image
+from .models import Produit, Image, Categorie, SousCategorie 
  
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
@@ -26,5 +26,7 @@ class ProduitSerializer(serializers.ModelSerializer):
         'slug': {'read_only': True},
         
         }
+        
+    
  
 

@@ -11,10 +11,17 @@ def rand_slug():
 class Categorie(models.Model):
 
     categorie =  models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.categorie
+
 class SousCategorie(models.Model):
 
     sous_categorie =  models.CharField(max_length=50)
     categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE) 
+    
+    def __str__(self):
+        return self.sous_categorie
 
 class Produit(SafeDeleteModel):
     _safedelete_policy = SOFT_DELETE_CASCADE
