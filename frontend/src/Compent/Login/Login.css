@@ -4,7 +4,7 @@
 ::placeholder {
   -webkit-transition: 2s;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
   text-align: center;
   letter-spacing: 3px;
   padding-right: 70px;
@@ -46,6 +46,8 @@
   height: 30px;
   margin-left: 55px;
   letter-spacing: 4px;
+  
+ 
 }
 .dasa input {
   margin-top: 20px;
@@ -67,7 +69,7 @@
   color: white;
   height: 33px;
   width: 150px;
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 .Button {
@@ -76,7 +78,7 @@
 }
 .InputName p {
   -webkit-transition: 2s;
-  font-size: 20px;
+  font-size: 12px;
 }
 .InputName h2 {
   padding-left: 0px;
@@ -84,7 +86,7 @@
   padding-bottom: 70px;
   -webkit-transition: 2s;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 45px;
   height: 40px;
 }
 
@@ -129,7 +131,7 @@
   -webkit-transition: 2s;
   padding-left: 53px;
   color: white;
-  font-size: 25px;
+  font-size: 15px;
 }
 .Username {
   -webkit-transition: 2s;

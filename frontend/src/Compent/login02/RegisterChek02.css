@@ -1,0 +1,139 @@
+.DisplayFlex3{
+    display: flex;
+    background-image: url('BackGround06.gif');
+    height: 720px;
+    width: 1540px;
+}
+
+.Accomplid{
+    display: flex;
+    margin-left: 290px;
+   margin-top: 10px;
+     
+  }
+  .Accomplid span{
+      color: #3e6993;
+      padding-bottom: 10px;
+  }
+
+  .AnimatipnBackGroundBlue01{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2D6DB2 0%, #3D7EC1 74%);
+    border-top-left-radius: 30px ;
+    border-bottom-left-radius: 30px ;
+    height: 30px;
+    width: 430px;
+    animation: BarchCharge 3s;
+}
+/* 2D6DB2 */
+
+.AniatedNumber2Bar{
+    padding-top: 10px;
+    background-color:#2B69B1;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: NumberCharge03 7s;
+}
+@keyframes NumberCharge03 {
+    0%{
+        background-color: #f3f3f3;
+    }
+    20%{
+        background-color: #f4f4f4;
+    }
+    40%{
+        background-color: #f4f4f4;
+    }
+    50%{
+        background-color: #cacaca;
+    }
+    100%{
+        background-color: #C4D6EC;
+    }
+}
+.AniatedNumber2Bar p{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    color: #5992C9;
+    padding-top: 4px;
+    border-radius: 50px;
+    margin-left: 10px;
+   
+    
+}
+.LederMember{
+    display: flex;
+}
+.LederMember{
+    margin-top: 20px;
+    width: 330px;
+    height: 45px;
+    border-radius: 30px;
+    margin-left: 225px;
+    background-color: white;
+}
+.Member p{ 
+    font-size: 12px;
+}
+.LederMember p{
+   
+    margin-top: 14px;
+    
+}
+.Member{
+    transition-duration: 2s;
+    width: 165px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+
+}
+.Member p{
+        font-size: 5px;
+}
+.leader{
+    transition-duration: 1s;
+    width: 165px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    cursor: pointer;
+}
+.AnimatipnBackGroundBlue02{
+    
+   
+    background-image: linear-gradient(315deg, #1B2E4F 0%, #5693CE 74%);
+    border-top-left-radius: 30px ;
+    border-bottom-left-radius: 30px ;
+    height: 30px;
+    width: 450px;
+    animation: BarchChargee 5s;
+
+}
+
+@keyframes BarchChargee{
+    0%{
+        width: 0px;
+    }
+    50%{
+        width: 250px;
+    }
+    100%{
+        width: 450px;
+    }
+    
+}
+
+.File {
+   
+    border: none;
+    
+}
+.File input{
+    border: none;
+    background-color: none;
+}

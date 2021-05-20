@@ -39,9 +39,12 @@
   margin-left: 20px;
   width: 30px;
 }
+.Input06 input{
+  font-size: 15px;
+}
 .Register01 h2 {
   letter-spacing: 4px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -65,8 +68,8 @@
   background-color: black;
 }
 .Radio label {
-  font-size: 25px;
-  padding-top: 20px;
+  font-size: 20px;
+  padding-top: 25px;
   padding-left: 10px;
   width: 20px;
   margin-left: 35px;

@@ -6,11 +6,19 @@ import Sponsur from '../Compent/Home/Sponsur'
 import Sponsur05 from '../Compent/Home/Sponsur05'
 import Aos from 'aos'
 import RecharcheMap from '../Compent/Home/ResercheMap'
+import {GetUserRefresh} from '../js/actions/authActions'
+import {useDispatch} from 'react-redux'
 
 import './User02.css'
+import { Redirect } from 'react-router'
 const User02 = () => {
+    const token = localStorage.getItem('tokens')
+   
+    const dispatch = useDispatch()
     useEffect(() => {
         Aos.init({duration: 3000});
+        dispatch(GetUserRefresh({refresh:token}))
+        
       }, [])
     var aValue = localStorage.getItem('Catgory')
     var aValue01 =JSON.parse( localStorage.getItem('Catgory01'))
@@ -116,8 +124,24 @@ const User02 = () => {
         window.location.reload(false);
         localStorage.removeItem("Catgory01")
     }
+    const[logout , setLogout]=useState(false)
+    const Togel =()=>{
+        localStorage.removeItem('tokens')
+        setLogout(true)
+
+    }
+    const Token =  localStorage.getItem('tokens')
+
+        if(!Token){
+      return <Redirect to="/"/>
+     }
+        
+       
     return (
+        
         <div data-Aos="fade-up" >
+            
+            {logout && <Redirect to="/"/>}
             <div data-Aos="fade-up" className="NavItem02">
                 <img src="binpact002.png"/>
                 <div className="NameProfile">
@@ -128,7 +152,7 @@ const User02 = () => {
                
                 </div>
                 <div className="Button6">
-                <button>Logout</button>
+                <button onClick={Togel}>Logout</button>
                 </div>
             </div>
             <div data-Aos="fade-up" className="BackImageUr">
@@ -151,6 +175,7 @@ const User02 = () => {
                 <p onClick={FilterSamrtphone} data-Aos="fade-up">Smartphone</p> 
                    <p data-Aos="fade-up">Ville</p>
                    <p data-Aos="fade-up">Prix en binz</p>
+                   {console.log(token)}
                    <p data-Aos="fade-up">Rating user</p>
                    <p  data-Aos="fade-up"> Caracretstique</p>
                    </div> }

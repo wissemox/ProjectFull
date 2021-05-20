@@ -4,10 +4,10 @@
 }
 .TextFlexBox02 h4 {
   margin-top: 3%;
-  font-family: "Montserrat*", Bold *;
-  font-size: 250%;
+  font-family: "Montserrat", Bold;
+  font-size: 210%;
   font-weight: 600;
-  width: 900px;
+  width: 800px;
   padding-left: 250px;
   padding-top: 30px;
   color: white;
@@ -17,10 +17,12 @@
 .TextFlexBox02 p {
   line-height: 0.9;
   color: #e6e7e8;
-  font-size: 200%;
-  width: 730px;
+  font-family: "Montserrat";
+  font-size:150%;
+  line-height: 1cm;
+  width: 780px;
   font-weight: 100;
-  text-align: left;
+  text-align: justify;
   padding-top: 3%;
   padding-left: 250px;
 }
@@ -84,8 +86,8 @@
 .MainFlexBox button {
   border: none;
   margin-top: 0px;
-  font-family: "Montserrat*", Regular *;
-  font-size: 25px;
+  font-family: "Montserrat", Regular ;
+  font-size: 19px;
   font-weight: 500;
   background-color: #b10b1c;
   width: 350px;
