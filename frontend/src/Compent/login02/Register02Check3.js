@@ -41,10 +41,10 @@ const Register02Check3 = ({Test05}) => {
                         <p data-Aos="fade-up">INSCRIPATION</p>
                         <div data-Aos="fade-left" >
                             {/* Verfaction here */}
-                            <div className="ErroreDesign">
-                            <h6> {errors&&errors.sexe}</h6>
-                             <h6> {errors&&errors.username}</h6>
-                             <h6> {errors&&errors.email}</h6>
+                            <div data-Aos="fade-up" className="ErroreDesign">
+                            <h6 data-Aos="fade-up"> {errors&&errors.sexe}</h6>
+                             <h6 data-Aos="fade-up"> {errors&&errors.username}</h6>
+                             <h6 data-Aos="fade-up"> {errors&&errors.email}</h6>
                            
                             </div>
                             
@@ -55,9 +55,10 @@ const Register02Check3 = ({Test05}) => {
                             <div className="Date5" data-Aos="fade-left">
                                 <input value={DateNaissance} onChange={(e)=>setDateNaissance(e.target.value)} type="date" placeholder="Date de naissance"/>
                             </div>
-                            <div data-Aos="fade-left">
-                                <input  placeholder="Photo"/>
-                            </div>
+                            <div className="FileUpload5">
+                           
+                           <input class="form-control form-control-lg" id="formFileSm" type="file" />
+                           </div>
                             <div data-Aos="fade-left">
                                 <input  placeholder="Linkedin (ou autre)"/>
                             </div>

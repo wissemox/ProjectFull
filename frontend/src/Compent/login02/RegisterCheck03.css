@@ -28,9 +28,11 @@
     background-color: blue;
 }
 .Adrres input{
+    -webkit-transition: 2s;
 width: 60px;
 }
 .Addresaa{
+    -webkit-transition: 2s;
     display: flex;
     margin-left: 525px;
     background-color: white;
@@ -41,6 +43,7 @@ width: 60px;
     margin-bottom: 20px;
 }
 .Addresaa input{
+    -webkit-transition: 2s;
     border: none;
     margin-left: 10px;
     border-right: 1px solid black;
@@ -48,6 +51,7 @@ width: 60px;
     width: 95px;
 }
 .Addresaa input::placeholder{
+    -webkit-transition: 2s;
     text-align: center;
     padding-left: 20px;
     font-size: 12px;
@@ -57,6 +61,7 @@ width: 60px;
     border: none;
 }
 .Address01 input{
+    -webkit-transition: 2s;
     width: 105px;
 }
 .AniatedNumber3Bar{
@@ -81,6 +86,7 @@ width: 60px;
     
 }
 .AnimatipnBackGroundBlue03{
+    -webkit-transition: 2s;
     background-image: linear-gradient(315deg, #1B2E4F 0%, #5693CE 74%);
 
     border-top-left-radius: 30px ;
@@ -99,5 +105,170 @@ width: 60px;
     }
     100%{ 
         width: 670px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .Addresaa{
+       
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 525px;
+   
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 1300px) {
+    .Addresaa{
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 525px;
+       
+   
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    .AnimatipnBackGroundBlue03{
+        -webkit-transition: 2s;
+        background-image: linear-gradient(315deg, #1B2E4F 0%, #5693CE 74%);
+    
+        border-top-left-radius: 30px ;
+        border-bottom-left-radius: 30px ;
+        height: 30px;
+        width: 420px;
+        animation: BarchCharge02 4s;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .Addresaa{
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 410px;
+       
+   
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .Addresaa{
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 360px; 
+        
+   
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .Addresaa{
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 360px; 
+        
+   
+        height: 35px;
+        width: 330px;
+        
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Addresaa{
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 300px; 
+     
+   
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .Addresaa{
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 300px; 
+       
+   
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:850px){
+    .Addresaa{
+      
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 248px; 
+       
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:800px) {
+    .AnimatipnBackGroundBlue03{
+        -webkit-transition: 2s;
+        background-image: linear-gradient(315deg, #1B2E4F 0%, #5693CE 74%);
+        
+        border-top-left-radius: 30px ;
+        border-bottom-left-radius: 30px ;
+        height: 30px;
+        width: 380px;
+        animation: BarchCharge02 4s;
+    }
+    .Addresaa{
+      
+        -webkit-transition: 2s;
+        display: flex;
+        margin-left: 225px; 
+       
+        height: 35px;
+        width: 330px;
+    
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .Addresaa{
+        -webkit-transition: 2s;
+        margin-left: 90px;
+    }
+    .AnimatipnBackGroundBlue03{
+        -webkit-transition: 2s;
+        background-image: linear-gradient(315deg, #1B2E4F 0%, #5693CE 74%);
+    
+        border-top-left-radius: 30px ;
+        border-bottom-left-radius: 30px ;
+        height: 30px;
+        width: 300px;
+        animation: BarchCharge02 4s;
     }
 }

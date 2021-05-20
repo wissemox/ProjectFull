@@ -42,17 +42,17 @@ const Register02 = ({Test05,Test04,Test03 , Bloena  , LengthBolen , setLengthBol
                         <p data-Aos="fade-up">INSCRIPATION</p>
                             <div data-Aos="fade-left" >
                                 {/* Verfaction Here */}
-                              {!Nom || !Prenom || !Email || !password || !Confirmpassword ? <div>   
-                                <h6>Entre all filed</h6>
+                              {!Nom || !Prenom || !Email || !password || !Confirmpassword ? <div data-Aos="fade">   
+                                <h6 data-Aos="fade">Entre all filed</h6>
                               </div> :null }
-                              {password!==Confirmpassword &&<div> <h6>Confirm Password</h6> </div> }
-                              {!Email.includes('@') ?<h6>Entre real email</h6>  :  null }
+                              {password!==Confirmpassword &&<div data-Aos="fade"> <h6 data-Aos="fade">Confirm Password</h6> </div> }
+                              {!Email.includes('@') ?<h6 data-Aos="fade">Entre real email</h6>  :  null }
                             
-                              {!LengthBolen && <div> <h6>Modpass should be at lest 6 charchter</h6> </div>}
+                              {!LengthBolen && <div data-Aos="fade"> <h6>Modpass should be at lest 6 charchter</h6> </div>}
                                 <input value={Nom} onChange={(e)=>setNom(e.target.value)} placeholder="Nom"/>
                             </div>
                             {console.log(Nom)}
-                            <div data-Aos="fade-left">
+                            <div  data-Aos="fade-left">
                                 <input  value={Prenom} onChange={(e)=>setPrenom(e.target.value)} placeholder="Prenom"/>
                             </div>
                             <div data-Aos="fade-left">

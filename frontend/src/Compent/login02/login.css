@@ -54,6 +54,7 @@
     height: 35px;
 }
 .Animation{
+    -webkit-transition: 2s;
     margin-top:10px;
     background-color: #C4D6EC;
     margin-left: 280px;
@@ -77,6 +78,7 @@
     
 }
 .AnimatedNumber{
+    -webkit-transition: 2s;
     position: absolute;
     margin-left: 220px;
     display: flex;
@@ -84,6 +86,7 @@
   
 }
 .AnimatedNumber div{
+    -webkit-transition: 2s;
     margin-left: 170px;
 }
 .AniatedNumber1{
@@ -248,3 +251,146 @@
         opacity: 1;
     }
 }
+
+/* Inspation */
+@media screen and (max-width: 1500px){
+    .Inspation{
+        /* -webkit-transition: 1s;
+        margin-left: 100px; */
+        -webkit-transition: 2s;
+        margin-left: 300px;
+       
+    }
+}
+@media screen and (max-width: 1300px) {
+    .Inspation{
+        
+        -webkit-transition: 2s;
+        margin-left: 300px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .Inspation{
+        -webkit-transition: 2s;
+        margin-left: 200px;
+    }
+      .Animation{
+       
+        -webkit-transition: 2s;
+       width:700px;
+          margin-left: 150px;
+      }
+      .AnimatedNumber div{
+        -webkit-transition: 2s;
+        margin-left: 100px;
+    }
+    
+    
+    .Animation{
+        -webkit-transition: 2s;
+        margin-left: 250px;
+    }
+
+      
+      .AnimatedNumber{
+        -webkit-transition: 2s;
+          margin-left: 220px;
+      }
+      .AnimatipnBackGroundBlue{
+        -webkit-transition: 2s;
+          width: 100px;
+      }
+    
+  }  
+
+
+    @media screen and (max-width: 1100px) {
+    .Inspation{
+        -webkit-transition: 2s;
+        margin-left: 200px;
+        
+    } 
+    .AnimatedNumber{
+        -webkit-transition: 2s;
+        margin-left: 200px;
+    }
+    .Animation{
+        -webkit-transition: 2s;
+        width: 600px;
+    }
+    
+  }
+  @media screen and (max-width: 1000px) {
+    .Inspation{
+        -webkit-transition: 2s;
+        margin-left: 150px;
+        
+    } 
+    .AnimatedNumber{
+        -webkit-transition: 2s;
+        margin-left: 150px;
+    }
+    .Animation{
+        margin-left: 170px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .Inspation{
+        -webkit-transition: 2s;
+    
+        margin-left: 100px;
+    } 
+    .AnimatedNumber{
+        -webkit-transition: 2s;
+        margin-left: 100px;
+    }
+    .Animation{
+        -webkit-transition: 2s;
+        margin-left: 120px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .Inspation{
+        -webkit-transition: 2s;
+    
+        margin-left: 150px;
+    } 
+    .AnimatedNumber{
+        -webkit-transition: 2s;
+        margin-left: 100px;
+    }
+    .AnimatedNumber div{
+        margin-left: 80px;
+    }
+    .Animation{
+        -webkit-transition: 2s;
+        margin-left: 120px;
+        width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Inspation{
+        -webkit-transition: 2s;
+        margin-left: 80px;
+    }
+    .Animation{
+        -webkit-transition: 2s;
+        margin-left: 50px;
+        width: 250px;
+    }
+    .AnimatedNumber div{
+        -webkit-transition: 2s;
+        margin-left: 50px;
+    }
+    .Animation{
+        -webkit-transition: 2s;
+        width:365px;
+    }
+    .AnimatedNumber{
+        -webkit-transition: 2s;
+          margin-left: 55px;
+      }
+  }
+  /* Animation */

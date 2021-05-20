@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import './RegisterChek02.css'
 import Register02Check3 from './Register02Check3'
+import {useForm} from "react-hook-form"
 const Register02Check2 = ({Test05,Test04,Bloena02}) => {
     const [BackGroundChange , setBackGroundChange]=useState(false)
     const[Bollen02 , setBollen]=useState(false)
@@ -13,6 +14,7 @@ const Register02Check2 = ({Test05,Test04,Bloena02}) => {
        
         setBackGroundChange(!BackGroundChange)
     }
+    const {register , handleSubmit}=useForm()
     const NextStep02 =()=>{
         Test04(Communte,sectur,Siret,NomEntreprize)
         localStorage.setItem("Nomcommunauté",  JSON.stringify(Communte));
@@ -35,11 +37,12 @@ const Register02Check2 = ({Test05,Test04,Bloena02}) => {
                <div className="Inspation">
                     <div className="Inscripation">
                         <p data-Aos="fade-up">INSCRIPATION</p>
-                        {!Communte || !sectur || !Siret || !NomEntreprize  ? <div>   
-                                <h6>Entre all filed</h6>
+                        {!Communte || !sectur || !Siret || !NomEntreprize  ? <div data-Aos="fade" >   
+                                <h6 data-Aos="fade">Entre all filed</h6>
                               </div> :null }
                             
-                        <div data-Aos="fade-left" >
+                        <div data-Aos="fade-left" 
+                        >
                                 <input value={Communte} onChange={(e)=>setCommunte(e.target.value)} placeholder="Nom communauté"/>
                             </div>
                             <div data-Aos="fade-left" >
@@ -50,17 +53,23 @@ const Register02Check2 = ({Test05,Test04,Bloena02}) => {
                                    <div onClick={SwitchBackGroundValue} style={{backgroundColor:!BackGroundChange&&"#1C2D4F",color:!BackGroundChange&&"#f4f4f4"}} className="leader">
                                         <p style={{fontSize:"15px"}}>Leader</p>
                                    </div>
+                                   
                                </div>
+
                             </div>
                             <div data-Aos="fade-left">
+                                
                                 <input  value={sectur} onChange={(e)=>setSectur(e.target.value)} placeholder="Sectur"/>
                             </div>
                             <div data-Aos="fade-left">
                                 <input value={Siret} onChange={(e)=>setSiret(e.target.value)} placeholder="Siret"/>
                             </div>
-                            <div data-Aos="fade-left">
-                                <input  placeholder="Logo"/>
+                            <div className="FileUpload5">
+                           
+                            <input class="form-control form-control-smform-control form-control-lg" id="formFileSm" type="file" />
                             </div>
+                            
+
                             <div data-Aos="fade-left">
                                 <input value={NomEntreprize} onChange={(e)=>setEntreprize(e.target.value)}  placeholder="Nom entreprise"/>
                             </div>
