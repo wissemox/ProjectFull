@@ -36,7 +36,7 @@ class UserManager(BaseUserManager):
         pays='',
         ville='',
         adresse='',
-        code_postal='',
+        code_postal=0,
         nom_communaute=''
     ):
         if username is None:
@@ -66,13 +66,14 @@ class UserManager(BaseUserManager):
             print("An exception", e) 
         return user
 
-    def create_superuser(self, username, email, password=None):
+    def create_superuser(self, username, email, role = 'COMMUNITY_MEMBER', sexe ='HOMME', date_naissance =datetime.now(),password=None ):
         if password is None:
             raise TypeError('Password should not be none')
-
-        user = self.create_user(username, email, password)
+        ####""
+        user = self.create_user(username, email, role, sexe, date_naissance,password)
         user.is_superuser = True
         user.is_staff = True
+        user.is_verified = True
         user.save()
         return user
 

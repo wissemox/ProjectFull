@@ -8,7 +8,7 @@ urlpatterns = [
     path('update/<slug:slug>', views.update_produit),
     path('delete/<slug:slug>', views.delete_produit),
     path('detail/<slug:slug>/', views.detail_view),
-    path('/list/', views.ApiProduitsListView.as_view()),
+    path('list/', views.ApiProduitsListView.as_view()),
     
 ]
 
