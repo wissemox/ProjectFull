@@ -59,10 +59,10 @@ const Register02 = ({Test05,Test04,Test03 , Bloena  , LengthBolen , setLengthBol
                                 <input value={Email} onChange={(e)=>setEmail(e.target.value)}  placeholder="E-mail"/>
                             </div>
                             <div data-Aos="fade-left">
-                                <input value={password} onChange={(e)=>setpassword(e.target.value)}   placeholder="Mot de passe"/>
+                                <input value={password} type="password" onChange={(e)=>setpassword(e.target.value)}   placeholder="Mot de passe"/>
                             </div>
                             <div data-Aos="fade-left">
-                                <input value={Confirmpassword} onChange={(e)=>setConfirmPassword(e.target.value) } placeholder="Confirm password"/>
+                                <input value={Confirmpassword} type="password" onChange={(e)=>setConfirmPassword(e.target.value) } placeholder="Confirm password"/>
                             </div>
                             <button/>
                         </div>

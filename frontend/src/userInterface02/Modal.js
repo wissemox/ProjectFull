@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import {PostProduc} from '../../src/js/actions/authActions'
-import {useDispatch} from 'react-redux'
+import {useDispatch , useSelector} from 'react-redux'
 const ModalExample = () => {
  
   const dispatch = useDispatch()
   const [modal, setModal] = useState(false);
   const[file , setFile]=useState()
-  
+  const Producteerors = useSelector(state => state.Prodctadd)
   const[name , setnAME]=useState()
   const[prix , setPrix]=useState()
    
@@ -35,7 +35,7 @@ const ModalExample = () => {
   critere:"A",
   sous_categorie:51,
   fonctionnel:"Yes",
-  description:"Vends combiné de semis KUHN INTEGRA 3000 et herse rotative KUHN HRB 303"}))
+  description:description}))
   const ADDpRODUCT=()=>{
     dispatch(PostProduc(formData))
   }
@@ -47,13 +47,16 @@ const ModalExample = () => {
       <Button color="danger" onClick={toggle}>Add</Button>
       <Modal isOpen={modal} toggle={toggle}  external={externalCloseBtn}>
         
-        <ModalHeader>Modal title</ModalHeader>
+        <ModalHeader><p>{Producteerors&&Producteerors.categorie}</p> 
+        <p>{Producteerors&&Producteerors.sous_categorie}</p> 
+        <p>{Producteerors&&Producteerors.nom}</p> 
+        </ModalHeader>
         <ModalBody>
             <p>Name</p>
          <input value={name} onChange={(e)=>setnAME(e.target.value)}/>
          <p>Prixonbinz</p>
          
-         <input value={prix_en_euros} onChange={(e)=>setprix_en_euros(e.target.value)}/>
+         <input value={prix_en_euros} type="number" onChange={(e)=>setprix_en_euros(e.target.value)}/>
         <p>categorie</p>
         <input type="number" value={categorie} onChange={(e)=>setcategorie(e.target.value)} />
         <p>marque</p>

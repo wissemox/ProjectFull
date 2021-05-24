@@ -4,7 +4,8 @@ import Register02Check4 from './Register02Check4'
 import {useDispatch , useSelector} from 'react-redux'
 import {registerUser} from '../../js/actions/authActions'
 import { Redirect } from 'react-router'
-
+import ModalChange from './ModalChange'
+import ModalChangeUsername from './ModalUsername'
 const Register02Check3 = ({Test05}) => {
  const email =JSON.parse(localStorage.getItem('Email')) 
  const Prenom =JSON.parse(localStorage.getItem('Prenom')) 
@@ -35,11 +36,19 @@ const Register02Check3 = ({Test05}) => {
         {console.log(Sexe)}
         {Data && <Redirect to="/Favoire"/>}
         {Bolen03 ?<Register02Check4/> :   <div  className="DisplayFlex4">
+      
            <div data-Aos="fade" className="BakGroundLogin02d">
                <div className="Inspation">
+                 
                     <div className="Inscripation">
                         <p data-Aos="fade-up">INSCRIPATION</p>
                         <div data-Aos="fade-left" >
+                        <div className="Butadw">
+                       <div className="Butadw02">
+               {errors&&errors.email ? <ModalChange/> : null}
+               </div>
+               {errors&&errors.username ? <ModalChangeUsername/> : null}
+               </div>
                             {/* Verfaction here */}
                             <div data-Aos="fade-up" className="ErroreDesign">
                             <h6 data-Aos="fade-up"> {errors&&errors.sexe}</h6>
