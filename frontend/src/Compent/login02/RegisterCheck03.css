@@ -272,3 +272,13 @@ width: 60px;
         animation: BarchCharge02 4s;
     }
 }
+.Member01 {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.FlexBox05{
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -126,6 +126,7 @@ const Test05 =(Sexe , Date  ,Adress , Ville , Pays )=>{
                  {/* <PriverRoute02 exact path="/Dashboard01" component={User02}></PriverRoute02>   */}
                  <Route exact path="/Dashboard01" render={()=><User02/>} />   
                       <Route  path="/Profile" component={Profile}/>
+                      
       <Route exact path="/Confirm" render={()=><Confirm/>} />
       <Route exact path="/Confirm" render={()=><Confirm/>} />
       <Route exact path="/Login02" render={()=><Register02 Test05={Test05} Bloena02={Bloena02} Test04={Test04} setLengthBolen={setLengthBolen} LengthBolen={LengthBolen}  Bloena={Bloena} Test03={Test03}/>}/>

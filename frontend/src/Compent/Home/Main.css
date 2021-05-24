@@ -113,8 +113,12 @@
   height: 250px;
 }
 .Loader {
-  margin-top: 250px;
-  margin-left: 650px;
+  margin-top: 300px;
+  
+}
+.Loader img{
+width: 80px;
+height: 80px;
 }
 .CarouselImage6 {
   background-color: #d7ecfb;

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Check.css'
 import Counter from '../../Share/CounterOne'
+import SvgComponent from '../../ImageTes'
 const Check = ({match}) => {
 
     return (
@@ -8,7 +9,10 @@ const Check = ({match}) => {
             <div className="BackGroundImageCHeck">
                 <div className="Verfaction">
             <img  src="/Binpact.png"></img>
-          
+            <div className="SvgCompent">
+            <SvgComponent className="Ratironaz"/>
+            </div>
+            
             <p>THNKS FOR JOINIG</p>
             <div className="Yourregstersuscful">
             <h2>Your registration is complete</h2>

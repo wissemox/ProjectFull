@@ -7,7 +7,9 @@ import Sponsur05 from '../Compent/Home/Sponsur05'
 import Aos from 'aos'
 import RecharcheMap from '../Compent/Home/ResercheMap'
 import {GetUserRefresh} from '../js/actions/authActions'
-import {useDispatch} from 'react-redux'
+import {useDispatch,useSelector} from 'react-redux'
+import Modal from './Modal'
+import {PostProduc} from '../js/actions/authActions'
 
 import './User02.css'
 import { Redirect } from 'react-router'
@@ -15,11 +17,15 @@ const User02 = () => {
     const token = localStorage.getItem('tokens')
    
     const dispatch = useDispatch()
+    const TokenAces = useSelector(state => state.authReducer.access)
+    
     useEffect(() => {
         Aos.init({duration: 3000});
         dispatch(GetUserRefresh({refresh:token}))
         
       }, [])
+
+      localStorage.setItem('tokenacces' , TokenAces)
     var aValue = localStorage.getItem('Catgory')
     var aValue01 =JSON.parse( localStorage.getItem('Catgory01'))
     const[togel ,setTogel]=useState(false)
@@ -130,6 +136,7 @@ const User02 = () => {
         setLogout(true)
 
     }
+    
     const Token =  localStorage.getItem('tokens')
 
         if(!Token){
@@ -143,7 +150,11 @@ const User02 = () => {
             
             {logout && <Redirect to="/"/>}
             <div data-Aos="fade-up" className="NavItem02">
+                <div>
                 <img src="binpact002.png"/>
+                </div>      
+               
+                
                 <div className="NameProfile">
                 <div >
                 <img src="Wissemabid.png"/>
@@ -199,6 +210,7 @@ const User02 = () => {
                   <div className="ProductFlex8">
                   {Product.slice(3).map((el)=><Product03Map el={el}/>)}
                   </div>
+                  <Modal />
             
           </div>
           <div className="FlexNumber">
@@ -270,7 +282,8 @@ const User02 = () => {
             </div>
         </div>
           </div>
-          {/* BackGround0 */}
+          {/* BackGround0 */} 
+          
           <Sponsur05/>
         </div>
         

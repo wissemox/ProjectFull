@@ -1,4 +1,5 @@
 * {
+ 
   margin: 0px;
   font-family:"Montserrat", Regular ;
   padding: 0px;
@@ -68,34 +69,38 @@
 }
 @media screen and (max-width: 600px) {
   .ImageNavbar {
+    -webkit-transition: 2s;
     display: none;
   }
   .ImageNavBar01 {
+    -webkit-transition: 2s;
     display: flex;
   }
   .ImageNavBar01 {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     margin-top: 20px;
     margin-left: 140px;
   }
   .ImageNavBar01 img {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     width: 200px;
   }
   .FlexBoxNavBar img {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
   }
   .Text03 {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     display: none;
   }
   .Menu05 {
+    -webkit-transition: 2s;
     background-color: white;
     -webkit-transition: 1s;
     height: 80px;
     display: flex;
   }
   .Menu05 img {
+    -webkit-transition: 2s;
     -webkit-transition: 1s;
     margin-left: 45%;
     margin-top: 10px;
@@ -104,21 +109,23 @@
     height: 40px;
   }
   .Menu05 img:hover {
-    -webkit-transition: 1s;
+    
+    -webkit-transition: 2s;
     -webkit-transition: 1s;
     transform: scale(1.2);
     transition: transform 2s;
   }
   .BOlen {
+    
     margin-top: 20px;
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     display: flex;
     flex-direction: column;
     margin-right: 1050px;
     background-color: rgb(241, 241, 241);
   }
   .BOlen p {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     padding-top: 10px;
     text-align: center;
     width: 80px;
@@ -128,7 +135,7 @@
     color: #5793ce;
   }
   .Button03 {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     margin-top: 20px;
     margin-left: 120px;
     display: flex;
@@ -141,7 +148,7 @@
     height: 23px;
     padding-bottom: 10px;
     font-size: 12px;
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     margin-left: 20px;
 
     border: none;
@@ -157,7 +164,7 @@
 .Categories button {
   color: #0b224d;
   background-color: #0b224d;
-  -webkit-transition: 1s;
+  -webkit-transition: 2s;
   border: none;
   width: 100px;
   height: 30px;
@@ -166,7 +173,7 @@
   border-radius: 20px;
 }
 .Categories button:hover {
-  -webkit-transition: 1s;
+  -webkit-transition: 2s;
   background-color: #f72122;
   color: white;
 }
@@ -229,22 +236,22 @@
 
 @media screen and (max-width: 1500px) {
   .Text03 {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     margin-left: 0px;
 
   }
   .Text03 p {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     font-size: 14px;
     margin-left: 50px;
   }
   .ImageNavbar img {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     margin-left: 20px;
     margin-right: 50px;
   }
   .ImageNavbar {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     width: 180px;
     margin-right: 210px;
     margin-left: 30px;
@@ -263,21 +270,21 @@
 @media screen and (max-width: 1200px) {
   .Text03 {
   
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     margin-left: 0px;
   }
   .Text03 p {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     font-size: 14px;
     margin-left: 20px;
   }
   .ImageNavbar img {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     margin-left: 20px;
     margin-right: 50px;
   }
   .ImageNavbar {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     width: 180px;
     margin-right: 150px;
     margin-left: 10px;
@@ -293,116 +300,221 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  .Text03 {
-    -webkit-transition: 1s;
-    margin-left: 30px;
-    
-    
 
+  .Text03 p {
+    -webkit-transition: 2s;
+    width:120px;
   }
   .ButtonFlexBox button h2{
-  padding-top: 3px;
+    -webkit-transition: 2s;
+  padding-top:0px;
     font-size: 10px;
+    font-weight: 500;
   }
   .Text03 p {
+    -webkit-transition: 2s;
     padding-left: 0px;
-    -webkit-transition: 1s;
+    
+    -webkit-transition: 2s;
     font-size: 12px;
   }
   .ImageNavbar img {
-    -webkit-transition: 1s;
-    margin-left: 20px;
+    
+    -webkit-transition: 2s;
+    margin-left: 50px;
     margin-right: 50px;
+    ;
+    width: 200px;
+  }
+  .ImageNavbar{
+    -webkit-transition: 2s;
+    margin-top:20px;
+    width: 50px;
   }
   .Text03 p{
     margin-right: 2px;
     margin-left: 2px;
   }
   .Text03{
-    margin-left: 50px;
+    -webkit-transition: 2s;
+    margin-left:2px;
   }
   .ImageNavbar {
     -webkit-transition: 1s;
     width: 180px;
     margin-right: 80px;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .FlexBox03 button {
+    -webkit-transition: 2s;
     width: 50px;
     height: 20px;
     margin-top: 23px;
   }
   .FlexBox03 h2 {
+    -webkit-transition: 2s;
     font-size: 18px;
   }
 }
 @media screen and (max-width: 950px) {
   .ImageNavbar img {
-    -webkit-transition: 1s;
+    -webkit-transition: 2;
+    width: 200px;
   }
   .ImageNavbar {
-
-    margin-right: 40px;
+    -webkit-transition: 2s;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .Text03 p {
-    width: 90px;
+    -webkit-transition: 2s;
+    padding-top: 5px;
+    width: 100px;
+    font-size: 10px;
   }
   .Text03 {
+    -webkit-transition: 2s;
     margin-left: 10%;
   }
 }
 @media screen and (max-width: 900px) {
   .ImageNavbar img {
-    
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
+    width: 200px;
   }
   .ImageNavbar {
-    margin-right: 20px;
+    -webkit-transition: 2s;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .Text03 p {
+    -webkit-transition: 2s;
+    padding-top: 5px;
+    width: 100px;
+    font-size: 10px;
+  }
+  .Text03 {
+    -webkit-transition: 2s;
+    margin-left: 50px;
   }
 }
 /* ButtonFlexBox */
 @media screen and (max-width: 880px) {
   .ButtonFlexBox {
-    -webkit-transition: 1s;
+    
+    -webkit-transition: 2s;
     display: none;
   }
   .ButtonResposive {
-    -webkit-transition: 1s;
+   
+    -webkit-transition: 2s;
     display: flex;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   .ButtonResposive button {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     width: 30px;
     height: 30px;
     margin-left: 30px;
   }
   .ButtonResposive {
+    -webkit-transition: 2s;
     margin-right: 50px;
 
     width: 50px;
   }
   .ButtonResposive button {
+    -webkit-transition: 2s;
     margin-top: 15px;
   }
   .ButtonResposive img {
+    -webkit-transition: 2s;
     margin-top: 3px;
     width: 20px;
     margin-bottom: 10px;
   }
-}
-@media screen and (max-width: 820px) {
-  .ButtonResposive button {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+  .Text03 p {
+    -webkit-transition: 2s;
+    width:100px;
   }
 }
-@media screen and (max-width: 800px) {
-  .ButtonResposive button {
-    width: 20px;
-    height: 20px;
+/* // */
+@media screen and (max-width: 820px) {
+  .ButtonFlexBox {
+    
+    -webkit-transition: 2s;
+    display: none;
+  }
+  .ButtonResposive {
+   
+    -webkit-transition: 2s;
+    display: flex;
     margin-left: 20px;
+  }
+  .ButtonResposive button {
+    -webkit-transition: 2s;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .ButtonResposive {
+    -webkit-transition:2s;
+    margin-right: 50px;
+
+    width: 50px;
+  }
+  .ButtonResposive button {
+    -webkit-transition:2s;
+    margin-top: 15px;
+  }
+  .ButtonResposive img {
+    -webkit-transition:2s;
+    margin-top: 3px;
+    width: 20px;
+    margin-bottom: 10px;
+  }
+  .Text03 p {
+    -webkit-transition:2s;
+    width:100px;
+  }
+}
+/* //: */
+@media screen and (max-width: 800px) {
+  .ButtonFlexBox {
+    
+    -webkit-transition: 2s;
+    display: none;
+  }
+  .ButtonResposive {
+   
+    -webkit-transition:2s;
+    display: flex;
+    margin-left: 20px;
+  }
+  .ButtonResposive button {
+    -webkit-transition: 2s;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .ButtonResposive {
+    -webkit-transition: 2s;
+    margin-right: 50px;
+
+    width: 50px;
+  }
+  .ButtonResposive button {
+    -webkit-transition: 2s;
+    margin-top: 15px;
+  }
+  .ButtonResposive img {
+    -webkit-transition: 2s;
+    margin-top: 3px;
+    width: 20px;
+    margin-bottom: 10px;
+  }
+  .Text03 p {
+    width:100px;
   }
 }
 @media screen and (max-width: 790px) {
@@ -412,12 +524,9 @@
     margin-left: 20px;
   }
   .Text03 p {
-    width: 40px;
+    width: 80px;
   }
-  .PorquoiBinpact {
-    margin-left: 20px;
-    width: 70px;
-  }
+ 
   .PorquoiBinpact p {
     margin-left: 0px;
     margin-right: 0px;
@@ -425,28 +534,28 @@
   }
 }
 @media screen and (max-width: 750px) {
-  .ImageNavbar img{
-    margin-top: 40px;
-    width: 150px;
-  }
-  .ImageNavbar{
-    width: 80px;
-  }
-  .Text03 p {
-     margin-left: 20px;
-    width: 80px;
-  }
-  .PorquoiBinpact p {
-    
-    margin-left: 0px;
-    margin-right: 0px;
-   
-    text-align: left;
-  }
   .ButtonResposive button {
     width: 20px;
     height: 20px;
-    margin-left: 12px;
+    margin-left: 10px;
   }
+  .Text03 p {
+    width: 80px;
+  }
+ 
+  .PorquoiBinpact p {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100px;
+  }
+  .ImageNavbar{
+    
+    width: 130px;
+    height: 90px;
+  }
+  .ImageNavbar img{
+    width: 150px;
+    margin-top: 25px;
   
+  }
 }

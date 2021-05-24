@@ -13,8 +13,8 @@ const Register02Check3 = ({Test05}) => {
  const password =JSON.parse(localStorage.getItem('password')) 
  var role = localStorage.getItem('role');
  const Data = useSelector(state=>state.authReducer.data)
-  const errors =  useSelector(state=>state.authReducer.errors)
-    
+  const errors =  useSelector(state=>state.Errore.errors)
+    {console.log(email)}
     const dispatch=useDispatch()
     const[Bolen03 , setBolen03]=useState(false)
     const[Sexe , setSexe]=useState("")
@@ -26,7 +26,7 @@ const Register02Check3 = ({Test05}) => {
     
     const RegisterUser =() =>{
         Test05(Sexe,adresse,pays,ville,DateNaissance)
-        dispatch(registerUser({ prenom:Prenom,email:email, adresse:adresse ,tel:"string",pays:pays,ville:pays,nom:name,code_postal:150, username:name,password:password , role:role ,nom_communaute:Nomcommunauté,sexe:Sexe,date_naissance:DateNaissance}))
+        dispatch(registerUser({ prenom:Prenom,email:email, adresse:adresse ,tel:"string",pays:pays,ville:pays,nom:"string",code_postal:150, username:name,password:password , role:role ,nom_communaute:Nomcommunauté,sexe:Sexe,date_naissance:DateNaissance}))
     }
 
     return (

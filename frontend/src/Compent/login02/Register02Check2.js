@@ -1,8 +1,14 @@
-import React , {useState} from 'react'
+import React , {useState , useEffect} from 'react'
 import './RegisterChek02.css'
 import Register02Check3 from './Register02Check3'
 import {useForm} from "react-hook-form"
+import {useDispatch , useSelector} from 'react-redux'
+import {Getallcomunte} from '../../js/actions/authActions'
+import MapComunte from './MapComunte'
+import ModalComunite from './ModelCommunite'
+
 const Register02Check2 = ({Test05,Test04,Bloena02}) => {
+    const dispatch =useDispatch()
     const [BackGroundChange , setBackGroundChange]=useState(false)
     const[Bollen02 , setBollen]=useState(false)
     const[Communte , setCommunte]=useState("")
@@ -10,10 +16,22 @@ const Register02Check2 = ({Test05,Test04,Bloena02}) => {
     const[sectur , setSectur]=useState("")
     const[Siret , setSiret]=useState("")
     const[NomEntreprize , setEntreprize]=useState("")
+    const[Test , setTest]=useState()
     const SwitchBackGroundValue=()=>{
        
-        setBackGroundChange(!BackGroundChange)
-    }
+        setBackGroundChange(false)
+    } 
+    const SwitchBackGroundValue01=()=>{
+       
+        setBackGroundChange(true)
+    } 
+    useEffect(()=>{
+        dispatch(Getallcomunte()) 
+    },[])
+    // Getallcomunte
+    const ComunteAll = useSelector(state => state.ComunteReducer)
+    
+    {console.log(Test)}
     const {register , handleSubmit}=useForm()
     const NextStep02 =()=>{
         Test04(Communte,sectur,Siret,NomEntreprize)
@@ -34,6 +52,7 @@ const Register02Check2 = ({Test05,Test04,Bloena02}) => {
         {console.log(LeaderOrMember)}
         {Bloena02 ?<Register02Check3 Test05={Test05}/> :  <div  className="DisplayFlex3">
            <div data-Aos="fade" className="BakGroundLogin02d">
+             
                <div className="Inspation">
                     <div className="Inscripation">
                         <p data-Aos="fade-up">INSCRIPATION</p>
@@ -41,26 +60,31 @@ const Register02Check2 = ({Test05,Test04,Bloena02}) => {
                                 <h6 data-Aos="fade">Entre all filed</h6>
                               </div> :null }
                             
-                        <div data-Aos="fade-left" 
-                        >
-                                <input value={Communte} onChange={(e)=>setCommunte(e.target.value)} placeholder="Nom communauté"/>
+                              <div data-Aos="fade-left">
+                                
+                                <input  value={sectur} onChange={(e)=>setSectur(e.target.value)} placeholder="Sectur"/>
                             </div>
                             <div data-Aos="fade-left" >
                                <div className="LederMember">
-                                   <div style={{backgroundColor:BackGroundChange&&"#1C2D4F",color:BackGroundChange&&"white" }} onClick={SwitchBackGroundValue} className="Member">
-                                        <p style={{fontSize:"15px"}}>Membre</p>
+                                   <div style={{backgroundColor:BackGroundChange&&"#1C2D4F",color:BackGroundChange&&"white" }} onClick={SwitchBackGroundValue01} className="Member">
+                                        <p style={{fontSize:"15px"}}> <ModalComunite setCommunte={setCommunte} Communte={Communte} ComunteAll={ComunteAll} BackGroundChange={BackGroundChange}/></p>
+                                       
                                    </div>
                                    <div onClick={SwitchBackGroundValue} style={{backgroundColor:!BackGroundChange&&"#1C2D4F",color:!BackGroundChange&&"#f4f4f4"}} className="leader">
                                         <p style={{fontSize:"15px"}}>Leader</p>
+                                        {console.log(BackGroundChange)}
                                    </div>
                                    
                                </div>
 
                             </div>
-                            <div data-Aos="fade-left">
-                                
-                                <input  value={sectur} onChange={(e)=>setSectur(e.target.value)} placeholder="Sectur"/>
-                            </div>
+                          
+                                 {BackGroundChange ? <div className="Test05" > 
+                              <p>{Communte&&Communte}</p>
+                                 </div> :  <div  >
+                                <input value={Communte} onChange={(e)=>setCommunte(e.target.value)} placeholder="Nom communauté"/>
+                            </div>}
+                      
                             <div data-Aos="fade-left">
                                 <input value={Siret} onChange={(e)=>setSiret(e.target.value)} placeholder="Siret"/>
                             </div>

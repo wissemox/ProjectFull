@@ -286,3 +286,32 @@
     }
     
   }
+
+  .TestModal{
+      background-color: red;
+    height: 1500px;
+    width: 1500px;
+      position: absolute;
+  }
+  .OnTogel{
+      display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px;
+ 
+    margin-top: 20px;
+    width: 500px;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    
+  }
+.Test05{
+    background-color: white;
+    margin-left: 220px;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 340px;
+    display: flex;
+}
+.Test05 p{
+ padding-top: 5px;
+    padding-left: 100px;
+}

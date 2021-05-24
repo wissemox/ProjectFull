@@ -67,7 +67,7 @@ const Home = () => {
            <Sponsur05/>
             </div>
             </>
-            : <div className="Loader"> <ReactLoading type={"bars"} color={"#184981"} height={150} width={150} /> </div>}
+            : <div className="Loader">   <img  className="Ratironaz" src="TESt05zd.png"/> </div>}
               
         </div>
      

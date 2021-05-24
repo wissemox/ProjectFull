@@ -6,7 +6,10 @@ import {USER_LOADING,
     GET_AUTH_USER,
     AUTH_ERROS,
     REST_PASSWORD, 
-    GET_AUTH_USER02
+    GET_AUTH_USER02,
+    GETALLCOMMUNTE,
+    ADDPRDUCT,
+    ErroreProduct
     
 } from '../constant/Actiontype'
 
@@ -14,16 +17,20 @@ import {USER_LOADING,
  export const registerUser=(formData)=>async dispatch=>{
   try{
        const res = await axios.post('/auth/register/',formData)
-         dispatch({
+         dispatch(
+          
+            {
             type:REGISTER_USER, 
-          payload:res.data
+          payload:res.data,
+  
        })
     }catch(error){ 
-       console.dir(error)
-       dispatch({
-          type:REGISTER_USER, 
+     
+         dispatch({
+         type:AUTH_ERROS, 
          payload:error.response.data
-       })
+      })
+       
      }
  }; 
 
@@ -78,7 +85,42 @@ export const ResetPassword01=(email , token)=>async dispatch=>{
     }catch(error){
         console.log(error)
     }
- }
+ } 
+
+ export const Getallcomunte=()=>async dispatch=>{
+   try{
+      const res = await axios.get('/auth/communate/all')
+       dispatch({
+          type:GETALLCOMMUNTE,
+           payload: res.data
+        })
+    }catch(error){
+        console.log(error)
+    }
+ } 
+
+
+ export const PostProduc=(formDasta)=>async dispatch=>{
+   try{
+      const config = {
+         headers: {
+           'Authorization': 'Bearer ' + localStorage.getItem('tokenacces')
+         }
+       }
+       const res = await axios.post('/produitupload/',formDasta,config)
+       dispatch({
+           type:ADDPRDUCT, 
+           payload: res.data
+       })
+    }catch(error){
+         
+      console.dir(error)
+      dispatch({
+         type:ErroreProduct, 
+        payload:error.response.data
+      })
+    }
+ } 
 // export const getAuthUser=()=>async dispatch=>{ 
 //     try{
 //         const Config = {headers:{'x-auth-token':localStorage.getItem('token')}}

@@ -344,3 +344,37 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .Sponsur6 p{
+    -webkit-transition: 2s;
+    font-size: 20px;
+    width: 600px;
+    height: 50px;
+    margin-left: 100px;
+
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .Sponsur6 p{
+    -webkit-transition: 2s;
+    font-size: 12px;
+    width: 300px;
+    height: 50px;
+    margin-left: 50px;
+    
+  }
+  
+}
+@media screen and (max-width: 700px) {
+  .Sponsur6 p{
+    -webkit-transition: 2s;
+    font-size: 15px;
+    width: 80%;
+    height: 50px;
+   
+
+  }
+  
+}
