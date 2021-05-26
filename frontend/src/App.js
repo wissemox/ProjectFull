@@ -18,6 +18,8 @@ import Test01 from './Test'
 import Register02 from './Compent/login02/login'
 import Register4 from './Compent/login02/Register02Check4'
 import Check from './Compent/routes/Check'
+import ProfileUpdate from './userInterface02/ProfileUpdate'
+import ProgresBar from './userInterface02/ProgresBar'
 function App() {
   // Function
     // 1 userName 
@@ -122,9 +124,12 @@ const Test05 =(Sexe , Date  ,Adress , Ville , Pays )=>{
       {/* User */}
      
       {/* Producdt */}
-      {/* Confirm */} <Route  path="/Dashboard" component={User}/>
+      {/* Confirm */} <Route  path="/Dashboard01/profile" component={User}/>
                  {/* <PriverRoute02 exact path="/Dashboard01" component={User02}></PriverRoute02>   */}
-                 <Route exact path="/Dashboard01" render={()=><User02/>} />   
+                 <Route exact path="/Dashboard01" render={()=><User02/>} /> 
+                
+                 <Route exact path="/Dashboard01/boutique" render={()=><ProfileUpdate/>} /> 
+                 {/* <Route exact path="/Dashboard01/Profie" render={()=><ProgresBar/>} /> */}
                       <Route  path="/Profile" component={Profile}/>
                       
       <Route exact path="/Confirm" render={()=><Confirm/>} />
@@ -132,6 +137,7 @@ const Test05 =(Sexe , Date  ,Adress , Ville , Pays )=>{
       <Route exact path="/Login02" render={()=><Register02 Test05={Test05} Bloena02={Bloena02} Test04={Test04} setLengthBolen={setLengthBolen} LengthBolen={LengthBolen}  Bloena={Bloena} Test03={Test03}/>}/>
       <Route exact path="/Favoire" render={()=><Register4/>}/>
       <Route exact path="/Check/:token" render={({match})=><Check match={match.params.token}/>}/>
+      
       </BrowserRouter>
       
     </div>

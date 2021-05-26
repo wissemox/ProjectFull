@@ -10,9 +10,10 @@ import {GetUserRefresh} from '../js/actions/authActions'
 import {useDispatch,useSelector} from 'react-redux'
 import Modal from './Modal'
 import {PostProduc} from '../js/actions/authActions'
-
+import {useSpring , animated} from 'react-spring'
 import './User02.css'
 import { Redirect } from 'react-router'
+import { Link } from 'react-router-dom'
 const User02 = () => {
     const token = localStorage.getItem('tokens')
    
@@ -30,7 +31,23 @@ const User02 = () => {
     var aValue01 =JSON.parse( localStorage.getItem('Catgory01'))
     const[togel ,setTogel]=useState(false)
     const[Inputd ,setInputd]=useState("")
-    const Presntage =  JSON.parse(localStorage.getItem("Verfaction"));
+    const Presntage =  JSON.parse(localStorage.getItem("profile_pourcentage"));
+    const[testsd,settesfa]=useState('1')
+    const Testla =useSpring({
+        from:{
+            
+         
+            width:"120px",
+         
+            
+        }, 
+        to:{
+       
+            width:`${Presntage}px`,
+          
+            
+        }
+    })
     const [Product , setProduct ]=useState([{
         Rate:4,
         name:"Samsung",
@@ -142,8 +159,8 @@ const User02 = () => {
         if(!Token){
       return <Redirect to="/"/>
      }
-        
-       
+      
+       const imgUrl=require(`../../../backend/images/${testsd}.png`)
     return (
         
         <div data-Aos="fade-up" >
@@ -156,10 +173,12 @@ const User02 = () => {
                
                 
                 <div className="NameProfile">
+                <Link to="/Dashboard01/profile">
                 <div >
                 <img src="Wissemabid.png"/>
                 </div>
-                <p>Wissem abid</p>
+                </Link>
+               <p>Wissem abid</p>
                
                 </div>
                 <div className="Button6">
@@ -168,9 +187,9 @@ const User02 = () => {
             </div>
             <div data-Aos="fade-up" className="BackImageUr">
             {console.log(aValue01)}
-            <div style={{width:Presntage===60&&"1000px" || Presntage===70 && "1300px"}} className="BackGround02">
+            <animated.div style={{width:Presntage===60&&"1000px" || Presntage===90 && "1300px"}} className="BackGround02">
             <p >{Presntage}</p>
-            </div>
+            </animated.div>
          
             {console.log(togel)}
             <div data-Aos="fade-up" className="Input05"> 
@@ -211,6 +230,8 @@ const User02 = () => {
                   {Product.slice(3).map((el)=><Product03Map el={el}/>)}
                   </div>
                   <Modal />
+                 
+                    <img src={'../../../backend/images/1.png'}/>
             
           </div>
           <div className="FlexNumber">
@@ -277,7 +298,7 @@ const User02 = () => {
            
             </div>
             <div className="Flash8">
-            <img src="Flash03.png"/>
+       
             </div>
             </div>
         </div>

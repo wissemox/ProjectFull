@@ -209,3 +209,11 @@
 .Imageoda {
   background-color: red;
 }
+.Morgana{
+  background-color: #2F8FD0;
+  font-size: 5px;
+  color:#2F8FD0 ;
+  border-radius: 20px;
+  position: absolute;
+  margin-left: 160px;
+}

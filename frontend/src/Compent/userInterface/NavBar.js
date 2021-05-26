@@ -19,11 +19,7 @@ const NavBar = ({Img}) => {
                         <input/>
                     </div>
                     <div  data-Aos="fade-up" className="User">
-                        <div data-Aos="fade-up">
-                            <img data-Aos="fade-up" src="Wissemabid.png"/> 
                         
-                        </div>
-                        <p>wissem abid</p>
                     </div>
                 </div>
                 

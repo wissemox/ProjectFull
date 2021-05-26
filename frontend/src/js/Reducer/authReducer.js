@@ -35,6 +35,7 @@ const authReducer =(state=initialState , {type , payload}) =>{
             }
             case  REGISTER_USER:
                 localStorage.setItem('token',payload.token)
+                localStorage.setItem('profile_pourcentage',payload.data.profile_pourcentage)
                 return{
                     ...state, 
                     isLoading:false, 

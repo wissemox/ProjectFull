@@ -27,18 +27,18 @@ const User = () => {
                <div className="FlexBoxInreface">
                    <div>
                    
-                   <Route exact path="/Dashboard" render={()=><UserInerface01/>}></Route>  
+                   <Route exact path="/Dashboard01/profile" render={()=><UserInerface01/>}></Route>  
                    </div>
                    <div>
-                   <Route exact path="/Dashboard" render={()=>   <Profile/>}></Route>  
+                   <Route exact path="/Dashboard01/profile" render={()=>   <Profile/>}></Route>  
                    
                     <div>
-                    <Route exact path="/Dashboard" render={()=>   <Leder/>}></Route>  
+                    <Route exact path="/Dashboard01/profile" render={()=>   <Leder/>}></Route>  
                   
                     </div>
                    </div>
                   
-                   <Route exact path="/Dashboard/p" render={()=> <Profile01/>}></Route>  
+                   <Route exact path="/Dashboard01/profile/updateProfile" render={()=> <Profile01/>}></Route>  
                </div>
             </div>
        

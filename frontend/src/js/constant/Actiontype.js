@@ -9,3 +9,5 @@ export const GET_AUTH_USER02='GET_AUTH_USER';
 export const GETALLCOMMUNTE='GETALLCOMUNTE'
 export const ADDPRDUCT='ADDPRDUCT'
 export const ErroreProduct='ErroreProduct'
+export const PRODUCT_LIST='PRODUCT_LIST'
+export const DELETEPRODUCT="DELETEPRODUCT"

@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import {PostProduc} from '../../src/js/actions/authActions'
+import {UpdateProduct} from '../../src/js/actions/authActions'
 import {useDispatch , useSelector} from 'react-redux'
-const ModalExample = () => {
+const ModalExample02 = ({el}) => {
  
   const dispatch = useDispatch()
   const [modal, setModal] = useState(false);
@@ -11,7 +11,6 @@ const ModalExample = () => {
   const Producteerors = useSelector(state => state.Prodctadd)
   const[name , setnAME]=useState()
   const[prix , setPrix]=useState()
-   
   const[prix_en_euros , setprix_en_euros]=useState()
   const[categorie , setcategorie]=useState()
   const[pernome , setPrenmone]=useState({Name:"wissem"})
@@ -23,28 +22,22 @@ const ModalExample = () => {
   const[fonctionnel ,setfonctionnel]=useState()
   const[description ,setdescription]=useState()
   const toggle = () => setModal(!modal);
-  var formData = new FormData()
+    const UpdateProduc01=()=>{
+        dispatch(UpdateProduct(el.slug,{nom:name ,modele:modele, prix_en_euros:prix_en_euros , categorie:1,marque:marque,version:version,
+            critere:"A",sous_categorie:1, fonctionnel:"Yes" , description:description}))
+    }
+   
+
+  
   // formData.append('file' , file)
  
-  formData.append('images', file);
-  formData.append('data',JSON. stringify({nom:name,
-  prix_en_euros:prix_en_euros,
-  categorie:categorie,
-  marque:marque,modele:"KUHN HRB 303",
-  version:"2019",
-  critere:"A",
-  sous_categorie:1,
-  fonctionnel:"Yes",
-  description:description}))
-  const ADDpRODUCT=()=>{
-    dispatch(PostProduc(formData))
-  }
+  
   
   const externalCloseBtn = <button className="close" style={{ position: 'absolute', top: '15px', right: '15px' }} onClick={toggle}>&times;</button>;
   
   return (
     <div>
-      <Button color="danger" onClick={toggle}>Add</Button>
+      <Button color="danger" onClick={toggle}>Update</Button>
       <Modal isOpen={modal} toggle={toggle}  external={externalCloseBtn}>
         
         <ModalHeader><p>{Producteerors&&Producteerors.categorie}</p> 
@@ -79,12 +72,12 @@ const ModalExample = () => {
          typeof 
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={ADDpRODUCT} >Do Something</Button>{' '}
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
+          <Button color="primary" onClick={UpdateProduc01}  >Update</Button>{' '}
+          <Button color="secondary" >Cancel</Button>
         </ModalFooter>
       </Modal>
     </div>
   );
 }
 
-export default ModalExample;
+export default ModalExample02;

@@ -1,0 +1,11 @@
+.WITHCARD{
+    margin-left: 50px;
+    width: 300px;
+}
+.DisplaydFlex{
+    display: flex;
+}
+.ButtonDisplayFlex{
+display: flex;
+margin-left: 50px;
+}

@@ -9,8 +9,9 @@ import {USER_LOADING,
     GET_AUTH_USER02,
     GETALLCOMMUNTE,
     ADDPRDUCT,
-    ErroreProduct
-    
+    ErroreProduct,
+    PRODUCT_LIST,
+    DELETEPRODUCT
 } from '../constant/Actiontype'
 
 
@@ -121,6 +122,69 @@ export const ResetPassword01=(email , token)=>async dispatch=>{
       })
     }
  } 
+
+ export const ProductList=()=>async dispatch=>{
+   try{
+      const config = {
+         headers: {
+           'Authorization': 'Bearer ' + localStorage.getItem('tokenacces')
+         }
+       }
+      const res = await axios.get(`/produit`,config)
+       dispatch({
+          type: PRODUCT_LIST ,
+           payload: res.data
+        })
+    }catch(error){
+        console.log(error)
+    }
+ }
+
+
+
+ //Delete 
+ export const DeleteProduct=(formDasta)=>async dispatch=>{
+   try{
+      const config = {
+         headers: {
+           'Authorization': 'Bearer ' + localStorage.getItem('tokenacces')
+         }
+       }
+       const res = await axios.delete(`/produitdelete/${formDasta}`,config)
+       dispatch(ProductList())
+    }catch(error){
+         
+      console.dir(error)
+     
+    }
+ } 
+
+
+ export const UpdateProduct=(slug,formData)=>async dispatch=>{
+   try{
+      const config = {
+         headers: {
+           'Authorization': 'Bearer ' + localStorage.getItem('tokenacces')
+         }
+       }
+       const res = await axios.put(`/produitupdate/${slug}`,formData,config)
+       dispatch(ProductList())
+    }catch(error){
+         
+      console.dir(error)
+     
+    }
+ } 
+//  export const DeleteProduct = (formDasta)=>(dispatch)=>{
+//    const config = {
+//       headers: {
+//         'Authorization': 'Bearer ' + localStorage.getItem('tokenacces')
+//       }
+//     }
+//    axios.put(`/produitdelete/${formDasta}`,config)
+//    .then(res => dispatch(ProductList()))
+//    .catch(err=>console.log(err))
+//  }
 // export const getAuthUser=()=>async dispatch=>{ 
 //     try{
 //         const Config = {headers:{'x-auth-token':localStorage.getItem('token')}}

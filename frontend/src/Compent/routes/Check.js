@@ -13,9 +13,9 @@ const Check = ({match}) => {
             <SvgComponent className="Ratironaz"/>
             </div>
             
-            <p>THNKS FOR JOINIG</p>
+            <p>MERCI POUR JOINIG</p>
             <div className="Yourregstersuscful">
-            <h2>Your registration is complete</h2>
+            <h2> Votre inscription est validée</h2>
             <p>{match}</p>
             </div>
             <Counter/>
