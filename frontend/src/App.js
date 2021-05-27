@@ -52,6 +52,12 @@ const Test04 =(NomCommunauté , Secture ,siret ,  nomentreprizde )=>{
   }
 
 }
+const Prevlise =( )=>{
+
+    setBolen02(false)
+  
+
+}
 const Test05 =(Sexe , Date  ,Adress , Ville , Pays )=>{
   if(Sexe&&Date&&Adress&&Ville&&Pays){
     setBolen03(true)
@@ -109,7 +115,7 @@ const Test05 =(Sexe , Date  ,Adress , Ville , Pays )=>{
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
       <BrowserRouter>
       <Route exact path="/login" render={()=><Login/>}></Route>
-      <Route exact path="/register" render={()=><Register Verfaction02={Verfaction02} Verf0action={Verf0action} Verfaction1={Verfaction1} Test={Test} Bloena={Bloena} Step2d={Step2d} Step2={Step2} Step3d={Step3d} Step3={Step3} />}></Route>
+      <Route exact path="/register" render={()=><Register Verfaction02={Verfaction02} Verf0action={Verf0action} Verfaction1={Verfaction1} Test={Test} Bloena={Bloena} Step2d={Step2d} Step2={Step2} Step3d={Step3d} Step3={Step3} setBolen02={setBolen02} />}></Route>
       {/* <Route exact path="/register/1" render={()=><Register Test={Test} Bloena={Bloena} />}></Route> */}
     
       <Route  exact path="/" render={()=> <Home/> } /> 
@@ -134,7 +140,7 @@ const Test05 =(Sexe , Date  ,Adress , Ville , Pays )=>{
                       
       <Route exact path="/Confirm" render={()=><Confirm/>} />
       <Route exact path="/Confirm" render={()=><Confirm/>} />
-      <Route exact path="/Login02" render={()=><Register02 Test05={Test05} Bloena02={Bloena02} Test04={Test04} setLengthBolen={setLengthBolen} LengthBolen={LengthBolen}  Bloena={Bloena} Test03={Test03}/>}/>
+      <Route exact path="/Login02" render={()=><Register02  Prevlise={Prevlise} setBolen={setBolen} Test05={Test05} Bloena02={Bloena02} Test04={Test04} setLengthBolen={setLengthBolen} LengthBolen={LengthBolen}  Bloena={Bloena} Test03={Test03}/>}/>
       <Route exact path="/Favoire" render={()=><Register4/>}/>
       <Route exact path="/Check/:token" render={({match})=><Check match={match.params.token}/>}/>
       

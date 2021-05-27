@@ -6,7 +6,7 @@ import {registerUser} from '../../js/actions/authActions'
 import { Redirect } from 'react-router'
 import ModalChange from './ModalChange'
 import ModalChangeUsername from './ModalUsername'
-const Register02Check3 = ({Test05}) => {
+const Register02Check3 = ({Test05,setBolen02,Prevlise}) => {
  const email =JSON.parse(localStorage.getItem('Email')) 
  const Prenom =JSON.parse(localStorage.getItem('Prenom')) 
  const name =JSON.parse(localStorage.getItem('name')) 
@@ -29,7 +29,7 @@ const Register02Check3 = ({Test05}) => {
         Test05(Sexe,adresse,pays,ville,DateNaissance)
         dispatch(registerUser({ prenom:Prenom,email:email, adresse:adresse ,tel:"string",pays:pays,ville:pays,nom:"string",code_postal:150, username:name,password:password , role:role ,nom_communaute:Nomcommunauté,sexe:Sexe,date_naissance:DateNaissance}))
     }
-
+   
     return (
         
         <>
@@ -45,9 +45,9 @@ const Register02Check3 = ({Test05}) => {
                         <div data-Aos="fade-left" >
                         <div className="Butadw">
                        <div className="Butadw02">
-               {errors&&errors.email ? <ModalChange/> : null}
+              
                </div>
-               {errors&&errors.username ? <ModalChangeUsername/> : null}
+               
                </div>
                             {/* Verfaction here */}
                             <div data-Aos="fade-up" className="ErroreDesign">
@@ -89,8 +89,10 @@ const Register02Check3 = ({Test05}) => {
                         </div>
                     </div>
                     
-                <div className="Daz">
-                   <button  onClick={RegisterUser} >NEXT</button>
+                <div className="FlexBox">
+                    <button onClick={Prevlise} className="Precedent2">Precedent</button>
+                   <button className="Suivant"  onClick={RegisterUser} >Suivant</button>
+                  
                 </div>
                     <div className="Accomplid">
                     <span>70% Accompli..</span>

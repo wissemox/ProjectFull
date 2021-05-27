@@ -1,3 +1,4 @@
+
 .MainFlexBox {
   display: flex;
   margin-left: 5%;
@@ -218,6 +219,7 @@ height: 80px;
 
 .MainFlexBox02 {
   height: 700px;
+  width: 100%;
 }
 
 .Input5 input {

@@ -3,16 +3,19 @@ import Register02Check2 from './Register02Check2'
 import './login.css'
 import Aos from 'aos'
 import "aos/dist/aos.css"
-const Register02 = ({Test05,Test04,Test03 , Bloena  , LengthBolen , setLengthBolen,Bloena02}) => {
+const Register02 = ({setBolen,Prevlise,Test05,Test04,Test03  ,setBolen02, Bloena  , LengthBolen , setLengthBolen,Bloena02}) => {
     useEffect(() => {
+        console.log('wissem')
+     
         Aos.init({duration: 2000});
       }, [])
-      const [Bolen , setBolen]=useState(false)
+      const [Bolen , setBolen01A]=useState(false)
       const [Input01 , setinput02]=useState(false)
       const [Input02 , setinput03]=useState(false)
       const [Input03 , setinput04]=useState(false)
       const [Input04 , setinput05]=useState(false)
       const [Input05 , setinput06]=useState(false)
+      {console.log(Bloena)}
       const [ConfirmPassword02 , setConfirm02]=useState(false)
       const [EmailConfirm , setConfirmEmail]=useState(false)
       const [Nom , setNom]=useState("")
@@ -25,7 +28,7 @@ const Register02 = ({Test05,Test04,Test03 , Bloena  , LengthBolen , setLengthBol
          localStorage.setItem("Prenom",  JSON.stringify(Prenom));
          localStorage.setItem("Email",  JSON.stringify(Email));
          localStorage.setItem("password",  JSON.stringify(password));
-         setBolen(!Bolen)
+         setBolen01A(!Bolen)
       }
      
       const Verfaction =()=>{
@@ -85,7 +88,7 @@ const Register02 = ({Test05,Test04,Test03 , Bloena  , LengthBolen , setLengthBol
         <>
         {console.log(LengthBolen)}
        
-        {Bloena?<Register02Check2 Test05={Test05} Bloena02={Bloena02} Test04={Test04}/> :  <div  className="DisplayFlex2">
+        {Bloena?<Register02Check2 Prevlise={Prevlise} setBolen02={setBolen02} Bloena={Bloena} setBolen={setBolen} Test05={Test05} Bloena02={Bloena02} Test04={Test04}/> :  <div  className="DisplayFlex2">
            <div data-Aos="fade" className="BakGroundLogin02">
                <div className="Inspation">
                     <div className="Inscripation">
@@ -123,8 +126,9 @@ const Register02 = ({Test05,Test04,Test03 , Bloena  , LengthBolen , setLengthBol
                             <button/>
                         </div>
                     </div>
-                <div className="Daz">
-                   <button onClick={Verfaction}>NEXT</button>
+                <div className="FlexBox" >
+                <button style={{cursor:"no-drop"}} className="Prescedent">Precedent</button>
+                   <button  className="Suivant" onClick={Verfaction}>Suivant</button>
                   
                 </div>
                     <div className="Accompli">

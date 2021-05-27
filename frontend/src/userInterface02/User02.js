@@ -150,6 +150,10 @@ const User02 = () => {
     const[logout , setLogout]=useState(false)
     const Togel =()=>{
         localStorage.removeItem('tokens')
+        localStorage.removeItem('Siret')
+        localStorage.removeItem('Prenom')
+        localStorage.removeItem('Nomcommunauté')
+        localStorage.removeItem('tokenacces')
         setLogout(true)
 
     }
@@ -196,19 +200,19 @@ const User02 = () => {
             {/* Corbel */}
         
             <div data-Aos="fade-up" className="FlexBox5">
-               <div data-Aos="fade-up" className="FlexBox">
-                   {togel ? <div data-Aos="fade-up" className="Fadwa">
+               <div data-Aos="fade-up" className="FlexBox00">
+               {togel ? <div data-Aos="fade-up" className="Fadwa">
                    
-                        <input value={Inputd} onChange={(e)=>setInputd(e.target.value)} data-Aos="fade-up"/> 
-                        {console.log(Inputd)}
-                       </div> :<div  className="Fada"> <p data-Aos="fade-up" onClick={FilterHightTech}>Hight-tech</p>
-                <p onClick={FilterSamrtphone} data-Aos="fade-up">Smartphone</p> 
-                   <p data-Aos="fade-up">Ville</p>
-                   <p data-Aos="fade-up">Prix en binz</p>
-                   {console.log(token)}
-                   <p data-Aos="fade-up">Rating user</p>
-                   <p  data-Aos="fade-up"> Caracretstique</p>
-                   </div> }
+                   <input value={Inputd} onChange={(e)=>setInputd(e.target.value)} data-Aos="fade-up"/> 
+                   {console.log(Inputd)}
+                  </div> :<div  className="Fada"> <p data-Aos="fade-up" onClick={FilterHightTech}>Hight-tech</p>
+           <p onClick={FilterSamrtphone} data-Aos="fade-up">Smartphone</p> 
+              <p data-Aos="fade-up">Ville</p>
+              <p data-Aos="fade-up">Prix en binz</p>
+              {console.log(token)}
+              <p data-Aos="fade-up">Rating user</p>
+              <p  data-Aos="fade-up"> Caracretstique</p>
+              </div> }
 
                
                    <img data-Aos="fade-right" onClick={()=>setTogel(!togel)} src="Reserche.png" />

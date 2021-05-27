@@ -127,7 +127,7 @@ const Producdt = () => {
             {/* Corbel */}
         
             <div data-Aos="fade-up" className="FlexBox5">
-               <div data-Aos="fade-up" className="FlexBox">
+               <div data-Aos="fade-up" className="FlexBox00">
                    {togel ? <div data-Aos="fade-up" className="Fadwa">
                         <input value={Inputd} onChange={(e)=>setInputd(e.target.value)} data-Aos="fade-up"/> 
                         {console.log(Inputd)}

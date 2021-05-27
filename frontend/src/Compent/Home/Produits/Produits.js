@@ -1,10 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import './Produits.css'
 import Produitsmap from './Produitsmap'
+import {useDispatch} from 'react-redux'
 
 import Aos from 'aos'
 import "aos/dist/aos.css"
 const Produits = () => {
+    const dispatch=useDispatch()
     useEffect(() => {
         Aos.init({duration: 2000});
       }, [])

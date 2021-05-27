@@ -5,7 +5,7 @@
 .DisplayFlex2{
     background-color: rgb(231, 231, 231);
     height: 720px;
-    width: 1540px;
+    width: 100%;
     display: flex;
     background-image: url('BackGroundImage5.gif');
 }
@@ -396,3 +396,30 @@
       }
   }
   /* Animation */
+
+.FlexBox{
+    margin-left: 53%;
+    margin-top: 20px;
+}
+.Prescedent{
+   
+    border: none;
+    background-color: #A5A5A5;
+    color: white;
+    border-radius: 30px;
+    font-size: 12px;
+    height: 20px;
+    width: 100px;
+}
+
+
+.Suivant{
+    border: none;
+    background-color: #BF1822;
+    color: white;
+    border-radius: 30px;
+    font-size: 12px;
+    height: 20px;
+    width: 100px;
+    margin-left: 25px;
+}

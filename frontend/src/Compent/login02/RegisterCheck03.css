@@ -2,7 +2,7 @@
     display: flex;
     background-image: url('BackGround03.gif');
     height: 720px;
-    width: 1540px;
+    width: 100%;
 }
 .Date5 input{
     text-align: center;

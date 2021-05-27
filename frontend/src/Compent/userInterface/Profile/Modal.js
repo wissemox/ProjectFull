@@ -19,6 +19,7 @@ const Clicked =()=>{
   localStorage.setItem('Upload', JSON.stringify(file.name))
  setModal(!modal);
 }
+
   const externalCloseBtn = <button className="close" style={{ position: 'absolute', top: '15px', right: '15px' }} onClick={toggle}>&times;</button>;
   return (
     <div>
