@@ -14,7 +14,7 @@ const Commentcamarche = () => {
             </Box>
             <Box className="mt-150">
                 <Box className="flex h-1 ml-11p mb-20 justify-items-center">
-                    <MenuIcon className="mr-400" style={{fontSize:"50px" , color:"#EF797B"}}/>
+                    <MenuIcon    className="mr-400" style={{fontSize:"50px" , color:"#EF797B"}}/>
                     <VerifiedUserIcon  className="mr-400" style={{fontSize:"50px", color:"#EF797B"}}/>
                     <ExitToAppIcon  className="mr-400" style={{fontSize:"50px", color:"#EF797B"}}/>
                     
@@ -23,11 +23,16 @@ const Commentcamarche = () => {
                 {/* Title */}
                 
             </Box>
-            <Box  className="mt-20  flex text-sm NavBarResposive ">
-                
-                <p  className="w-400 text-lg font-medium	" >Qu'est ce qui vous fait plaisir ?</p>
-                <p  className="ml-28 w-400 text-lg font-medium	">Validez un proposition</p>
-                <p  className="ml-10 w-400 text-lg font-medium	">Debarrssez-vous des produits qui ne vous servent a rien !</p>
+            <Box   className="mt-20 ml-5  flex text-sm NavBarResposive 	 ">
+                <Box  className="text-lg w-600 font-medium font-bold mr-20  	">
+                <p>Qu'est ce qui vous fait plaisir ?</p>
+                </Box>
+                <Box  className="mr-20  w-500   ml-40 text-lg font-medium font-bold	 	">
+                <p  >Validez un proposition</p>
+                </Box>
+                <Box  className="text-lg font-medium font-bold text-center	 ">
+                <p>Debarrssez-vous des produits qui ne vous servent a rien !</p>
+                </Box>
             </Box>
         </Container>
     )
