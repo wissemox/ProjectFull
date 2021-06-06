@@ -1,0 +1,218 @@
+/* ml-20 */
+/* NavBar */
+@media screen and (max-width: 1400px){
+    .ml-20{
+        -webkit-transition: 2s;
+
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .ml-20{
+        -webkit-transition: 2s;
+        
+        margin-left: 80px;
+    }
+    .text-sm{
+        -webkit-transition: 2s;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .ml-20{
+        -webkit-transition: 2s;
+        
+        margin-left: 80px;
+    }
+    .text-sm{
+        
+        -webkit-transition: 2s;
+        font-size: 10px;
+        width: 900px;
+    }
+    .ml-40 {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .ml-20{
+        -webkit-transition: 2s;
+        
+        margin-left: 80px;
+    }
+    .text-sm{
+        
+        -webkit-transition: 2s;
+        font-size: 10px;
+        width: 1200px;
+    }
+    .ml-40 {
+        -webkit-transition: 2s;
+        margin-left: 40px;
+    }
+    .imgResposive{
+        -webkit-transition: 2s;
+        margin-bottom: 20px;
+        width: 150px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .ml-20{
+        -webkit-transition: 2s;
+        
+        margin-left: 30px;
+    }
+    .text-sm{
+        
+        -webkit-transition: 2s;
+        font-size: 10px;
+        width: 1200px;
+    }
+    .ml-40 {
+        -webkit-transition: 2s;
+        margin-left: 40px;
+    }
+    .imgResposive{
+        -webkit-transition: 2s;
+        margin-bottom: 20px;
+        width: 150px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 950px){
+    .ml-20{
+        -webkit-transition: 2s;
+        
+        margin-left:20px;
+    }
+    .text-sm{
+        
+        -webkit-transition: 2s;
+        font-size: 10px;
+        width: 1200px;
+    }
+    .ml-40 {
+        -webkit-transition: 2s;
+        margin-left: 10px;
+    }
+    .imgResposive{
+        -webkit-transition: 2s;
+        margin-bottom: 20px;
+        width: 150px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 900px){
+   .MenuResposive{
+       display: block;
+   }
+   .NavBarResposive{
+    display:none;
+   }
+}
+
+/* Main */
+/* text-5xl */
+@media screen and (max-width: 1400px){
+    .mt-180{
+        -webkit-transition: 2s;
+        margin-top: 140px;
+    }
+    .ml-11p{
+        -webkit-transition: 2s;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .mt-180{
+        -webkit-transition: 2s;
+        margin-top: 50px;
+    }
+    .text-5xl{
+        -webkit-transition: 2s;
+        font-size: 40px;
+    }
+    .w-1100{
+        -webkit-transition: 2s;
+        width: 900px;
+    }
+    .ml-11p{
+        -webkit-transition: 2s;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .text-5xl{
+        -webkit-transition: 2s;
+        font-size: 35px;
+    }
+    .w-1100{
+        -webkit-transition: 2s;
+        width: 800px;
+    }
+    .mr-400{
+        margin-right: 350px;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    .text-5xl{
+        -webkit-transition: 2s;
+        font-size: 30px;
+    }
+    .w-1100{
+        -webkit-transition: 2s;
+        width: 700px;
+    }
+    .mr-400{
+        -webkit-transition: 2s;
+        margin-right: 300px;
+    }
+}
+@media screen and (max-width: 800px){
+    .text-5xl{
+        -webkit-transition: 2s;
+        font-size: 25px;
+    }
+    .w-1100{
+        -webkit-transition: 2s;
+        width: 500px;
+    }
+    .mr-400{
+        -webkit-transition: 2s;
+        margin-right: 250px;
+    }
+}
+@media screen and (max-width: 700px){
+    .text-5xl{
+        -webkit-transition: 2s;
+        font-size: 25px;
+    }
+    .w-1100{
+        -webkit-transition: 2s;
+        width: 400px;
+    }
+    .ml-41p{
+        margin-left: 30%;
+    }
+    .ml-36p{
+        margin-left: 20%;
+    }
+    .mr-400{
+        -webkit-transition: 2s;
+        margin-right: 200px;
+    }
+}
+@media screen and (max-width: 600px){
+   .ml-48{
+       margin-left: 140px;
+   }
+   .mr-400{
+    -webkit-transition: 2s;
+    margin-right: 120px;
+}
+.ml-11p{
+    margin-left: 50px;
+}
+}

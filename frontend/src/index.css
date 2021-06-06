@@ -1,13 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.FontLogo{
+  font-family: 'Montserrat';
+}
+.displayflex{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* FonSize */
+.f-12{
+  font-size: 12px;
+}
+.f-18{
+  font-size: 18px;
+}
+
+/* Color */
+.colorBplue{
+  color: #3E6993;
+}
+.colorBlue{
+  color: #1C335B;
+}
+.colorRed{
+  color: #B90D1E;
+}
+.bg-Bluegr{
+  background-image: linear-gradient(315deg, #1B2E4F 0%, #5693CE 74%);
+}
+.bg-red{
+  background-color: #B90D1E;
+}
+.bg-blue{
+  background-color: #2460A5;
+}
+.bg-blues{
+  background-color: #012A54;
+}
+.bg-gris{
+  background-color: #E7E6E6;
+}
+.bg-Disbaled{
+  background-color: #A5A5A5;
+  cursor: no-drop;
+}
+.bg-bluelow{
+  background-color: #C4D6EC;
+}
+.bg-bluelow2{
+  background-color: #5693CE;
+}
+
+/* Box Shadow */
+.Box-Shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }

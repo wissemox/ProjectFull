@@ -1,0 +1,23 @@
+.Animationlogo{
+    animation:Animationlogo 1s  ;
+}
+
+@keyframes Animationlogo{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .Animationlogo02{
+    animation:Animationlogo02 3s infinite ;
+}
+@keyframes Animationlogo02{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(320deg);
+    }
+  }

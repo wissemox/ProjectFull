@@ -1,0 +1,220 @@
+/* .ml-350{
+    
+} */
+/*  mr-40
+ */
+
+ @media screen and (max-width: 1400px) {
+    .ml-350{
+        
+        -webkit-transition: 2s;
+    margin-left: 400px;
+    
+    } 
+    .TextRespsive{
+        font-size: 10px;
+    }
+   .mr-40{
+    -webkit-transition: 2s;
+       margin-right: 100px;
+   }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 300px;
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+
+  }
+
+  
+  @media screen and (max-width: 1200px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 220px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 230px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 250px;
+    }
+    .mr-40{
+        -webkit-transition: 2s;
+        margin-right: 80px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 230px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 250px;
+    }
+    .mr-40{
+        -webkit-transition: 2s;
+        margin-right: 80px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .ml-350{
+        -webkit-transition: 2s;
+   
+    margin-left: 230px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 230px;
+    }
+    .mr-40{
+        -webkit-transition: 2s;
+        margin-right: 40px;
+    }
+    .Resposive{
+        -webkit-transition: 2s;
+        margin-left: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 180px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 180px;
+    }
+    .mr-40{
+        -webkit-transition: 2s;
+        margin-right: 40px;
+    }
+    .Resposive{
+        -webkit-transition: 2s;
+        margin-left: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 150px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 180px;
+    }
+    .mr-40{
+        -webkit-transition: 2s;
+        margin-right: 40px;
+    }
+    .Resposive{
+        -webkit-transition: 2s;
+        margin-left: 180px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 150px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 180px;
+    }
+    .mr-40{
+        -webkit-transition: 2s;
+        margin-right: 20px;
+    }
+    .ml-35p{
+        margin-left: 22%;
+    }
+    .Resposive{
+        -webkit-transition: 2s;
+        margin-left: 150px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .ml-350{
+        -webkit-transition: 2s;
+    margin-left: 50px;
+    
+   
+    } 
+    .ResponsiveMargin{
+        -webkit-transition: 2s;
+        width: 80px;
+    }
+    .ml-80{
+        -webkit-transition: 2s;
+        margin-left: 100px;
+    }
+    .mr-40{
+        -webkit-transition: 2s;
+        margin-right: 20px;
+    }
+    .Resposive{
+        -webkit-transition: 2s;
+        margin-left: 80px;
+    }
+  }

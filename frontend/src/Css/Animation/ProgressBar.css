@@ -1,0 +1,18 @@
+.AnimationProgresBar{
+    -webkit-transition: 2s;
+    animation: AnimationProgresBar 3s;
+}
+@keyframes AnimationProgresBar {
+   0%{
+       width: 50px;
+   }
+  }
+.bluelow2{
+    animation: BackGroun 5s;
+}
+@keyframes BackGroun {
+    0%{
+       background-color: white;
+    }
+   }
+   
