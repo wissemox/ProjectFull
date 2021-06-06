@@ -189,6 +189,9 @@
 .ml-8p{
     margin-left: 30%;
 }
+.ml-10p{
+    margin-left: 10%;
+}
 .ml-3p{
     margin-left: 3%;
 }
@@ -197,4 +200,7 @@
 }
 .ml-70{
     margin-left: 70px;
+}
+.mt-20p{
+    margin-top: 20%;
 }
