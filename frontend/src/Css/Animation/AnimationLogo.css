@@ -1,6 +1,9 @@
 .Animationlogo{
     animation:Animationlogo 1s  ;
 }
+.Tesf{
+  animation: Test 3s;
+}
 
 @keyframes Animationlogo{
     from {
@@ -21,3 +24,5 @@
       transform: rotate(320deg);
     }
   }
+
+  

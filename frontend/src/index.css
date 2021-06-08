@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,6 +25,9 @@ code {
 /* FonSize */
 .f-12{
   font-size: 12px;
+}
+.f-14{
+  font-size: 14px;
 }
 .f-18{
   font-size: 18px;
@@ -64,6 +68,9 @@ code {
 .bg-bluelow2{
   background-color: #5693CE;
 }
+.color-r{
+  color: #F1898C;
+}
 
 /* Box Shadow */
 .Box-Shadow{
@@ -72,4 +79,9 @@ code {
 }
 .text-smp20{
   font-size: 80%;
+}
+.bg-Hover:hover{
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  -webkit-transition: 2s;
 }

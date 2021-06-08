@@ -1,0 +1,16 @@
+
+.AnimaionNavbar{
+    animation: AnimaionNavbar 1s;
+  }
+  
+  @keyframes AnimaionNavbar{
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .Animationlogo02{
+      animation:Animationlogo02 3s infinite ;
+  }

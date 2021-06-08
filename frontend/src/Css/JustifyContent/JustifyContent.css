@@ -1,0 +1,9 @@
+.flex-left{
+    justify-content: left;
+}
+.flex-center{
+    justify-content: center;
+}
+.flex-right{
+    justify-content: right;
+}
