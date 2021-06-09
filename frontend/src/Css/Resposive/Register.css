@@ -167,6 +167,11 @@
   }
   
   @media screen and (max-width: 700px) {
+    .Inscipation{
+        -webkit-transition: 2s;
+       padding-left: 50px;
+       
+    }
     .ml-350{
         -webkit-transition: 2s;
     margin-left: 150px;
@@ -195,6 +200,11 @@
   }
 
   @media screen and (max-width: 600px) {
+
+    .Inscipation{
+        -webkit-transition: 2s;
+       padding-left: 40px;
+    }
     .ml-350{
         -webkit-transition: 2s;
     margin-left: 50px;

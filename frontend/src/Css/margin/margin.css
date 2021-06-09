@@ -170,6 +170,11 @@
     margin-left: 36%;
 
 }
+.ml-80p{
+    -webkit-transition: 2s;
+    margin-left: 80%;
+
+}
 .mr-40{
     margin-right: 40px;
 }

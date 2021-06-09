@@ -85,3 +85,20 @@ code {
   border-radius: 5px;
   -webkit-transition: 2s;
 }
+.HoverBackGround{
+
+  width: 100%;
+}
+.HoverBackGround:hover{
+  -webkit-transition: 1s;
+
+  background-color: #F1898C;
+  width: 500px;
+  width: 100%;
+  color: white;
+  
+}
+.Sticky{
+  position: fixed;
+  top: 0;
+}

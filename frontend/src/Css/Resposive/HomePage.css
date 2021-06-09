@@ -36,8 +36,8 @@
     }
     .ml-20{
         -webkit-transition: 2s;
-
-        margin-left: 20px;
+      
+        margin-left: 6%;
     }
     .ml-33p{
         -webkit-transition: 2s;
@@ -130,7 +130,7 @@
     }
     .ml-20{
         -webkit-transition: 2s;
-        
+      
         margin-left: 80px;
     }
     .text-sm{

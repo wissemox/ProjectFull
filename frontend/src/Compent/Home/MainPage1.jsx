@@ -31,7 +31,7 @@ const MainPage = () => {
            
                 {/* NavBar */}
                    <AppBar data-aos="fade" style={{backgroundColor:"transparent",boxShadow:"none"}} position={`${Scroll&&"fixed"}`} className={`${Scroll && "AnimaiionNavbarSticky"} ${Scroll && "bg-white"}  `}>
-                        <Box data-aos="fade-up-right" className="flex  ml-20 pt-10 flex-center  ">
+                    {!Menu && <>  <Box data-aos="fade" className="flex  ml-20 pt-10 flex-center  ">
                         <Box>
                         {!Scroll ?     <img  className="w-190 imgResposive"   src="Binpactwhite.png"/> :  <img  className="w-190 imgResposive"   src="binpact002.png"/>}
                         </Box>
@@ -50,43 +50,61 @@ const MainPage = () => {
                   
                      
                         </Box> 
-                        </Box>
+                        </Box> 
+                        </>}  
+                  
 
-                   
-                     
+                       
+                        {Menu&&
+                         <AppBar  boxShadow={5} position="fixed"  className={`bg-gray-100 bg-white  ${Menu && "AnimaiionNavbarSticky"} `} >
+                                <Box className="flex flex-center mt-2">
+                                <Box className="wp-50 mt-1 ml-4">
+                                <img className="w-190 imgResposive" src="binpact002.png"/>
+                                </Box>
+                                <Box className="wp-50 mt-4" >
+                                <MenuIcon onClick={()=>setMenud(!Menu)} style={{marginLeft:"80%"}} className={`text-gray-500`}/>
+                                </Box>
+                                
+
+
+                                </Box>
+                                <Box  className={`text-gray-500  h-400 `}>
+                                    <Box  className="pb-10 font-semibold text-l py-4 HoverBackGround pl-5 ">
+                                        <Typography variant="p">Acceuil</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5 py-4 HoverBackGround	">
+                                        <Typography variant="p">Comment ca marche ?</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5 py-4 HoverBackGround	">
+                                        <Typography variant="p"> Pourqoi Binpct ?</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5 py-4 HoverBackGround	">
+                                        <Typography variant="p">Categories</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5  py-4 HoverBackGround	">
+                                        <Typography variant="p">Communautes</Typography>
+                                    </Box>
+                                </Box>
+                            </AppBar>
+                            }
                     </AppBar>
                     <Container>
-                        {Menu&&
-                         <Box  boxShadow={5}  className="bg-gray-100 h-200 AnimaionNavbar rounded-2xl text-white			 ml-360 absolute w-150 text-center	 ">
-                             <Box className="mb-2 bg-Hover mt-2">
-                               <Typography className="text-sm color-r w-50" variant="p" >ACCEUIL</Typography>
-                               </Box>
-                               <Box  className="mb-2 bg-Hover">
-                                <Typography className="text-sm color-r" variant="p">CATEGORIES</Typography>
-                                </Box>
-                                <Box  className="mb-2 bg-Hover">
-                                <Typography className="text-sm color-r" variant="p" >COMMUNAUTES</Typography>
-                                </Box>
-                                <Box className="w-100 mb-2 bg-Hover">
-                                <Typography className="text-sm color-r " variant="p" >POURQOI BINPACT </Typography>
-                                </Box>
-                                <Box className="w-100 mb-2 bg-Hover">
-                                    <Typography   className="text-sm color-r"  variant="p"> COMMENT CA MARCHE </Typography>
-                                </Box>
-                            </Box>}
+                        
                      
                  <Container> {/* Title */}
+                     {!Menu && <>
                         <Box className="ml-3p">
-                            <Box  className="tracking-widest ml-40 wp-100  mr-40 mt-180">
-                                <Box  data-aos="fade-down-left"  className="flex">
-                                    <h3   variant="h3" className="pr-40 font-medium tracking-widest leading-snug  ml-3p text-5xl text-white">Troquez des produits de qualité
-                                    dans une communuté engagée</h3>
+                            
+                                <Box  className="tracking-widest ml-40 wp-100  mr-40 mt-180">
+                                    <Box  data-aos="fade-down-left"  className="flex">
+                                        <h3   variant="h3" className="pr-40 font-medium tracking-widest leading-snug  ml-3p text-5xl text-white">Troquez des produits de qualité
+                                        dans une communuté engagée</h3>
+                                    </Box>
                                 </Box>
-                            </Box>
               
                             {/* Descraption */}
-                            <Box data-aos="fade-left"  className=" ml-20 text-white wp-70	">
-                                <p>Des Produits verifiés et validés par nos
+                                  <Box data-aos="fade-left"  className=" ml-20 text-white wp-70	">
+                                    <p>Des Produits verifiés et validés par nos
                                     experts! offre spéciale lancement , limtée 
                                     aux 2000 premiers inscris</p>
                                     <Box className="mt-8">
@@ -143,7 +161,7 @@ const MainPage = () => {
                             <img className="w-15 h-10 ml-1 mr-10 mt-1" src="TESt05zd.png"/>
                             </Box>
                      
-                    </Box>
+                    </Box> </>}
                 </Container>  
             </Container>
         </Box>
@@ -181,24 +199,38 @@ const MainPage = () => {
              
             </Box>
             </AppBar>
-                {Menu&&
-                 <Box  boxShadow={5}  className="bg-gray-100 h-200 AnimaionNavbar rounded-2xl text-white			 ml-360 absolute w-150 text-center	 ">
-                     <Box className="mb-2 bg-Hover mt-2">
-                       <Typography className="text-sm color-r w-50" variant="p" >ACCEUIL</Typography>
-                       </Box>
-                       <Box  className="mb-2 bg-Hover">
-                        <Typography className="text-sm color-r" variant="p">CATEGORIES</Typography>
-                        </Box>
-                        <Box  className="mb-2 bg-Hover">
-                        <Typography className="text-sm color-r" variant="p" >COMMUNAUTES</Typography>
-                        </Box>
-                        <Box className="w-100 mb-2 bg-Hover">
-                        <Typography className="text-sm color-r " variant="p" >POURQOI BINPACT </Typography>
-                        </Box>
-                        <Box className="w-100 mb-2 bg-Hover">
-                            <Typography   className="text-sm color-r"  variant="p"> COMMENT CA MARCHE </Typography>
-                        </Box>
-                    </Box>}
+            {Menu&&
+                         <AppBar  boxShadow={5} position="fixed"  className={`bg-gray-100 bg-white  ${Menu && "AnimaiionNavbarSticky"} `} >
+                                <Box className="flex flex-center mt-2">
+                                <Box className="wp-50 mt-1 ml-4">
+                                <img className="w-190 imgResposive" src="binpact002.png"/>
+                                </Box>
+                                <Box className="wp-50 mt-4" >
+                                <MenuIcon onClick={()=>setMenud(!Menu)} style={{marginLeft:"80%"}} className={`text-gray-500`}/>
+                                </Box>
+                                
+
+
+                                </Box>
+                                <Box  className={`text-gray-500  h-400 `}>
+                                    <Box  className="pb-10 font-semibold text-l py-4 HoverBackGround pl-5 ">
+                                        <Typography variant="p">Acceuil</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5 py-4 HoverBackGround	">
+                                        <Typography variant="p">Comment ca marche ?</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5 py-4 HoverBackGround	">
+                                        <Typography variant="p"> Pourqoi Binpct ?</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5 py-4 HoverBackGround	">
+                                        <Typography variant="p">Categories</Typography>
+                                    </Box>
+                                    <Box className="pb-10 font-semibold text-l	pl-5  py-4 HoverBackGround	">
+                                        <Typography variant="p">Communautes</Typography>
+                                    </Box>
+                                </Box>
+                            </AppBar>
+                            }
              
          <Container> {/* Title */}
                 <Box data-aos="fade-down-left" className="ml-3p">

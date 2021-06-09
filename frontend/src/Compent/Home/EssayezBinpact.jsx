@@ -35,7 +35,7 @@ const EssayezBinpact = () => {
             </Box>
             <Box   className="mt-8">
             
-             <Button   className={`rounded-full h-11 ${Scroll&&"ButtonAnimation"}` } style={{backgroundColor:"#F1898C" , borderRadius:"20px",color:"white"}}>Bloquez vote place maintence</Button>
+             <Button   className={`rounded-full h-11"}` } style={{backgroundColor:"#F1898C" , borderRadius:"20px",color:"white"}}>Bloquez vote place maintence</Button>
             </Box>
         </Box>
     )

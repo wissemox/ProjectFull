@@ -15,7 +15,7 @@ const Home = () => {
         <>
         <MainPage/>
         <Catgory/>
-        <Nouveaute/>
+         <Nouveaute/> 
          <Commentcamarche/> 
         <MainPage2/> 
         <EssayezBinpact />
