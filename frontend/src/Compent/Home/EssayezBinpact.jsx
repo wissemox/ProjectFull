@@ -13,7 +13,7 @@ const EssayezBinpact = () => {
         const[Scroll , setScroll]=useState(false)
         const changeBackground =()=>{
             console.log(window.scrollY)
-             if(window.scrollY>2500){
+             if(window.scrollY>2400){
                 setScroll(true)
             }else{
                setScroll(false)
