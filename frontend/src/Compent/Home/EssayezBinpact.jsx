@@ -10,7 +10,17 @@ const EssayezBinpact = () => {
           Aos.init({duration: 2000});
         }, [])
    
-
+        const[Scroll , setScroll]=useState(false)
+        const changeBackground =()=>{
+            console.log(window.scrollY)
+             if(window.scrollY>2500){
+                setScroll(true)
+            }else{
+               setScroll(false)
+            }
+        }
+        window.addEventListener('scroll' ,changeBackground )
+        {console.log(Scroll)}
     return (
         <Box className="mt-60 mb-20 text-center			"> 
        
@@ -24,8 +34,8 @@ const EssayezBinpact = () => {
                 </Box>
             </Box>
             <Box   className="mt-8">
-              
-             <Button data-Aos="flip-left"  className="rounded-full h-11 "  style={{backgroundColor:"#F1898C" , borderRadius:"20px",color:"white"}}>Bloquez vote place maintence</Button>
+            
+             <Button   className={`rounded-full h-11 ${Scroll&&"ButtonAnimation"}` } style={{backgroundColor:"#F1898C" , borderRadius:"20px",color:"white"}}>Bloquez vote place maintence</Button>
             </Box>
         </Box>
     )

@@ -13,36 +13,49 @@ const MainPage = () => {
  
     const [active , setactive]=useState(false)
     const[Menu , setMenud]=useState(false)
+    const[Scroll , setScroll]=useState(false)
+    const changeBackground =()=>{
+        console.log(window.scrollY)
+        if(window.scrollY>200){
+            setScroll(true)
+        }else{
+            setScroll(false)
+        }
+    }
+    window.addEventListener('scroll' ,changeBackground )
+    {console.log(Scroll)}
     return (
         <>
         <Parallax className="ParallaxResposive1400widht"  bgImage={"Untitled-2.jpg"} strength={600}> 
         <Box className="w-15  	h-720 ">
-            <Container>
+           
                 {/* NavBar */}
-                    <Box data-aos="fade-up-right" className="flex  ml-20 pt-10 ">
+                   <AppBar data-aos="fade" style={{backgroundColor:"transparent",boxShadow:"none"}} position={`${Scroll&&"fixed"}`} className={`${Scroll && "AnimaiionNavbarSticky"} ${Scroll && "bg-white"}  `}>
+                        <Box data-aos="fade-up-right" className="flex  ml-20 pt-10 flex-center  ">
+                        <Box>
+                        {!Scroll ?     <img  className="w-190 imgResposive"   src="Binpactwhite.png"/> :  <img  className="w-190 imgResposive"   src="binpact002.png"/>}
+                        </Box>
+                        <Box className={`mt-20 ml-40 flex text-sm NavBarResposive  ${Scroll ?"text-gray-500	":"text-white"}  `}>
+                        <Typography data-aos="fade" variant="p" className="pr-40">ACCEUIL</Typography>
+                        <Typography data-aos="fade"  variant="p" className="pr-40">COMMENT CA MARCHE ? </Typography>
+                        <Typography data-aos="fade" variant="p" className="pr-40">POURQOI BINPACT ?</Typography>
+                        <Typography data-aos="fade" variant="p" className="pr-40">CATEGORIES</Typography>
+                        <Typography data-aos="fade" variant="p" className="pr-40">COMMUNAUTES</Typography>
                     
-                    <img className="w-190 imgResposive"   src="binpact002.png"/>
-                 
-                    <Box className="mt-20 ml-40 flex text-sm NavBarResposive  text-white 		">
-                    <Typography data-aos="fade" variant="p" className="pr-40">ACCEUIL</Typography>
-                    <Typography data-aos="fade"  variant="p" className="pr-40">COMMENT CA MARCHE ? </Typography>
-                    <Typography data-aos="fade" variant="p" className="pr-40">POURQOI BINPACT ?</Typography>
-                    <Typography data-aos="fade" variant="p" className="pr-40">CATEGORIES</Typography>
-                    <Typography data-aos="fade" variant="p" className="pr-40">COMMUNAUTES</Typography>
-                   
-                    </Box>
-                   
-
-                    <Box style={{width:"100%"}} className="hidden flex 	   MenuResposive  text-left">
+                        </Box>
+                        <Box style={{width:"80%"}} className="hidden flex  mt-3	   MenuResposive  text-left">
                        
-                        <MenuIcon onClick={()=>setMenud(!Menu)} style={{marginLeft:"80%"}} className="text-white  	"/>
-                        
-                   
-                      
-                    </Box> 
+                       <MenuIcon onClick={()=>setMenud(!Menu)} style={{marginLeft:"80%"}} className={`${Scroll ?"text-gray-500	":"text-white"} `}/>
+                       
+                  
                      
-                    </Box>
-               
+                        </Box> 
+                        </Box>
+
+                   
+                     
+                    </AppBar>
+                    <Container>
                         {Menu&&
                          <Box  boxShadow={5}  className="bg-gray-100 h-200 AnimaionNavbar rounded-2xl text-white			 ml-360 absolute w-150 text-center	 ">
                              <Box className="mb-2 bg-Hover mt-2">
@@ -143,9 +156,10 @@ const MainPage = () => {
 <Box className="w-15  	h-720 ">
     <Container>
         {/* NavBar */}
-            <Box className="flex  ml-20 pt-10 ">
-            
-            <img className="w-190 imgResposive"   src="binpact002.png"/>
+            <AppBar data-aos="fade" style={{backgroundColor:"transparent",boxShadow:"none"}} position={`${Scroll&&"fixed"}`} className={`${Scroll && "AnimaiionNavbarSticky"} ${Scroll && "bg-white"}  `}>
+            <Box  className="flex  ml-20 pt-10 ">
+            {!Scroll ?     <img  className="w-190 imgResposive"   src="Binpactwhite.png"/> :  <img  className="w-190 imgResposive"   src="binpact002.png"/>}
+           
          
             <Box className="mt-20 ml-40 flex text-sm NavBarResposive  text-white 		">
             <Typography variant="p" className="pr-40">ACCEUIL</Typography>
@@ -156,17 +170,17 @@ const MainPage = () => {
            
             </Box>
            
-
-            <Box style={{width:"100%"}} className="hidden flex 	   MenuResposive  text-left">
+                            
+            <Box    style={{width:"100%"}} className="hidden flex 	   MenuResposive  text-left">
                
-                <MenuIcon onClick={()=>setMenud(!Menu)} style={{marginLeft:"80%"}} className="text-white  	"/>
+                <MenuIcon   onClick={()=>setMenud(!Menu)} style={{marginLeft:"80%"}} className={`${Scroll ?"text-gray-500	":"text-white"}`}/>
                 
            
               
             </Box> 
              
             </Box>
-       
+            </AppBar>
                 {Menu&&
                  <Box  boxShadow={5}  className="bg-gray-100 h-200 AnimaionNavbar rounded-2xl text-white			 ml-360 absolute w-150 text-center	 ">
                      <Box className="mb-2 bg-Hover mt-2">
