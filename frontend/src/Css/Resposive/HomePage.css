@@ -529,6 +529,9 @@
     .HaideResercheBar{
         display: none;
     }
+    .text-lg{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 600px){
     .TextResposive{

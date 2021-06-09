@@ -3,7 +3,7 @@ import {Container , Box , Typography , IconButton , AppBar, Button  } from '@mat
 
 const Buyers = () => {
     return (
-        <Box className="mt-4" style={{backgroundColor:"#F3F4F6" , height:"500px"}}>
+        <Box className="mt-4" style={{backgroundColor:"#F3F4F6" , height:"800px"}}>
            {/**/}
            <Box className="flex font-bold	text-3xl	  flex-center">
                <Box className="mt-10">
@@ -22,12 +22,41 @@ const Buyers = () => {
                <Box className="flex flex-center mt-40">
                   <Box style={{marginLeft:"14%" , marginTop:"5%"}} className="mr-15p">
                   <img src="im1.png"/>
+                  <Box className="text-lg font-semibold pt-10 text-center">
+                      <Typography variant="p">james Thornton</Typography>
                   </Box>
-                    <Box style={ {marginTop:"5%"}}  className="mr-15p">
-                    <img src="im2.png"/>
+                  <Box className="text-center f-14 " >
+                      <Typography variant="p">
+                          Design is the method of putting form and content together ,
+                           here is no single definition .Design can be asethetics
+                      </Typography>
                     </Box>
-                      <Box style={{ marginTop:"5%"}} className="mr-15p"> 
+                  </Box>
+                    <Box   style={ {marginTop:"5%"}}  className="mr-15p">
+                    <img src="im2.png"/>
+                    <Box className="text-lg font-semibold pt-10 text-center">
+                      <Typography variant="p">james Thornton</Typography>
+                      
+                    </Box>
+                  
+                    <Box className="text-center f-14">
+                      <Typography variant="p">
+                          Design is the method of putting form and content together ,
+                           here is no single definition .Design can be asethetics
+                      </Typography>
+                    </Box>
+                    </Box>
+                      <Box  style={{ marginTop:"5%"}} className="mr-15p"> 
                       <img src="im3.png"/>
+                      <Box  className="text-lg font-semibold pt-8 text-center">
+                      <Typography variant="p">james Thornton</Typography>
+                      </Box>
+                      <Box className="text-center f-14">
+                      <Typography  variant="p">
+                          Design is the method of putting form and content together ,
+                           here is no single definition .Design can be asethetics
+                      </Typography>
+                    </Box>
                       </Box>
                         
                    
